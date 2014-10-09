@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="/ana.ico" type="image/x-icon">
     <link rel="icon" href="/ana.ico" type="image/x-icon">
 
-    <title>NjePuneeRe</title>
+    <title>Njepuneere</title>
 
     <!-- Bootstrap core CSS -->
     {{HTML::style("/css/bootstrap.css")}}

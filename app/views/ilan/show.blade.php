@@ -18,7 +18,7 @@
                 <h6>{{$adsInfo->ref_code}}</h6>
             </div>
             <div class="col-sm-6">
-                <img src="{{$adsInfo->logo}}" alt="post img" class="pull-right img-responsive img-thumbnail" style="width:200px; height=150px; ">
+                <img src="http://institutional.njepuneere.loc/{{$adsInfo->logo}}" alt="post img" class="pull-right img-responsive img-thumbnail" style="width:200px; height=150px; ">
       </div>
     </div>
   </div>
@@ -142,8 +142,8 @@
                 {{ Form::close() }}
 
                 </div>
-            <div id="socialHolder" class="col-md-3">
-              <button type="button" class="btn btn-success" style="margin-top:18px;margin-left:-5px;">
+            <div id="socialHolder" class="col-sm-3">
+              <button type="button" class="btn btn-success" style="margin-top:18px;margin-left:-35px;">
                Complain
               </button>
             <div id="socialShare" class="btn-group share-group dropup">

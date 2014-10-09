@@ -63,7 +63,7 @@
 	        @if(!Auth::user())
 	          <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg pull-right header-btn hidden-mobile"><i class="fa fa-circle-arrow-up fa-lg"></i> Login & Register</a>
 	          
-	          <a style="margin-bottom:5px;margin-right:5px;" href="http://104.131.119.56:8080/SirketGiris" class="btn btn-success btn-lg header-btn"><i class="fa fa-circle-arrow-up fa-lg"></i> Employer</a>
+	          <a style="margin-bottom:5px;margin-right:5px;" href="http://institutional.njepuneere.loc" class="btn btn-success btn-lg header-btn"><i class="fa fa-circle-arrow-up fa-lg"></i> Employer</a>
 	        @endif
 	        @if(Auth::user())
 	        <div id="logout" class="btn-header transparent pull-right">

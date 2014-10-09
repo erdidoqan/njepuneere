@@ -6,7 +6,7 @@
             
             <a href="ads/{{$p->id}}" rel="tooltip" data-placement="top" data-original-title="<img style='width:100%' src='{{$p->logo}}' alt='me' class='online'>" data-html="true">
                 <div class="[ info-card ]">
-                    <img style="width:100%" src="http://localhost/institutional.karriera/public/{{$p->logo}}" />
+                    <img style="width:100%" src="http://institutional.njepuneere.loc/{{$p->logo}}" />
                     <div class="[ info-card-details ] animate">
                         <div class="[ info-card-header ]">
                             <h3> {{$p->com_name}} </h3>
