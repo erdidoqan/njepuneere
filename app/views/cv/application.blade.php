@@ -1,9 +1,13 @@
 @extends('cv.page')
 
 @section('content')
-  <div class="panel panel-success" style="margin-top:30px;">
-    <div class="panel-body">
-        <h4><strong>My Application</strong></h4><br>
+<div class="col-sm-12" style="margin-top:30px;">
+  <div class="jarviswidget jarviswidget-color-greenDark" id="wid-id-1" data-widget-colorbutton="true" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false">
+    <header>
+      <h2>My Applicant</h2>       
+    </header>
+    <div>         
+    <div class="widget-body">
             @if($apply->count())
               @foreach($apply as $app)
                 <div class="row">
@@ -30,6 +34,8 @@
           </div>
             @endif
     </div>
+  </div>
+  </div>
   </div>
 
 

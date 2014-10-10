@@ -48,12 +48,11 @@
 			$v = Validator::make($input,$rules);
 
 			if($v->passes()){
-
 				$pr_img = Input::file('pr_img');
-				$filename = time(). '.' .$pr_img->getClientOriginalName();
+				$filename = Auth::user()->adi.Auth::user()->soyadi.'-'.Auth::user()->id.'.jpg';//burada ayni isimde kaydettiriyorum sorun olabilir!
 				$path = public_path('img/pr_img/' . $filename);
 				Image::make($pr_img->getRealPath())->resizeCanvas(10, -10, 'center', true)->save($path);
-				$pr_img = 'http://localhost/karrieraDene/public/img/pr_img/'.$filename;
+				$pr_img = '/img/pr_img/'.$filename;
 				$pr_img = User::where('id', '=', Auth::user()->id)->update(array('pr_img' => $pr_img));
 
 				return Redirect::back();

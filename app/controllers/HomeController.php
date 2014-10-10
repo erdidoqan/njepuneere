@@ -24,14 +24,11 @@ class HomeController extends BaseController {
 
 	public function search()
 	{
-		$client = new Elasticsearch\Client();
-		$indexParams['index']  = 'my_index';    //index
-		$client->indices()->create($indexParams);
+		$indexParams['index'] = 'my_index';
+		$indexParams['body']['settings']['number_of_shards'] = 2;
+		$indexParams['body']['settings']['number_of_replicas'] = 0;
 		
-		$searchParams['index'] = 'job';
-		$searchParams['type']  = 'job_type';
-		$searchParams['body']['query']['match']['testField'] = 'abc';
-		$retDoc = $client->search($searchParams);
+		$result = Es::search($indexParams);
 
 		return View::make('ilan.search-list')->with('results', $results)->with('input',$input);
 	}

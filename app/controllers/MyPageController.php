@@ -20,11 +20,11 @@ class MyPageController extends BaseController {
 	{
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
-		$apply = DB::table('vi_new_app')->where('user_id','=',Auth::user()->id)->orderBy('created_at','DESC')->paginate();
+		$pre = DB::table('tbl_prewritten')->where('user_id','=',Auth::user()->id)->orderBy('created_at','DESC')->paginate();
 
 		return View::make('cv.prewritten')
 		
-		->with('apply',$apply)
+		->with('pre',$pre)
 		->with('noti_cv',$noti_cv)
 		->with('noti_app',$noti_app);	
 	}

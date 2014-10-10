@@ -2,9 +2,8 @@
 
 use Monolog\Logger;
 
-$params = array();
-$params['hosts'] = array (
-    
+return array(
+    'hosts' => array(),
+    'logPath' => 'path/to/your/elasticsearch/log',
+    'logLevel' => Logger::INFO
 );
-
-$client = new Elasticsearch\Client($params);

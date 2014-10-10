@@ -18,6 +18,6 @@
         </div>
 
         <div class="col-sm-2" style="margin-left: 31px;">
-            <a href="#" class="btn btn-xlarge {{ Request::path() == '/' ? 'active' : ''; }}">
+            <a href="#" class="btn btn-xlarge {{ Request::path() == 'message' ? 'active' : ''; }}">
                 <i class="glyphicon glyphicon-envelope fa-4x"></i><b class="badge alert-danger" style="margin-left:-25px;padding: 7px 9px;">0/5</b><br>My Message </a>
         </div>

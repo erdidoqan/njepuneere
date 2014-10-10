@@ -1,17 +1,21 @@
 @extends('cv.page')
 
 @section('content')
-  <div class="panel panel-success" style="margin-top:30px;">
-    <div class="panel-body">
-        <h4><strong>My Pre-Written</strong></h4><br>
-            @if($apply->count())
-              @foreach($apply as $app)
+<div class="col-sm-12" style="margin-top:30px;">
+  <div class="jarviswidget jarviswidget-color-greenDark" id="wid-id-1" data-widget-colorbutton="true" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false">
+    <header>
+      <h2>Pre Written</h2>       
+    </header>
+    <div>         
+    <div class="widget-body">
+            @if($pre->count())
+              @foreach($pre as $pre)
                 <div class="row">
                     <div class="col-sm-6">
-                      <a href="#">{{ $app->ads_name }}</a><small> ({{$app->com_name}})</small><br><br>
+                      <a href="#">{{ $pre->prewr_name }}</a><small></small><br><br>
                         <div class="col-sm-6">Date of Last Update:</div>
                         <div class="col-sm-4">
-                        {{ Carbon::createFromTimestamp(strtotime($app->created_at))->diffForHumans() }}
+                        {{ Carbon::createFromTimestamp(strtotime($pre->created_at))->diffForHumans() }}
                         </div>
                         <br>
                     </div>  
@@ -38,19 +42,8 @@
             </div>  
     </div>
   </div>
-
-<script type="text/javascript">
-  var activeEl = 3;
-    $(function() {
-        var items = $('.btn-nav');
-        $( items[activeEl] ).addClass('active');
-        $( ".btn-nav" ).click(function() {
-            $( items[activeEl] ).removeClass('active');
-            $( this ).addClass('active');
-            activeEl = $( ".btn-nav" ).index( this );
-        });
-    });
-</script>
+</div>
+</div>
 
 
 @stop

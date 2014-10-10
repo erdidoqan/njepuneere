@@ -6,6 +6,7 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"intervention/image": "2.*",
+		"elasticsearch/elasticsearch": "~1.0",
 		"shift31/laravel-elasticsearch": "1.0.*@dev",
 		 "felixkiss/uniquewith-validator": "1.1.*"
 	},

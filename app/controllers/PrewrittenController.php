@@ -43,7 +43,7 @@ class PrewrittenController extends \BaseController {
 		$pre->user_id = Auth::user()->id;
 		$pre->save();
 
-		return Redirect::to('create-resume');
+		return Redirect::to('pre-written');
 		}
 		return Redirect::back()->withErrors($v);
 	}
