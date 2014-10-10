@@ -3,7 +3,7 @@
     <div class="panel-body">
       <div class="col-sm-12">
       <section class="col col-5">
-      {{Form::select('resume_name', DB::table('tbl_new_cv')->lists('resume_name','id'), null, ['class' => 'form-control']);}}
+      {{Form::select('resume_name', DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->lists('resume_name','id'), null, ['class' => 'form-control']);}}
                   </section>
                   <br>
           <small>Occupancy rate of :</small>
@@ -41,15 +41,3 @@
       </div>
     </div>
   </div>
-<script type="text/javascript">
-   $(function() {
-    $("li").click(function() {
-        $("li").removeClass('active');
-        setTimeout(function() {
-            var expe = $.QueryString("expe");
-            $("li:eq(" + expe + ")").addClass("active");
-        }, 0);
-
-    });
-});
-</script>

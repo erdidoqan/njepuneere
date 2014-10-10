@@ -1,4 +1,6 @@
+@extends('cv.message.message')
 
+@section('content')
 <h2 class="email-open-header">
 	Re: Timelogs of last client <span class="label txt-color-white">inbox</span>
 	<a href="javascript:void(0);" rel="tooltip" data-placement="left" data-original-title="Print" class="txt-color-darken pull-right"><i class="fa fa-print"></i></a>	
@@ -107,18 +109,4 @@
 	</ul>
 </div>
 
-
-<script type="text/javascript">
-	
-	// DO NOT REMOVE : GLOBAL FUNCTIONS!
-	//pageSetUp();
-	
-	// PAGE RELATED SCRIPTS
-	
-	$(".table-wrap [rel=tooltip]").tooltip();
-
-	$(".replythis").click(function(){
-		loadURL("ajax/email-reply.html", $('#inbox-content > .table-wrap'));
-	})
-	
-</script>
+@stop

@@ -20,3 +20,4 @@
     {{HTML::style("http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700")}}
     {{ HTML::style('/css/jasny-bootstrap.css') }}
     {{ HTML::style('/css/jasny-bootstrap.min.css') }}
+    {{ HTML::style('/css/jasny-bootstrap.css.map') }}

@@ -33,6 +33,7 @@ Route::group(array('before' => 'auth'), function(){
 	Route::get('pre-written', array('as'=>'pre-written', 'uses'=>'MyPageController@pre_written'));
 	Route::get('user-up', array('as'=>'user-up', 'uses'=>'AuthController@user_update'));
 
+
 	Route::resource('cv', "CvController");
 	Route::resource('exp', "ExpController");
 	Route::resource('edu', "EduController");
@@ -51,4 +52,9 @@ Route::group(array('before' => 'auth'), function(){
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
 		return View::make('cv.prewritten-ic')->with('noti_cv',$noti_cv)->with('noti_app',$noti_app);
 	});
+});
+
+Route::group(array('before' => 'auth'), function(){
+	Route::get('/message',"MessageController@index");
+	Route::get('/message/opened_message',"MessageController@opened_message");
 });
