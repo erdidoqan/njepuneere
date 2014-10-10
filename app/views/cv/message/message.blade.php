@@ -31,97 +31,26 @@
             <li><a href="#">Trash</a></li>
           </ul>
         </div>
-        <div class="table-wrap custom-scroll animated fast fadeInRight">
-          <script>
-            $("#inbox-table [rel=tooltip]").tooltip();
-
-            $("#inbox-table input[type='checkbox']").change(function() {
-              $(this).closest('tr').toggleClass("highlight", this.checked);
-            });
-
-            $("#inbox-table .inbox-data-message").click(function() {
-              $this = $(this);
-              getMail($this);
-            })
-            $("#inbox-table .inbox-data-from").click(function() {
-              $this = $(this);
-              getMail($this);
-            })
-            function getMail($this) {
-              console.log($this.closest("tr").attr("id"));
-              loadURL("ajax/email-opened.html", $('#inbox-content > .table-wrap'));
-            }
-
-
-            $('.inbox-table-icon input:checkbox').click(function() {
-              enableDeleteButton();
-            })
-
-            $(".deletebutton").click(function() {
-              $('#inbox-table td input:checkbox:checked').parents("tr").rowslide();
-              //$(".inbox-checkbox-triggered").removeClass('visible');
-              //$("#compose-mail").show();
-            });
-
-            function enableDeleteButton() {
-              var isChecked = $('.inbox-table-icon input:checkbox').is(':checked');
-
-              if (isChecked) {
-                $(".inbox-checkbox-triggered").addClass('visible');
-                //$("#compose-mail").hide();
-              } else {
-                $(".inbox-checkbox-triggered").removeClass('visible');
-                //$("#compose-mail").show();
-              }
-            }
-            
-          </script>
+        <div class="table-wrap custom-scroll animated fast fadeInRight" style="min-height:320px;">
+           @if($apply->count())
+            <table class="table table-hover ">
+              
+                   @foreach($apply as $r)
+                   <tbody>  
+                   <tr> 
+                  <td><a style="text-decoration: none;" href="ads/{{$r->adsInfo_id}}" rel="tooltip" data-placement="top" data-original-title="<img style='width:100%' src='http://localhost/institutional.karriera/public/img/logo/1407447912.jpg' alt='me' class='online'>" data-html="true">{{$r->com_name}}</a></td>
+                  <td><a style="text-decoration: none;" href="ads/{{$r->adsInfo_id}}">{{$r->ads_name}}</a></td>
+                  <td><span class="text-warning">{{$r->work_place}}</span></td>
+                  <td><span class="label label-info">04 Ağustos 2014</span></td>
+                  <td><a style="text-decoration: none;" href="ads/{{$r->adsInfo_id}}" class="btn btn-xs btn-primary">Go to Ads</a></td>
+                </tr>
+                </tbody>
+                @endforeach
+            </table>
+          @endif
         </div>
 </div>
 
-<script type="text/javascript">
-  pageSetUp();
-  var pagefunction = function() {
-    tableHeightSize();
-    $(window).resize(function() {
-      tableHeightSize()
-    })
-    function tableHeightSize() {
-      if ($('body').hasClass('menu-on-top')) {
-        var menuHeight = 68;
-        var tableHeight = ($(window).height() - 224) - menuHeight;
-        if (tableHeight < (320 - menuHeight)) {
-          $('.table-wrap').css('height', (320 - menuHeight) + 'px');
-        } else {
-          $('.table-wrap').css('height', tableHeight + 'px');
-        }
-
-      } else {
-        var tableHeight = $(window).height() - 224;
-        if (tableHeight < 320) {
-          $('.table-wrap').css('height', 320 + 'px');
-        } else {
-          $('.table-wrap').css('height', tableHeight + 'px');
-        }
-
-      }
-
-    }
-    loadInbox();
-    function loadInbox() {
-      loadURL("ajax/email/email-list.html", $('#inbox-content > .table-wrap'))
-    }
-    $(".inbox-load").click(function() {
-      loadInbox();
-    });
-    $("#compose-mail").click(function() {
-      loadURL("ajax/email-compose.html", $('#inbox-content > .table-wrap'));
-    });
-    
-  };
-  loadScript("js/plugin/delete-table-row/delete-table-row.min.js", pagefunction);
-  
-</script>
 </div>
     </div>
   </div>

@@ -1,3 +1,4 @@
+.table > tbody > tr > td.no-line { border-top: none; }
 /* 
 Inspired by http://dribbble.com/shots/890759-Ui-Kit-Metro/attachments/97174
 */
