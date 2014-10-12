@@ -56,5 +56,6 @@ Route::group(array('before' => 'auth'), function(){
 
 Route::group(array('before' => 'auth'), function(){
 	Route::get('/message',"MessageController@index");
-	Route::get('/message/opened_message',"MessageController@opened_message");
+	Route::get('/message/open',"MessageController@open");
+	Route::get('/message/compose',"MessageController@compose");
 });
