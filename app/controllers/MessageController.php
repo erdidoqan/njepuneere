@@ -5,7 +5,7 @@ class MessageController extends \BaseController {
 	{
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
- 		$message = Message::where('birey_id','=',Auth::user()->id)->orderBy('id','DESC')->paginate(5);
+ 		$message = Message::where('birey_id','=',Auth::user()->id)->where('message_status','=',1)->orderBy('id','DESC')->paginate(5);
 
 		return View::make('cv.message.message')
 		->with('noti_cv',$noti_cv)

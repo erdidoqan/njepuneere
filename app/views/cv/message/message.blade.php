@@ -13,9 +13,9 @@
         <h1 class="page-title txt-color-blueDark hidden-tablet"><i class="fa fa-fw fa-inbox"></i> Inbox</h1>
         <div class="inbox-checkbox-triggered">
           <div class="btn-group">
-            <a href="javascript:void(0);" class="btn btn-default"><strong><i class="fa fa-exclamation fa-lg text-danger"></i></strong></a>
-            <a href="javascript:void(0);" class="btn btn-default"><strong><i class="fa fa-folder-open fa-lg"></i></strong></a>
-            <a href="javascript:void(0);" class="deletebutton btn btn-default"><strong><i class="fa fa-trash-o fa-lg"></i></strong></a>
+            <a href="#" class="btn btn-default"><strong><i class="fa fa-exclamation fa-lg text-danger"></i></strong></a>
+            <a href="#" class="btn btn-default"><strong><i class="fa fa-folder-open fa-lg"></i></strong></a>
+            <a href="#" class="deletebutton btn btn-default"><strong><i class="fa fa-trash-o fa-lg"></i></strong></a>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@
             <strong>Compose</strong> 
           </a>
           <ul class="inbox-menu-lg">
-            <li class="active"><a class="inbox-load" href="javascript:void(0);"> Inbox (14) </a></li>
+            <li class="active"><a class="inbox-load" href="/message"> Inbox (14) </a></li>
             <li><a href="#">Sent</a></li>
             <li><a href="#">Draft</a></li>
             <li><a href="#">Trash</a></li>
@@ -45,14 +45,18 @@
                    @foreach($message as $r)
                    <tbody>  
                    <tr> 
-                  <td><a style="text-decoration: none;" href="ads/{{$r->adsInfo_id}}" rel="tooltip" data-placement="top" data-original-title="<img style='width:100%' src='http://localhost/institutional.karriera/public/img/logo/1407447912.jpg' alt='me' class='online'>" data-html="true">{{$r->com_name}}</a></td>
-                  <td><a style="text-decoration: none;" href="ads/{{$r->adsInfo_id}}">{{$r->ads_name}}</a></td>
+                  <td><a href="ads/{{$r->adsInfo_id}}">{{$r->com_name}}</a></td>
+                  <td><a href="ads/{{$r->adsInfo_id}}">{{$r->ads_name}}</a></td>
                   <td><span class="label label-info">04 Ağustos 2014</span></td>
-                  <td><a style="text-decoration: none;" href="ads/{{$r->adsInfo_id}}" class="btn btn-xs btn-primary">Read</a></td>
+                  <td><a href="ads/{{$r->adsInfo_id}}" class="btn btn-xs btn-primary">Read</a></td>
                 </tr>
                 </tbody>
                 @endforeach
             </table>
+            @else
+            <div class="alert alert-warning">
+            <p>You do not have any messages from any companies!</p>
+          </div>
           @endif
         </div>
 </div>
