@@ -11,7 +11,7 @@ Route::get('ads/{id}',function($id)
 		$adsInfo = AdsInfo::find($id);
 		$ads = Ads::find($id);
 
-		return View::make('ilan.show')->with('adsInfo',$adsInfo)->with('ads',$ads)->with('last',$last)->with('img_src',$img_src);
+		return View::make('ilan.show')->with('adsInfo',$adsInfo)->with('ads',$ads)->with('last',$last);
 	});
 
 
