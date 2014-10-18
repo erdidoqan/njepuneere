@@ -130,7 +130,7 @@
 @if(Auth::user())
   <div class ="navbar navbar-fixed-bottom">
                 <div class="row">
-                    <div class="col-lg-6" style="margin-left:215px;margin-bottom:-44px;">
+                    <div class="col-lg-7" style="margin-left:100px;margin-bottom:-44px;">
                <div class="row mobile-social-share">
                 <div class="col-md-9" style="margin-top:13px;">
                 {{ Form::open(array('route' => array('apply.store', $ads->id, $adsInfo->id, $adsInfo->user_id))) }}

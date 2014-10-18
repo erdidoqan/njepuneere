@@ -43,7 +43,6 @@
                  @endforeach
                 
 		</table>
-     {{$results->links()}}
 
 					@else
 					<div class="alert alert-warning">

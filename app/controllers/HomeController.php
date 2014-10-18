@@ -21,16 +21,11 @@ class HomeController extends BaseController {
 	{
 		return View::make('hello');
 	}
-
-	
-
-
-
 	public function getSearch()
 	{
 		$search = Input::get('search');
   		//$data = $this->AdsInfo->getByPage($page, 50);
-		$results = AdsInfo::where('ads_name', 'LIKE', '%'.$search.'%')->paginate(3);
+		$results = AdsInfo::where('ads_name', 'LIKE', '%'.$search.'%')->paginate();
 
 		return View::make('ilan.search-list', compact('search', 'results'));
 
