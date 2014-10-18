@@ -23,7 +23,8 @@
             </div>@endforeach
            
     </div>
+    <div style="margin-left:38px;">{{$adsInfo->links()}}</div>
+
 
 </div>
 @endif
-

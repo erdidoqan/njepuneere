@@ -4,7 +4,7 @@
 		{{ Form::open(array('url' => 'search', 'class'=>'smart-form')) }}
 			<fieldset>
 				<section>
-					<label class="label"><b>Keywords</b></label>
+					<label class="label"><b>Keyword</b></label>
 					<label class="input"> <i class="icon-append fa fa-question-circle"></i>
 						{{ Form::text('search','', array('placeholder' => 'Filter')) }}
 						
@@ -14,7 +14,19 @@
 					</label>
 				</section>
 			</fieldset>
-			<hr>
+			<fieldset>
+				<section>
+					<label class="label"><b>Company Name</b></label>
+					<label class="input"> <i class="icon-append fa fa-question-circle"></i>
+						{{ Form::text('search','', array('placeholder' => 'Filter')) }}
+						
+						<b class="tooltip tooltip-top-right">
+							<i class="fa fa-warning txt-color-teal"></i> 
+							Sort by position name</b> 
+					</label>
+				</section>
+			</fieldset>
+			
 			<fieldset>
 				<section>
 					<label class="label"><b>City</b></label>

@@ -22,15 +22,18 @@ class HomeController extends BaseController {
 		return View::make('hello');
 	}
 
-	public function search()
+	
+
+
+
+	public function getSearch()
 	{
-		$indexParams['index'] = 'my_index';
-		$indexParams['body']['settings']['number_of_shards'] = 2;
-		$indexParams['body']['settings']['number_of_replicas'] = 0;
-		
-		$result = Es::search($indexParams);
+		$search = Input::get('search');
+  		//$data = $this->AdsInfo->getByPage($page, 50);
+		$results = AdsInfo::where('ads_name', 'LIKE', '%'.$search.'%')->paginate(3);
 
-		return View::make('ilan.search-list')->with('results', $results)->with('input',$input);
+		return View::make('ilan.search-list', compact('search', 'results'));
+
 	}
-
+//http://njepuneere.loc/lib/search?sort=&page=2
 }

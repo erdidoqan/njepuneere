@@ -676,3 +676,21 @@ Form::macro('edu_level', function($name = "edu_level", $selected = null) {
     return $select;
 
 });
+
+HTML::macro('clever_link', function($route, $text) {    
+    if( Request::path() == $route ) {
+        $active = "class = 'active'";
+    }
+    else {
+        $active = '';
+    }
+ 
+  return $active . '>' . link_to($route, $text);
+});
+
+
+
+
+
+
+

@@ -15,7 +15,7 @@ Route::get('ads/{id}',function($id)
 	});
 
 
-Route::post('search', array('as'=>'search', 'uses'=>'HomeController@search'));
+Route::post('search', array('as'=>'search', 'uses'=>'HomeController@getSearch'));
 Route::get('BireyKayit', 'AuthController@getBireyKayit');
 Route::post('BireyKayit', 'AuthController@postBireyKayit');
 Route::post('pr_img', 'AuthController@postPr_img');
@@ -56,6 +56,6 @@ Route::group(array('before' => 'auth'), function(){
 
 Route::group(array('before' => 'auth'), function(){
 	Route::get('/message',"MessageController@index");
-	Route::get('/message/open',"MessageController@open");
+	Route::get('/message/open/{id}',"MessageController@open");
 	Route::get('/message/compose',"MessageController@compose");
 });

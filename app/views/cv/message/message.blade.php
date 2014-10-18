@@ -2,12 +2,17 @@
 
 @section('content')
 <div class="col-sm-12" style="margin-top:30px;">
-  <div class="jarviswidget jarviswidget-color-greenDark" id="wid-id-1" data-widget-colorbutton="true" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false">
+  <div class="jarviswidget jarviswidget-color-greenDark" id="wid-id-1"
+      data-widget-colorbutton="true"
+      data-widget-togglebutton="false" 
+      data-widget-deletebutton="false" 
+      data-widget-fullscreenbutton="false">
+
     <header>
       <h2>Messeage</h2>       
     </header>
-    <div>
 
+    <div>
     <div id="content">
       <div class="inbox-nav-bar no-content-padding">
         <h1 class="page-title txt-color-blueDark hidden-tablet"><i class="fa fa-fw fa-inbox"></i> Inbox</h1>
@@ -45,10 +50,10 @@
                    @foreach($message as $r)
                    <tbody>  
                    <tr> 
-                  <td><a href="ads/{{$r->adsInfo_id}}">{{$r->com_name}}</a></td>
-                  <td><a href="ads/{{$r->adsInfo_id}}">{{$r->ads_name}}</a></td>
+                  <td><a href="ads/{{$r->ads_id}}">{{$r->com_name}}</a></td>
+                  <td><a href="ads/{{$r->ads_id}}">{{$r->ads_name}}</a></td>
                   <td><span class="label label-info">04 Ağustos 2014</span></td>
-                  <td><a href="ads/{{$r->adsInfo_id}}" class="btn btn-xs btn-primary">Read</a></td>
+                  <td><a href="/message/open/{{$r->id}}" class="btn btn-xs btn-primary">Read</a></td>
                 </tr>
                 </tbody>
                 @endforeach

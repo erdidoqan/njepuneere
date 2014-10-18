@@ -4,7 +4,7 @@
 @section('content')
 <div class="panel panel-fixed panel-primary">
   <div class="panel-body">
-  <small>Display options : {{ ucwords($input) }}</small>
+  <small>Display options : {{ ucwords($search) }}</small>
     
   </div>
   </div>
@@ -23,8 +23,8 @@
                  @foreach($results as $r)
                  <tbody>
                  	<tr>
-                      <td><a style="text-decoration: none;" href="ads/{{$r->id}}" rel="tooltip" data-placement="top" data-original-title="<img style='width:100%' src='{{$r->logo}}' alt='me' class='online'>" data-html="true">{{ucwords($r->com_name)}}</a></td>
-                      <td><a style="text-decoration: none;" href="ads/{{$r->id}}">{{ucwords($r->ads_name)}}</a></td>
+                      <td><a href="/ads/{{$r->id}}">{{ucwords($r->com_name)}}</a></td>
+                      <td><a href="/ads/{{$r->id}}">{{ucwords($r->ads_name)}}</a></td>
 
                       <td><span class="text-warning"><i class="fa fa-map-marker"></i> {{ucwords($r->work_place)}}</span></td>
                       <td><span class="label label-info">{{ Carbon::createFromTimestamp(strtotime($r->created_at))->addDays($r->pub_time)->diffForHumans() }}</span></td>
@@ -43,7 +43,8 @@
                  @endforeach
                 
 		</table>
-		 {{$results->links()}}
+     {{$results->links()}}
+
 					@else
 					<div class="alert alert-warning">
 						<h4>I'm sorry your search returned no results</h4>

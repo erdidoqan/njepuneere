@@ -12,13 +12,15 @@ class MessageController extends \BaseController {
 		->with('message',$message)
 		->with('noti_app',$noti_app);
 	}
-	public function open()
+	public function open($id)
 	{
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
+ 		$message = Message::find($id);
 
 		return View::make('cv.message.open')
 		->with('noti_cv',$noti_cv)
+		->with('message',$message)
 		->with('noti_app',$noti_app);
 	}
 

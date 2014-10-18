@@ -1,112 +1,51 @@
-@extends('cv.message.message')
+@extends('cv.page')
 
 @section('content')
-<h2 class="email-open-header">
-	Re: Timelogs of last client <span class="label txt-color-white">inbox</span>
-	<a href="javascript:void(0);" rel="tooltip" data-placement="left" data-original-title="Print" class="txt-color-darken pull-right"><i class="fa fa-print"></i></a>	
-</h2>
+<div class="col-sm-12" style="margin-top:30px;">
+  <div class="jarviswidget jarviswidget-color-greenDark" id="wid-id-1"
+      data-widget-colorbutton="true"
+      data-widget-togglebutton="false" 
+      data-widget-deletebutton="false" 
+      data-widget-fullscreenbutton="false">
 
-<div class="inbox-info-bar">
-	<div class="row">
-		<div class="col-sm-9">
-			<img src="img/avatars/5.png" alt="me" class="away">
-			<strong>Sadi Orlaf</strong>
-			<span class="hidden-mobile">&lt;sadi.orlaf@smartadmin.com&gt;to <strong>me</strong> on <i>12:10AM, 12 March 2013</i></span> 
-		</div>
-		<div class="col-sm-3 text-right">
-			
-			<div class="btn-group text-left">
-				<button class="btn btn-primary btn-sm replythis">
-					<i class="fa fa-reply"></i> Reply
-				</button>
-				<button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-					<i class="fa fa-angle-down"></i>
-				</button>
-				<ul class="dropdown-menu pull-right">
-					<li>
-						<a href="javascript:void(0);" class="replythis"><i class="fa fa-reply"></i> Reply</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);" class="replythis"><i class="fa fa-mail-forward"></i> Forward</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);"><i class="fa fa-print"></i> Print</a>
-					</li>
-					<li class="divider"></li>
-					<li>
-						<a href="javascript:void(0);"><i class="fa fa-ban"></i> Mark as spam!</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);"><i class="fa fa-trash-o"></i> Delete forever</a>
-					</li>
-				</ul>
-			</div>
+    <header>
+      <h2>Messeage</h2>       
+    </header>
 
-		</div>
-	</div>
+    <div>
+    <div id="content">
+      <div class="inbox-nav-bar no-content-padding">
+        <h1 class="page-title txt-color-blueDark hidden-tablet"><i class="fa fa-fw fa-inbox"></i> Inbox</h1>
+        <div class="inbox-checkbox-triggered">
+          <div class="btn-group">
+            <a href="#" class="btn btn-default"><strong><i class="fa fa-exclamation fa-lg text-danger"></i></strong></a>
+            <a href="#" class="btn btn-default"><strong><i class="fa fa-folder-open fa-lg"></i></strong></a>
+            <a href="#" class="deletebutton btn btn-default"><strong><i class="fa fa-trash-o fa-lg"></i></strong></a>
+          </div>
+        </div>
+      </div>
+      <div id="inbox-content" class="inbox-body no-content-padding">
+        <div class="inbox-side-bar">
+          <a href="/message/compose" class="btn btn-primary btn-block"> 
+            <strong>Compose</strong> 
+          </a>
+          <ul class="inbox-menu-lg">
+            <li class="active"><a class="inbox-load" href="/message"> Inbox (14) </a></li>
+            <li><a href="#">Sent</a></li>
+            <li><a href="#">Draft</a></li>
+            <li><a href="#">Trash</a></li>
+          </ul>
+        </div>
+        <div class="table-wrap custom-scroll animated fast fadeInRight" style="min-height:320px;">
+	      <a href="/ads/{{$message->ads_id}}">{{$message->com_name}} </a>
+        </div>
 </div>
 
-<div class="inbox-message">
-	<p>
-		Hey James,
-	</p>
-	<p>
-		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-	</p>	
-	
-	<p>
-		Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. <i class="fa fa-smile-o"></i> 
-	</p>
-	
-	<br>
-	<br>
-	Thanks,<br> 
-	<strong>Sadi Orlaf</strong>
-	<br>
-	<br>
-	<small>
-		General Manager - Finance Department <br> 
-		231 Ajax Rd, Detroit MI - 48212, USA
-		<br>
-		<i class="fa fa-phone"> (313) 647 6471</i> 
-
-	</small>
-	<br>	
-	<img src="img/logo-blacknwhite.png" height="20" width="auto" style="margin-top:7px; padding-right:9px; border-right:1px dotted #9B9B9B;" />
+</div>
+    </div>
+  </div>
+</div>
 </div>
 
-<div class="inbox-download">
-	2 attachment(s) — <a href="javascript:void(0);"> Download all attachments</a> 
-	
-	<ul class="inbox-download-list">
-		<li>
-			<div class="well well-sm">
-				<span>
-					<img src="img/demo/sample.jpg">
-				</span>
-				<br>
-				<strong>rocketlaunch.jpg</strong> 
-				<br>
-				400 kb 
-				<br> 
-				<a href="javascript:void(0);"> Download</a>  | <a href="javascript:void(0);"> View</a>
-			</div>
-		</li>
-		<li>
-			<div class="well well-sm">
-				<span>
-					<i class="fa fa-file"></i>
-				</span>
-				
-				<br>
-				<strong>timelogs.xsl</strong> 
-				<br>
-				1.3 mb 
-				<br> 
-				<a href="javascript:void(0);"> Download</a> | <a href="javascript:void(0);"> Share</a>
-			</div>
-		</li>
-	</ul>
-</div>
 
 @stop
