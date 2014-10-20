@@ -11,7 +11,6 @@
     <!-- Bootstrap core CSS -->
     {{HTML::style("/css/bootstrap.css")}}
     {{HTML::style("/css/bootstrap.min.css")}}
-    {{HTML::style("/css/bootstrap.theme.css")}}
     {{HTML::style("/css/style.css")}}
     {{HTML::style("/css/navbar-custom.css")}}
     {{HTML::style("/css/smartadmin-production.min.css")}}

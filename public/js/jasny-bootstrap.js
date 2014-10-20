@@ -813,14 +813,6 @@ if (typeof jQuery === 'undefined') { throw new Error('Jasny Bootstrap\'s JavaScr
   }
 
 
-  // INPUTMASK DATA-API
-  // ==================
-
-  $(document).on('focus.bs.inputmask.data-api', '[data-mask]', function (e) {
-    var $this = $(this)
-    if ($this.data('bs.inputmask')) return
-    $this.inputmask($this.data())
-  })
 
 }(window.jQuery);
 
