@@ -86,7 +86,7 @@
                                     </section>
                                     <section class="col col-6">
                                         <label class="input"> <i class="icon-append fa fa-phone"></i>
-                                        {{ Form::text('tel', '', array('class'=>'form-control','placeholder' => 'Phone','data-mask' => '(999) 999-9999')) }}
+                                        {{ Form::text('tel', '', array('class'=>'form-control','placeholder' => 'Phone','data-mask' => '(999) 99-999-9999')) }}
                                         </label>
                                     </section>
                                 </div>  
