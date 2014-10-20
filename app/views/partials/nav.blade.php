@@ -67,7 +67,7 @@
 	        @endif
 	        @if(Auth::user())
 	        <div id="logout" class="btn-header transparent pull-right">
-	          <span> <a href="logout" title="Sign Out" data-action="userLogout" data-logout-msg="Goodbye, {{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}..."><i class="fa fa-sign-out"></i></a> </span>
+	          <span> <a href="/logout" title="Sign Out" data-action="userLogout" data-logout-msg="Goodbye, {{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}..."><i class="fa fa-sign-out"></i></a> </span>
 	        </div>
 	        <div class="pull-right" style="margin-right:35px;margin-top:15px;">
 	          <span>{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }},</span> <a href="user-up"> Membership Information</a>
