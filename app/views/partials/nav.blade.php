@@ -63,11 +63,11 @@
 	        @if(!Auth::user())
 	          <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg pull-right header-btn hidden-mobile"><i class="fa fa-circle-arrow-up fa-lg"></i> Login & Register</a>
 	          
-	          <a style="margin-bottom:5px;margin-right:5px;" href="http://institutional.njepuneere.loc" class="btn btn-success btn-lg header-btn"><i class="fa fa-circle-arrow-up fa-lg"></i> Employer</a>
+	          <a style="margin-bottom:5px;margin-right:5px;" href="User::$img_sirket_src" class="btn btn-success btn-lg header-btn"><i class="fa fa-circle-arrow-up fa-lg"></i> Employer</a>
 	        @endif
 	        @if(Auth::user())
 	        <div id="logout" class="btn-header transparent pull-right">
-	          <span> <a href="/logout" title="Sign Out" data-action="userLogout" data-logout-msg="Goodbye, {{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}..."><i class="fa fa-sign-out"></i></a> </span>
+	          <span> <a href="/git pull origin masterlogout" title="Sign Out" data-action="userLogout" data-logout-msg="Goodbye, {{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}..."><i class="fa fa-sign-out"></i></a> </span>
 	        </div>
 	        <div class="pull-right" style="margin-right:35px;margin-top:15px;">
 	          <span>{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }},</span> <a href="user-up"> Membership Information</a>
