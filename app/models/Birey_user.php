@@ -14,7 +14,7 @@ class Birey_user extends Eloquent implements UserInterface, RemindableInterface 
 	 *
 	 * @var string
 	 */
-	protected $table = 'Birey_user';
+	protected $table = 'birey_user';
 
 	public static $rules = array(
 		'email' => 'required|unique:birey_user',
