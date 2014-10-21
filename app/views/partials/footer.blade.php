@@ -65,9 +65,11 @@
     <div class="footer-bottom">
         <div class="container">
             <p class="pull-left"> Copyright © njepuneere.com 2014. All right reserved. </p><br>
-            <p class="pull-left"> <a href="http://njepuneere.com/"><strong>Njepuneere.com</strong> </a>  është faqja e internetit të Shoqatës Një Botë e Re, e cila vazhdon aktivitetin me lejën nr. LN - 8060 - 05 - 2014 dhënë nga QKL më 30/05/2014.
-
-Sipas ligjit, marrja e vlerave monetare nga personat që kërkojnë punë është e ndaluar.</p>
+            <p class="pull-left">   Klienti nuk duhet t'i tregojë një personi të tretë informacionet e antarësimit të instuticionit, kodin, të dhënat personale të kandidatit dhe informacionet private (të veçanta). Të marrë masa, nëse është e nevojshme, për ruajtien e informacionit dhe mosdhënien e këtyre informacioneve një personi të tretë.
+Si dhe të marrë përsipër ruajtien e tyre.
+Klienti, perveç kësaj, në rast të ndryshimit të antarit përgjegjës që përdorte kodin e antarësimit të instuticionit, duhet të informojë menjëherë njepuneere.com.
+Klienti nëse është kunder me instuticionin, prish menjëherë kontratën me <a href="http://njepuneere.com/"><strong>Njepuneere.com</strong> </a>.
+Gjithashtu mund të bëjë një kërkesë për t'iu shpaguar çdo lloj dëmi të bërë kundrejt tij.</p>
             <div class="pull-right">
                 <ul class="nav nav-pills payments">
                 	<li><i class="fa fa-cc-visa"></i></li>
