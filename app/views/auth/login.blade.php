@@ -10,20 +10,22 @@
                 <h2>Login Form <small>or you can easily <a href="BireyKayit">Register</a> </small> </h2>             
             </header>
                 <div>
-                    @if($errors->any())
+                    @if ($errors->count() > 0)
                         <div class="alert alert-danger">
                             <a href="#" class="close" data-dismiss="alert">&times;</a>
-                            {{ implode('', $errors->all('<p class="error">:message</p>')) }}
+                            @foreach ($errors->all() as $msg)
+                                <P>{{$msg}} </P>
+                            @endforeach
                         </div>
                     @endif
                     <div class="widget-body no-padding">
-                        {{ Form::open(array('url' => 'BireyGiris','id'=>'smart-form-register','class'=>'smart-form')) }}
+                        {{ Form::open(array('url' => URL::route('BireyGiris'),'id'=>'smart-form-register','class'=>'smart-form')) }}
 
                             <fieldset>
                                 <label class="label col col-3">Email:</label>
                                 <section class="col col-9">
                                     <label class="input"> <i class="icon-append fa fa-envelope-o"></i>
-                                        {{ Form::text('email', '', array('placeholder' => 'Email address')) }}
+                                        {{ Form::email('email', Input::old('email'), array('placeholder' => 'Email address','id'=>'email')) }}
                                         <b class="tooltip tooltip-bottom-right">Needed to verify your account</b> </label>
                                 </section>
                                 <label class="label col col-3">Password:</label>

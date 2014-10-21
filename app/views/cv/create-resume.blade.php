@@ -68,7 +68,7 @@
       @include('cv/create-resume-ic')
     </div>
 </div>
-
+@include('partials/footer')
 
   </body>
 </html>

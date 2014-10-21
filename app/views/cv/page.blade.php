@@ -70,7 +70,7 @@
       @yield('content')
     </div>
 </div>
-
+@include('partials/footer')
 
   </body>
 </html>

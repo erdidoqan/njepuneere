@@ -19,7 +19,7 @@
             @include('partials/sidebar')
          </div>
               </div>
-      
+      @include('partials/footer')
   </body>
 </html>
 
