@@ -5,6 +5,9 @@ class MyPageController extends BaseController {
 	public function myPage()
 	{
 		$cv = Cv::where('user_id','=',Auth::user()->id)->where('status','=',1)->first();
+			if(empty($cv)){
+				return Redirect::to('/my-resume');
+			}
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
  		$apply = DB::table('vi_new_app')->where('user_id','=',Auth::user()->id)->orderBy('created_at','DESC')->paginate(15);
