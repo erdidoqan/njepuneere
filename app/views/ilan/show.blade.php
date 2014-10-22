@@ -101,7 +101,7 @@
                 <div class="form-group">
                   <label class="col-sm-4 control-label" for="textinput">Release Date</label>
                     <div class="col-sm-6">
-                      <p>{{$adsInfo->rel_date}}</p>
+                      <p>{{Carbon::createFromTimestamp(strtotime($adsInfo->created_at))->diffForHumans()}}</p>
                     </div>
                 </div>
 
