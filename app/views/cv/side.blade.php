@@ -21,7 +21,7 @@
     <div class="panel-body">
 		<div class="col-sm-12">
 			<h3><strong>Messages</strong></h3>
-			<p>Toplam <span class="text-danger">0</span> Mesaj <span class="text-danger">0</span> Okunmamış Mesaj</p>
+			<p>Total <span class="text-danger">0</span> Messages <span class="text-danger">0</span> Unread Message</p>
 			<button class="btn btn-warning btn-block"> messages</button>
 		</div>
 	</div>
