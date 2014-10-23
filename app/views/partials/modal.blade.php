@@ -40,7 +40,7 @@
                         {{ Form::password('sifre', array('class' => 'form-control', 'placeholder' => 'Password')) }}
                       </label>
                       <div class="note">
-                        Don't have an account! <a href="./BireyKayit" class="header-btn">
+                        Don't have an account! <a href="/BireyKayit" class="header-btn">
                     Sign Up Here
                 </a>
                       </div>
