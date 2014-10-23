@@ -8,7 +8,7 @@
           &times;
         </button>
         <h4 class="modal-title">
-          <img src="img/logo.png" width="150" alt="SmartAdmin">
+          <img src="/img/logo.png" width="150" alt="logo">
         </h4>
       </div>
       <div class="modal-body no-padding">
