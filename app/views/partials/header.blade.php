@@ -9,7 +9,7 @@
     <title>Njepuneere</title>
 
     <!-- Bootstrap core CSS -->
-    {{HTML::style("/css/t.css")}}
+
     {{HTML::style("/css/bootstrap.css")}}
     {{HTML::style("/css/bootstrap.min.css")}}
     {{HTML::style("/css/style.css")}}
@@ -21,3 +21,4 @@
     {{ HTML::style('/css/jasny-bootstrap.css') }}
     {{ HTML::style('/css/jasny-bootstrap.min.css') }}
     {{ HTML::style('/css/jasny-bootstrap.css.map') }}
+    {{HTML::style("/css/t.css")}}
