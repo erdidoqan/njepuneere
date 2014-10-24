@@ -29,8 +29,8 @@
 	      </div>
 	@endif
 	      <div class="project-context hidden-xs">
-	        <span class="label">Jobs</span>
-	        <a class="project-selector" href="search"> Job Ads<i class="fa fa-angle-right"></i></a>
+	        
+	        <a class="project-selector" href="search"> Job Ads</a>
 	      </div>
 	       <div class="project-context hidden-xs">
 	        <span class="label">CV</span>
