@@ -25,4 +25,6 @@ body .section1 {
    width: 1141px;
    border-radius: 5px;
 }
-/*asdasdaklsdjlkşajd*/
+
+body .btn-success {background-color: #24aa98;border-color: #24aa98;}
+body .btn-primary {background-color: #65abd0;border-color: #65abd0;color: #fff;}
