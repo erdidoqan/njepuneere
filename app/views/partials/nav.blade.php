@@ -29,8 +29,11 @@
 	      </div>
 	@endif
 	<div class="turgittin">
+		<div class="project-context hidden-xs">
+	        <a class="project-selector" href="/"><i class="fa fa-home"></i></a>
+			
+		</div>
 	      <div class="project-context hidden-xs">
-	        
 	        <a class="project-selector" href="search"> Job Ads</a>
 	      </div>
 	       <div class="project-context hidden-xs">
