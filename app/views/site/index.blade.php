@@ -5,8 +5,9 @@
 <div class="section1">
 <div class="container">
   <div class="col-md-12">
-      <h2>One of the 64,669 job ads for you!</h2>
-      
+  <div class="search-box-name">
+      One of the 64,669 job ads for you!
+  </div>
     <div class="col-sm-7"> 
                 {{ Form::open(array('url' => 'search')) }}
           <input id="search-fld" class="form-control input-lg"  type="text" name="search" placeholder="Find jobs and more" data-autocomplete='

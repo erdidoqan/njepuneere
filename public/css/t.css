@@ -4,7 +4,10 @@ body .navbar-default {
    margin-bottom: 10px;
 }
 body #project-context > *:first-child, .project-context > *:first-child {color:#343434;display: block;font-size: 18px;font-weight: 700;padding-left: 0;text-align: left;text-shadow: 0 0 1px #fff;text-transform: inherit;font-family: 'Cabin';}
+
 .turgittin {float: left;margin-top: 3px;}
+.search-box-name{}
+
 body .section1 {
    background-color: #ffffff;
    margin: 0 auto;
