@@ -35,4 +35,4 @@
         @include('partials/footer')
     </body>
 </html>
-
+@include('partials/scripts')
