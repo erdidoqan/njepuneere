@@ -1,2 +1,2 @@
-body .navbar-default {background-color: #fff;border-radius: 5px;padding-bottom: 19px;padding-top: 10px;}
+body .navbar-default {background-color: #fff;border-radius: 5px;}
 body #project-context > *:first-child, .project-context > *:first-child {color:#343434;display: block;font-size: 18px;font-weight: 700;padding-left: 0;text-align: left;text-shadow: 0 0 1px #fff;text-transform: inherit;font-family: 'Cabin';}
