@@ -28,6 +28,7 @@
 	        </div>
 	      </div>
 	@endif
+	<div class="turgittin">
 	      <div class="project-context hidden-xs">
 	        
 	        <a class="project-selector" href="search"> Job Ads</a>
@@ -56,7 +57,7 @@
 	          <li><a href="#">Construction</a></li>
 	        </ul>
 	      </div>
-	      
+	      </div>
 	      <div class="pull-right" style="margin-right:15px;">
 	        @if(!Auth::user())
 	          <a style="margin-top:9px;" data-toggle="modal" href="#myModal" class="btn btn-primary pull-right header-btn hidden-mobile"><i class="fa fa-circle-arrow-up fa-lg"></i> Login & Register</a>
