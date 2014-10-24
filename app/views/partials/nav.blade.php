@@ -37,8 +37,7 @@
 	        <a class="project-selector" href="/my-page"> My Page</a>
 	      </div>
 	      <div class="project-context hidden-xs">
-	        <span class="label">Career </span>
-	        <span class="project-selector dropdown-toggle"  data-toggle="dropdown"> My Career<i class="fa fa-angle-down"></i></span>
+	        <span class="project-selector dropdown-toggle"  data-toggle="dropdown"> My Career <i class="fa fa-angle-down"></i></span>
 	        <ul class="dropdown-menu">
 	          <li><a href="/my-resume">My Resume (5)</a></li>
 	          <li><a href="/my-application">My Application</a></li>
@@ -48,8 +47,7 @@
 	        </ul>
 	      </div>
 	      <div class="project-context hidden-xs">
-	        <span class="label">Sectoral</span>
-	        <span class="project-selector dropdown-toggle" data-toggle="dropdown"> Sector<i class="fa fa-angle-down"></i></span>
+	        <span class="project-selector dropdown-toggle" data-toggle="dropdown"> Sector <i class="fa fa-angle-down"></i></span>
 	        <ul class="dropdown-menu">
 	          <li><a href="#">Insurance</a></li>
 	          <li><a href="#">Information</a></li>
