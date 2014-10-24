@@ -17,7 +17,7 @@
     {{HTML::style("/css/smartadmin-production.min.css")}}
     {{HTML::style("/css/smartadmin-skins.min.css")}}
     {{HTML::style("/css/font-awesome.min.css")}}
-    {{HTML::style("http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700")}}
+    {{HTML::style("http://fonts.googleapis.com/css?family=Cabin:400,500,600,700")}}
     {{ HTML::style('/css/jasny-bootstrap.css') }}
     {{ HTML::style('/css/jasny-bootstrap.min.css') }}
     {{ HTML::style('/css/jasny-bootstrap.css.map') }}

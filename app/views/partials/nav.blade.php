@@ -33,8 +33,8 @@
 	        <a class="project-selector" href="search"> Job Ads</a>
 	      </div>
 	       <div class="project-context hidden-xs">
-	        <span class="label">CV</span>
-	        <a class="project-selector" href="/my-page"> My Page<i class="fa fa-angle-right"></i></a>
+	        
+	        <a class="project-selector" href="/my-page"> My Page</a>
 	      </div>
 	      <div class="project-context hidden-xs">
 	        <span class="label">Career </span>
