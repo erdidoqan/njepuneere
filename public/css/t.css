@@ -6,7 +6,15 @@ body .navbar-default {
 body #project-context > *:first-child, .project-context > *:first-child {color:#343434;display: block;font-size: 18px;font-weight: 700;padding-left: 0;text-align: left;text-shadow: 0 0 1px #fff;text-transform: inherit;font-family: 'Cabin';}
 
 .turgittin {float: left;margin-top: 3px;}
-.search-box-name{}
+.search-box-name {
+   color: #739e73;
+   font-family: cabin;
+   font-size: 25px;
+   font-weight: 600;
+   margin-bottom: 13px;
+   margin-left: 10px;
+}
+
 
 body .section1 {
    background-color: #ffffff;

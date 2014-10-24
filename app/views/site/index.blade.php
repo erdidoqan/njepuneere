@@ -43,7 +43,7 @@
 
     <div class="col-sm-2">
                <span class="input-group-btn">
-                    <button type="submit" class="btn btn-success btn-block btn-lg" ><span class="glyphicon glyphicon-search"></span> Job Search</button>
+                    <button type="submit" class="btn btn-success btn-lg" ><span class="glyphicon glyphicon-search"></span> </button>
                 </span>
     </div>
      {{ Form::close() }}
