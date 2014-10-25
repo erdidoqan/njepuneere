@@ -7,7 +7,7 @@
             </div>
 
             <div class="ads-text">
-                <h3> {{$p->com_name}} </h3>
+                <h3> {{ucwords($p->com_name)}} </h3>
                 <small> {{$p->ref_code}} </small>
             </div>
         </div>
