@@ -86,7 +86,7 @@ Form::macro('sehir', function($name = "sehir", $selected = null) {
 Form::macro('work_place', function($name = "work_place", $selected = null) {
     
     $work_place = array(
-        '' => 'Select to Work Place',
+        '' => 'Place',
 'Tirana' => 'Tirana*',
 'Durres' => 'Durres',
 'Vlore' => 'Vlore',

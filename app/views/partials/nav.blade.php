@@ -63,16 +63,20 @@
 	      </div>
 	      <div class="pull-right" style="margin-right:15px;">
 	        @if(!Auth::user())
+
 	          <a style="margin-top:9px;" data-toggle="modal" href="#myModal" class="btn btn-primary pull-right header-btn hidden-mobile"><i class="fa fa-circle-arrow-up fa-lg"></i> Login & Register</a>
 	          
 	          <a style="margin-bottom:-24px;margin-right:5px;" href="{{User::$img_sirket_src}}" class="btn btn-success header-btn"><i class="fa fa-circle-arrow-up fa-lg"></i> Employer</a>
 	        @endif
 	        @if(Auth::user())
+
 	        <div id="logout" class="btn-header transparent pull-right">
 	          <span> <a href="/logout" title="Sign Out" data-action="userLogout" data-logout-msg="Goodbye, {{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}..."><i class="fa fa-sign-out"></i></a> </span>
 	        </div>
+	        <div class="project-context erd hidden-xs">
 	        <div class="pull-right" style="margin-right:35px;margin-top:15px;">
 	          <span>{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }},</span> <a href="user-up"> Membership Information</a>
+	        </div>
 	        </div>
 	        @endif
 	      </div>
