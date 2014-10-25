@@ -2,7 +2,7 @@
     @foreach($adsInfo as $p)
             <div class="col-sm-5"  style="max-width:170px; max-height=165px;">
             
-                <div class="[ info-card ]">
+                <div style="border-radius:35px;" class="[ info-card ]">
                     <img style="width:100%" src="{{User::$img_sirket_src."".$p->logo}}" />
                     <div class="[ info-card-details ] animate">
                         <div class="[ info-card-header ]">
