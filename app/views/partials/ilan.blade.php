@@ -1,7 +1,7 @@
 @if($adsInfo->count())
     @foreach($adsInfo as $p)
-            <div class="col-sm-5"  style="max-width:170px; max-height=165px;">
-            
+ <div class="col-sm-5"  style="max-width:170px; max-height=165px;">
+            <a href="ads/{{$p->id}}">
                 <div style="border-radius:35px;" class="[ info-card ]">
                     <img style="width:100%" src="{{User::$img_sirket_src."".$p->logo}}" />
                     <div class="[ info-card-details ] animate">
@@ -18,5 +18,7 @@
                 </a>
                 
             </div>
-    @endforeach
+            @endforeach
 @endif
+
+
