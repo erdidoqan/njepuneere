@@ -3,18 +3,36 @@ body .navbar-default {
    border-radius: 5px;
    margin-bottom: 10px;
 }
-body #project-context > *:first-child, .project-context > *:first-child {color:#343434;display: block;font-size: 18px;font-weight: 700;padding-left: 0;text-align: left;text-shadow: 0 0 1px #fff;text-transform: inherit;font-family: 'Cabin';}
+body #project-context > *:first-child, .project-context > *:first-child {color:#343434;display: block;font-size: 18px;font-weight: 400;padding-left: 0;text-align: left;text-shadow: 0 0 1px #fff;text-transform: inherit;font-family: 'Cabin';}
 
-.turgittin {float: left;margin-top: 3px;}
+.turgittin {float: left;margin-top: 8px;}
+.erd {float: right;margin-top: -8px;}
+.search-box-p{
+   font-family: 'Cabin';
+   font-size: 15px;
+   margin-left: 15px;
+   margin-top: 13px;
+   opacity : 0.5;
+      filter : alpha( Opacity=50 );
+      -moz-opacity : 0.5;
+}
+.search-form{
+   margin-left: 204px;
+}
 .search-box-name {
    color: #24aa98;
    font-family: cabin;
    font-size: 25px;
    font-weight: 600;
    margin-bottom: 13px;
-   margin-left: 10px;
+   margin-left: 380px;
 }
-
+.search-tags{
+   font-family: 'Cabin';
+   font-size: 15px;
+   margin-left: 370px;
+   margin-top: 110px;
+}
 
 body .section1 {
    background-color: #ffffff;
@@ -24,8 +42,43 @@ body .section1 {
    padding-right: 0;
    width: 1141px;
    border-radius: 5px;
+   
+}
+body .btn-success {
+   background-color: #24aa98;
+   border-color: #24aa98;
+}
+body .btn-primary {
+   background-color: #65abd0;
+   border-color: #65abd0;
+   color: #fff;
 }
 
+<<<<<<< HEAD
 body .btn-success {background-color: #24aa98;border-color: #24aa98;}
 body .btn-primary  {background-color: #65abd0;border-color: #65abd0;color: #fff;}
 body .col-md-12 {}
+=======
+.ads {
+   display: block;
+   float: left;
+   height: 70px;
+   margin-bottom: 50px;
+   margin-left: 25px;
+   margin-top: 10px;
+   width: 150px;
+}
+.ads-img {
+   background: none repeat scroll 0 0 #fff;
+   border-radius: 10px;
+   display: flex;
+   height: 90%;
+   margin: 0 auto;
+}
+.ads-text{
+   text-align: center;
+   width: 100%;
+
+}
+.ads-img img {height: 30px;margin: 15px 0 0 20px!important;width: 107px; }
+>>>>>>> origin/master
