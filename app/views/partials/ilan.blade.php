@@ -9,7 +9,7 @@
 
             <div class="ads-text">
                 <p> {{ucwords($p->com_name)}} </p>
-                <small> {{ucwords($p->ads_name)}} </small>
+                <small style="margin-bottom:15px;"> {{ucwords($p->ads_name)}} </small>
             </div>
         </div>
         </a>
