@@ -9,7 +9,7 @@
 
             <div class="ads-text">
                 <p> {{ucwords($p->com_name)}} </p>
-                <small> {{$p->ref_code}} </small>
+                <small> {{ucwords($p->ads_name)}} </small>
             </div>
         </div>
         </a>
