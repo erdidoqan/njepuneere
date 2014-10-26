@@ -81,9 +81,10 @@ body .col-md-12 {}
 .ads-img img {height: 30px;margin: 15px 0 0 20px!important;width: 107px; }
 
 .com_name{
-
+   font-size: 12px;
 }
 .ads_name{
-   
+   color: #7d7c7c;
+   font-size: 11px;
 }
 
