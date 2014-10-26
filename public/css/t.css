@@ -60,11 +60,12 @@ body .col-md-12 {}
 
 .ads {
  display: block;
- float: left;
- height: 70px;
- margin-bottom: 50px;
- margin-top: 10px;
- width: 150px;
+   float: left;
+   height: 70px;
+   margin-bottom: 50px;
+   margin-left: 30px;
+   margin-top: 22px;
+   width: 150px;
 }
 .ads-img {
    background: none repeat scroll 0 0 #fff;
