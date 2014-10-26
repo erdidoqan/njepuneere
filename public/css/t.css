@@ -27,4 +27,5 @@ body .section1 {
 }
 
 body .btn-success {background-color: #24aa98;border-color: #24aa98;}
-body .btn-primary {background-color: #65abd0;border-color: #65abd0;color: #fff;}
+body .btn-primary  {background-color: #65abd0;border-color: #65abd0;color: #fff;}
+body .col-md-12 {}
