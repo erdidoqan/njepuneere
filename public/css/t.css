@@ -54,31 +54,29 @@ body .btn-primary {
    color: #fff;
 }
 
-<<<<<<< HEAD
 body .btn-success {background-color: #24aa98;border-color: #24aa98;}
 body .btn-primary  {background-color: #65abd0;border-color: #65abd0;color: #fff;}
 body .col-md-12 {}
-=======
+
 .ads {
-   display: block;
-   float: left;
-   height: 70px;
-   margin-bottom: 50px;
-   margin-left: 25px;
-   margin-top: 10px;
-   width: 150px;
+ display: block;
+ float: left;
+ height: 70px;
+ margin-bottom: 50px;
+ margin-top: 10px;
+ width: 150px;
 }
 .ads-img {
    background: none repeat scroll 0 0 #fff;
    border-radius: 10px;
    display: flex;
-   height: 90%;
+   height: 100%;
    margin: 0 auto;
 }
-.ads-text{
-   text-align: center;
-   width: 100%;
 
+.ads-text {
+   margin-top: 5px;
+   width: 100%;
 }
 .ads-img img {height: 30px;margin: 15px 0 0 20px!important;width: 107px; }
->>>>>>> origin/master
+
