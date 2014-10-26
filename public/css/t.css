@@ -73,6 +73,7 @@ body .btn-primary {
 .ads-text{
    text-align: center;
    width: 100%;
+   margin-top: 10px;
 
 }
 .ads-img img {height: 30px;margin: 15px 0 0 20px!important;width: 107px; }
