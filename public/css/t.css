@@ -54,10 +54,13 @@ body .btn-primary {
    color: #fff;
 }
 
-.ads{
+.ads {
+   display: block;
    float: left;
    height: 70px;
-   margin-left: 10px;
+   margin-bottom: 20px;
+   margin-left: 25px;
+   margin-top: 10px;
    width: 150px;
 }
 .ads-img{
