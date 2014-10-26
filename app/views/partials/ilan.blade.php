@@ -7,8 +7,13 @@
             </div>
 
             <div class="ads-text">
-                <p> {{ucwords($p->com_name)}} </p>
-                <small> {{$p->ref_code}} </small>
+                <div class="com_name">
+                    {{ucwords($p->com_name)}}
+                </div>
+                <div class="ads_name">
+                    {{$p->ads_name}}
+                </div>
+                
             </div>
         </div>
     @endforeach
