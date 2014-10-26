@@ -73,6 +73,8 @@ body .col-md-12 {}
    display: flex;
    height: 100%;
    margin: 0 auto;
+   max-width: 191px;
+   max-height: 75px;
 }
 
 .ads-text {
