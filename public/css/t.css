@@ -63,8 +63,9 @@ body .btn-primary {
    margin-top: 10px;
    width: 150px;
 }
-.ads-img{
+.ads-img {
    background: none repeat scroll 0 0 #fff;
+   border-radius: 10px;
    display: flex;
    height: 90%;
    margin: 0 auto;
