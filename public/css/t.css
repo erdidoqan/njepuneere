@@ -44,19 +44,6 @@ body .section1 {
    border-radius: 5px;
    
 }
-body .btn-success {
-   background-color: #24aa98;
-   border-color: #24aa98;
-}
-body .btn-primary {
-   background-color: #65abd0;
-   border-color: #65abd0;
-   color: #fff;
-}
-
-body .btn-success {background-color: #24aa98;border-color: #24aa98;}
-body .btn-primary  {background-color: #65abd0;border-color: #65abd0;color: #fff;}
-body .col-md-12 {}
 
 .ads {
    display: block;
