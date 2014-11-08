@@ -18,6 +18,7 @@ Route::get('ads/{id}',function($id)
 Route::post('search', array('as'=>'search', 'uses'=>'HomeController@getSearch'));
 Route::get('BireyKayit', 'AuthController@getBireyKayit');
 Route::post('BireyKayit', 'AuthController@postBireyKayit');
+Route::get('activate/{code}', 'AuthController@getActivate');
 Route::post('pr_img', 'AuthController@postPr_img');
 Route::get('BireyGiris', array('as'=>'login', 'uses'=>'AuthController@getBireyGiris'));
 Route::post('BireyGiris', array('as'=>'BireyGiris', 'uses'=>'AuthController@postBireyGiris'));

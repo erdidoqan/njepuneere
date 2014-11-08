@@ -28,7 +28,7 @@
     <div class="col-sm-1">
       <span class="input-group-btn">
         <button type="submit" class="btn btn-success btn-lg" style="border-radius: 5px;">
-          <span class="glyphicon glyphicon-search"></span> 
+          <span class="fa fa-1x fa-search"></span> 
         </button>
       </span>
     </div>

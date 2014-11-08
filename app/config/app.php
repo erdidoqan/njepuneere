@@ -193,7 +193,8 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 		'Carbon'		  => 'Carbon\Carbon',
 		'Image' 		  => 'Intervention\Image\Facades\Image',
-		'Es'			  => 'Elasticsearch\Client'
+		'Es'			  => 'Elasticsearch\Client',
+		'Gravatar' 		  => 'Thomaswelton\LaravelGravatar\Facades\Gravatar'
 	),
 
 );
