@@ -4,6 +4,8 @@
 <meta name="author" content="Erdi Doğan">
 <link rel="shortcut icon" href="/ana.ico" type="image/x-icon">
 <link rel="icon" href="/ana.ico" type="image/x-icon">
+<meta name="google-site-verification" content="HpQgEQ1gHXC_DrfCXZTHSFVXZMkVxTLESkJuMz2hq8A" />
+<meta name="google-site-verification" content="j6Xus6PADbsA985dGBaga6UG9eBbp74lFvWmi-Y4CNA" />
 <title>Njepuneere</title>
 
 <!-- Bootstrap core CSS -->
@@ -20,5 +22,3 @@
 {{ HTML::style('/css/jasny-bootstrap.min.css') }}
 {{ HTML::style('/css/jasny-bootstrap.css.map') }}
 {{HTML::style("/css/t.css")}}
-<meta name="google-site-verification" content="HpQgEQ1gHXC_DrfCXZTHSFVXZMkVxTLESkJuMz2hq8A" />
-<meta name="google-site-verification" content="j6Xus6PADbsA985dGBaga6UG9eBbp74lFvWmi-Y4CNA" />
