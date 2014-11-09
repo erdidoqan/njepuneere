@@ -9,59 +9,61 @@
 		}
 		public function postBireyKayit()
 		{
-			$d_tarihi = Input::get('yy') . '-' . Input::get('mm') . '-' . Input::get('dd');
+			
 			$input = Input::all();
 			$rules = array ('adi' => 'required',
 							'soyadi' => 'required',
 							'email'=> 'required|unique:birey_user|email',
 							'sifre' => 'required');
 			$v = Validator::make($input,$rules);
-			
-			if($v->passes())
-			{
 
-			$username = Input::get('adi');
-            $email = Input::get('email');
-            $password = Input::get('sifre');
-            
-            //Gravatar
-            $avatar = "{{URL::to('img/avatars/male.png')}}";
-            
-            
-            //Activation Code
-            $code = str_random(60);
-            
-            $user = new Birey_user;
-			$user->adi = $username;
-			$user->soyadi = Input::get('soyadi');
-			$user->email = $email;
-			$user->sifre = Hash::make($password);
-			$user->passwordConfirm = Hash::make(Input::get('passwordConfirm'));
-			$user->cinsiyet = Input::get('cinsiyet');
-			$user->d_tarihi = $d_tarihi;
-			$user->tel = Input::get('tel');
-			$user->ulke = Input::get('ulke');
-			$user->sehir = Input::get('sehir');
-			$user->uni = Input::get('uni');
-			$user->sonis = Input::get('sonis');
-			$user->durum = Input::get('durum');
-			$user->about_me = Input::get('about_me');
-			$user->code = $code;
-            $user->active = 0;
-            $user->pr_img = 'img/avatars/male.png';
+			if($v->fails()) {
+	            return  Redirect::back()->withErrors($v)->withInput();
+	        } else {
+	        	
+				$username = Input::get('adi');
+	            $email = Input::get('email');
+	            $password = Input::get('sifre');
+	            
+	            //Gravatar
+	            $avatar = "{{URL::to('img/avatars/male.png')}}";
+	            
+	            //dogum tarihi
+	            $d_tarihi = Input::get('yy') . '-' . Input::get('mm') . '-' . Input::get('dd');
 
-            if($user->save()){
-                
-                Mail::send('emails.auth.activate', 
-                    array('link'=> URL::to('activate', $code), 'username' => $username), 
-                    function($message) use ($user) {
-                        $message->to($user->email, $user->username)->subject('Activate your account');
-                    }
-                );
-                return  Redirect::back()
-                        ->with('success', 'Your account has been created. We have sent you an e-mail to activate your account.');
-			}
-			return Redirect::to('BireyKayit')->withErrors($v);
+	            //Activation Code
+	            $code = str_random(60);
+	            
+	            $user = new Birey_user;
+				$user->adi = $username;
+				$user->soyadi = Input::get('soyadi');
+				$user->email = $email;
+				$user->sifre = Hash::make($password);
+				$user->passwordConfirm = Hash::make(Input::get('passwordConfirm'));
+				$user->cinsiyet = Input::get('cinsiyet');
+				$user->d_tarihi = $d_tarihi;
+				$user->tel = Input::get('tel');
+				$user->ulke = Input::get('ulke');
+				$user->sehir = Input::get('sehir');
+				$user->uni = Input::get('uni');
+				$user->sonis = Input::get('sonis');
+				$user->durum = Input::get('durum');
+				$user->about_me = Input::get('about_me');
+				$user->code = $code;
+	            $user->active = 0;
+	            $user->pr_img = 'img/avatars/male.png';
+
+	            if($user->save()){
+	                Mail::send('emails.auth.activate', 
+	                    array('link'=> URL::to('activate', $code), 'username' => $username), 
+	                    function($message) use ($user) {
+	                        $message->to($user->email, $user->username)->subject('Activate your account');
+	                    }
+	                );
+	                return  Redirect::back()
+	                        ->with('success', 'Your account has been created. We have sent you an e-mail to activate your account.');
+				}
+				return Redirect::to('BireyKayit')->withErrors($v);
 			}
 		}
 
