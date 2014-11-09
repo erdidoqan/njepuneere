@@ -1,6 +1,6 @@
 <div class="panel panel-primary">
 	<div class="panel-body">
-		<span class="glyphicon glyphicon-info-sign"></span> <span>0 - 50 Arası Aday Basvurdu</span>
+		<span class="glyphicon glyphicon-info-sign"></span> <span>0-50  Candidate(s) Applied.</span>
 	</div>
 	</div>
 	<hr>
