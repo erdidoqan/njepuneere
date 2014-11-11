@@ -25,6 +25,7 @@ Route::post('BireyGiris', array('as'=>'BireyGiris', 'uses'=>'AuthController@post
 Route::get('logout', 'AuthController@logout');
 Route::get('ilanVerme', 'AuthController@getilanVerme');
 
+
 Route::group(array('before' => 'auth'), function(){
 	Route::get('my-page', array('as'=>'my-page', 'uses'=>'MyPageController@myPage'));
 	Route::get('my-resume', array('as'=>'my-page', 'uses'=>'MyPageController@resume'));
