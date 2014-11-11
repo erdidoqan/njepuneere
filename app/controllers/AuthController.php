@@ -20,7 +20,7 @@
 			if($v->fails()) {
 	            return  Redirect::back()->withErrors($v)->withInput();
 	        } else {
-	        	
+
 				$username = Input::get('adi');
 	            $email = Input::get('email');
 	            $password = Input::get('sifre');
@@ -53,6 +53,9 @@
 	            $user->active = 0;
 	            $user->pr_img = 'img/avatars/male.png';
 
+	            $user->save();
+	            return Redirect::to('BireyGiris');
+	            /*
 	            if($user->save()){
 	                Mail::send('emails.auth.activate', 
 	                    array('link'=> URL::to('activate', $code), 'username' => $username), 
@@ -62,7 +65,7 @@
 	                );
 	                return  Redirect::back()
 	                        ->with('success', 'Your account has been created. We have sent you an e-mail to activate your account.');
-				}
+				}*/
 				return Redirect::to('BireyKayit')->withErrors($v);
 			}
 		}
