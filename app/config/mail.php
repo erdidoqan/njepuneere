@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => erdi.doqan@gmail.com, 'name' => Erdi),
+	'from' => array('address' => 'erdi.doqan@gmail.com', 'name' => 'Erdi'),
 
 	/*
 	|--------------------------------------------------------------------------
