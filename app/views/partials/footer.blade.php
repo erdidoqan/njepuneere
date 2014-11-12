@@ -7,7 +7,7 @@
                     <ul>
                     	<li> <a href="#"> About Us </a> </li>
                         <li> <a href="http://njeboteere.org/web/" target="_blank"> Nje Bote e Re </a> </li>
-                        <li> <a href="#"> Vision </a> </li>
+                        <li> <a href="http://njeboteere.org/web/misioni/" target="_blank"> Vision </a> </li>
                         <li> <a href="#"> Mentorship </a> </li>
                     </ul>
                 </div>
