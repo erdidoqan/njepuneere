@@ -67,9 +67,10 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal">
                   Cancel
                 </button>
+                <!--
                 <a type="button" class="btn btn-facebook"><i class="fa fa-facebook"></i></a>
                 <a type="button" class="btn btn-linkedin"><i class="fa fa-linkedin"></i></a>
-
+                -->
               </footer>
             {{ Form::close() }}
             
