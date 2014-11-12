@@ -5,7 +5,7 @@
 	
 		<h4 class="text-info"><b>Special Jobs Ads</b></h4>
 		<div class="col-sm-6">
-			<a href="./search-list"><span class="text-primary">Region Pages</span></a><br>
+			<a href="#"><span class="text-primary">Region Pages</span></a><br>
 			<a href="#"><span class="text-primary">Disabled</span></a><br>
 			<a href="#"><span class="text-primary">Manager</span></a><br>
 			<a href="#"><span class="text-primary">Position Ads</span></a><br>
