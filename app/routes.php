@@ -7,9 +7,9 @@ Route::get('/', function()
 });
 Route::get('ads/{id}',function($id)
 	{
-		$last = AdsInfo::orderBy('created_at','DESC')->paginate(12); 
+		$last = Ads::orderBy('created_at','DESC')->paginate(12); 
 		$adsInfo = AdsInfo::find($id);
-		$ads = AdsInfo::find($id);
+		$ads = Ads::find($id);
 
 		return View::make('ilan.show')->with('adsInfo',$adsInfo)->with('ads',$ads)->with('last',$last);
 	});
