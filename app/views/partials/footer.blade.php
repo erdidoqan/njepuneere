@@ -6,7 +6,7 @@
                     <h3> About </h3>
                     <ul>
                     	<li> <a href="#"> About Us </a> </li>
-                        <li> <a href="http://njeboteere.org/web/"> Nje Bote e Re </a> </li>
+                        <li> <a href="http://njeboteere.org/web/" target="_blank"> Nje Bote e Re </a> </li>
                         <li> <a href="#"> Vision </a> </li>
                         <li> <a href="#"> Mentorship </a> </li>
                     </ul>
