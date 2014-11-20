@@ -71,6 +71,7 @@
                 <div class="error-actions">
                     <a href="/" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-home"></span>
                         Take Me Home </a>
+                        <a href="{{URL::previous()}}" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-arrow-left"></span></a>
                         @if(!Auth::user())
                         <a href="/BireyGiris" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-user"></span> To Login </a>
                         <a href="/BireyKayit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-user"></span> To Register </a>
