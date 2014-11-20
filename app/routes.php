@@ -27,6 +27,8 @@ Route::get('ilanVerme', 'AuthController@getilanVerme');
 Route::get('aboutus', "HomeController@aboutus");
 Route::get('term-of-use', "HomeController@term");
 Route::get('use-of-content', "HomeController@content");
+Route::get('privacy', "HomeController@privacy");
+Route::get('term-of-membership', "HomeController@membership");
 
 
 Route::group(array('before' => 'auth'), function(){

@@ -43,5 +43,13 @@ class HomeController extends BaseController {
 	{
 		return View::make('site.content');
 	}
+	public function privacy()
+	{
+		return View::make('site.privacy');
+	}
+	public function membership()
+	{
+		return View::make('site.membership');
+	}
 //http://njepuneere.loc/lib/search?sort=&page=2
 }

@@ -14,9 +14,9 @@
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                     <h3> Privacy </h3>
                     <ul>
-                        <li> <a href="#"> Privacy </a> </li>
-                        <li> <a href="#"> Privacy Principles </a> </li>
-                        <li> <a href="/term-of-use"> Terms of Membership </a> </li>
+                        <li> <a href="/privacy"> Privacy </a> </li>
+                        <li> <a href="/privacy"> Privacy Principles </a> </li>
+                        <li> <a href="/term-of-membership"> Terms of Membership </a> </li>
                         <li> <a href="/use-of-content"> Use of Content </a> </li>
                     </ul>
                 </div>
