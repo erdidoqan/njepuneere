@@ -24,9 +24,9 @@
                     <h3> Terms of Use </h3>
                     <ul>
                         <li> <a href="/term-of-use"> Terms of Use </a> </li>
-                        <li> <a href="#"> Responsibilities </a> </li>
-                        <li> <a href="#"> Use of Content </a> </li>
-                        <li> <a href="#"> Use of Cookies </a> </li>
+                        <li> <a href="/term-of-use"> Responsibilities </a> </li>
+                        <li> <a href="/use-of-content"> Use of Content </a> </li>
+                        <li> <a href="/use-of-content"> Use of Cookies </a> </li>
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
