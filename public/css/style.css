@@ -675,10 +675,10 @@ body.modal-open #wrap{
 
 
 .mobile-social-share {
-    background: none repeat scroll 0 0 #EEEEEE;
+    background: none repeat scroll 0 0 #CDD5D0;
     display: block !important;
-    min-height: 70px !important;
-    margin: 50px 0;
+    min-height: 10px !important;
+    margin: 50px 11px;
 }
 
 

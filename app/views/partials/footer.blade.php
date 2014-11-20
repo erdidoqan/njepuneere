@@ -5,7 +5,7 @@
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                     <h3> About </h3>
                     <ul>
-                    	<li> <a href="#"> About Us </a> </li>
+                    	<li> <a href="/aboutus"> About Us </a> </li>
                         <li> <a href="http://njeboteere.org/web/" target="_blank"> Nje Bote e Re </a> </li>
                         <li> <a href="http://njeboteere.org/web/misioni/" target="_blank"> Vision </a> </li>
                         <li> <a href="http://njeboteere.org/web/category/ndermjetsim/" target="_blank"> Mentorship </a> </li>
@@ -16,14 +16,14 @@
                     <ul>
                         <li> <a href="#"> Privacy </a> </li>
                         <li> <a href="#"> Privacy Principles </a> </li>
-                        <li> <a href="#"> Terms of Membership </a> </li>
-                        <li> <a href="#"> Use of Content </a> </li>
+                        <li> <a href="/term-of-use"> Terms of Membership </a> </li>
+                        <li> <a href="/use-of-content"> Use of Content </a> </li>
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                     <h3> Terms of Use </h3>
                     <ul>
-                        <li> <a href="#"> Terms of Use </a> </li>
+                        <li> <a href="/term-of-use"> Terms of Use </a> </li>
                         <li> <a href="#"> Responsibilities </a> </li>
                         <li> <a href="#"> Use of Content </a> </li>
                         <li> <a href="#"> Use of Cookies </a> </li>

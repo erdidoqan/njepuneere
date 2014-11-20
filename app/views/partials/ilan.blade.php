@@ -3,7 +3,7 @@
         <a href="ads/{{$p->id}}">
             <div class="ads">
                 <div class="ads-img">
-                    <img src="{{User::$img_sirket_src."".$p->logo}}" />
+                    <img src="{{User::$img_sirket_src."".$p->logo}}" class="img-rounded" />
                 </div>
 
                 <div class="ads-text">

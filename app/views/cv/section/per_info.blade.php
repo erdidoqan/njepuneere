@@ -1,7 +1,7 @@
 <div class="col-sm-10">
 	<h4 style="font-size:25px;" class="text-danger"><strong>{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}</strong></h4>
 	<p><strong> 
-    {{ 2014-substr(Auth::user()->d_tarihi,0,4) }} years old, {{Auth::user()->cinsiyet}}
+    {{ date('Y-m-d')-substr(Auth::user()->d_tarihi,0,4) }} years old, {{Auth::user()->cinsiyet}}
   </strong></p>
 	<div class="form-group">
       <label class="col-sm-3 control-label" for="textinput"><strong>Place of Birth / Date</strong></label>

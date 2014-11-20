@@ -24,6 +24,9 @@ Route::get('BireyGiris', array('as'=>'login', 'uses'=>'AuthController@getBireyGi
 Route::post('BireyGiris', array('as'=>'BireyGiris', 'uses'=>'AuthController@postBireyGiris'));
 Route::get('logout', 'AuthController@logout');
 Route::get('ilanVerme', 'AuthController@getilanVerme');
+Route::get('aboutus', "HomeController@aboutus");
+Route::get('term-of-use', "HomeController@term");
+Route::get('use-of-content', "HomeController@content");
 
 
 Route::group(array('before' => 'auth'), function(){

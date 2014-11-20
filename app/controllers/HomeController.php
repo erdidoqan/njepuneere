@@ -30,5 +30,18 @@ class HomeController extends BaseController {
 		return View::make('ilan.search-list', compact('search', 'results'));
 
 	}
+
+	public function aboutus()
+	{
+		return View::make('site.about');
+	}
+	public function term()
+	{
+		return View::make('site.term');
+	}
+	public function content()
+	{
+		return View::make('site.content');
+	}
 //http://njepuneere.loc/lib/search?sort=&page=2
 }
