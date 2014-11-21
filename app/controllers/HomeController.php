@@ -16,7 +16,19 @@ class HomeController extends BaseController {
 	$input = Input::get('search');
 		$results = AdsInfo::where('ads_name', 'LIKE', '%'.$input.'%')->paginate(15);
 	*/
+	public function home()
+	{
+		$adsInfo = AdsInfo::orderBy('created_at','DESC')->paginate(16); 
+		return View::make('site.index')->with('adsInfo', $adsInfo);
+	}
+	public function ads($id)
+	{
+		$last = Ads::orderBy('created_at','DESC')->paginate(12); 
+		$adsInfo = AdsInfo::find($id);
+		$ads = Ads::find($id);
 
+		return View::make('ilan.show')->with('adsInfo',$adsInfo)->with('ads',$ads)->with('last',$last);
+	}
 	public function showWelcome()
 	{
 		return View::make('hello');
