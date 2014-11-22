@@ -22,7 +22,6 @@
 	        } else {
 
 				$username = Input::get('adi');
-				$sname = Input::get('soyadi');
 	            $email = Input::get('email');
 	            $password = Input::get('sifre');
 	            
@@ -37,7 +36,7 @@
 	            
 	            $user = new Birey_user;
 				$user->adi = $username;
-				$user->soyadi =  $sname;
+				$user->soyadi = Input::get('soyadi');
 				$user->email = $email;
 				$user->sifre = Hash::make($password);
 				$user->passwordConfirm = Hash::make(Input::get('passwordConfirm'));
