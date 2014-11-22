@@ -59,7 +59,7 @@
 	            if($user->save()){
 	                Mail::send('emails.auth.activate', array('key' => 'value'), function($message)
 {
-    $message->to('erdi.doqan@gmail.com', 'John Smith')->subject('Welcome!');
+    				$message->to($email, $username)->subject('Activate your account!');
 });
 	                return  Redirect::back()
 	                        ->with('success', 'Your account has been created. We have sent you an e-mail to activate your account.');
