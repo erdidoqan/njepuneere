@@ -54,7 +54,7 @@
 	            $user->pr_img = 'img/avatars/male.png';
 
 	            //$user->save();
-	            return Redirect::to('BireyGiris');
+	            //return Redirect::to('BireyGiris');
 	            
 	            if($user->save()){
 	                Mail::send('emails.auth.activate', 
