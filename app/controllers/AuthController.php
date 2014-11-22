@@ -123,7 +123,7 @@
 			{
 				$remember = (Input::has('remember')) ? true : false;
 				$kimlik = array('email' => Input::get('email'), 'password' => Input::get('sifre'), 'active' => 1);
-				if(Auth::attempt($kimlik), $remember){
+				if(Auth::attempt($kimlik, $remember)){
 					return Redirect::back();
 				} else {
 					return Redirect::to('BireyGiris');
