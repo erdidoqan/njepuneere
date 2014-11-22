@@ -57,10 +57,10 @@
 	            //return Redirect::to('BireyGiris');
 	            
 	            if($user->save()){
-	                Mail::send('emails.auth.activate', array('link'=> URL::to('activate', $code)), function($message) use ($user)
-					{
-    					$message->to($user->email, $user->adi)->subject('Activate your account!');
-					});
+	                Mail::send('emails.auth.activate', array('link'=> URL::to('activate', $code), ['username' => $username]), function($message) use ($user)
+						{
+	    					$message->to($user->email, $user->adi)->subject('Activate your account!');
+						});
 	                return  Redirect::back()
 	                        ->with('success', 'Your account has been created. We have sent you an e-mail to activate your account.');
 				}
@@ -78,12 +78,12 @@
 	            $user->code = '';
 	            
 	            if($user->save()) {
-	                return  Redirect::to('login')
+	                return  Redirect::to('BireyGiris')
 	                        ->with('success', 'Account activated. You can now signin.');
 	            }
 	        }
 	        
-	        return Redirect::to('login')->with('error', 'We could not activate your account. Please, try again later.');
+	        return Redirect::to('BireyGiris')->with('error', 'We could not activate your account. Please, try again later.');
 	    }
 
 		public function postPr_img()
