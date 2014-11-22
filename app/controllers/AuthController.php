@@ -71,7 +71,6 @@
 		public function getActivate($code)
 	    {
 	        $user = Birey_user::where('code', '=', $code)->where('active', '=', 0);
-	        $asdasd = asldkjadj;
 	        if($user->count()){
 	            $user = $user->first();
 	            
