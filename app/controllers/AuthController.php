@@ -52,18 +52,22 @@
 				$user->code = $code;
 	            $user->active = 0;
 	            $user->pr_img = 'img/avatars/male.png';
-		            Mail::send('emails.auth.activate', 
-	                    array('link'=> URL::to('activate', $code), 'username' => $username), 
-		                    function($message) use ($user) {
-		                        $message->to($user->email, $user->username)->subject('Activate your account');
-		                    }
-		                );
 
-	            $user->save();
+	            //$user->save();
 	            return Redirect::to('BireyGiris');
 	            
-	        }
-	        return Redirect::to('BireyKayit')->withErrors($v);
+	            if($user->save()){
+	                Mail::send('emails.auth.activate', 
+	                    array('link'=> URL::to('activate', $code), 'username' => $username), 
+	                    function($message) use ($user) {
+	                        $message->to($user->email, $user->adi)->subject('Activate your account');
+	                    }
+	                );
+	                return  Redirect::back()
+	                        ->with('success', 'Your account has been created. We have sent you an e-mail to activate your account.');
+				}
+				return Redirect::to('BireyKayit')->withErrors($v);
+			}
 		}
 
 		public function getActivate($code)
