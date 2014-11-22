@@ -5,7 +5,7 @@ return array(
 
 	'host' => 'mail.njepuneere.com',
 
-	'port' => 110,
+	'port' => 26,
 
 	'from' => array('address' => 'info@njepuneere.com', 'name' => 'Erdi'),
 
