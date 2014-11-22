@@ -3,9 +3,9 @@
 return array(
 	'driver' => 'smtp',
 
-	'host' => 'mail.njepuneere.com',
+	'host' => 'host13.registrar-servers.com',
 
-	'port' => 26,
+	'port' => 465,
 
 	'from' => array('address' => 'info@njepuneere.com', 'name' => 'Erdi'),
 
