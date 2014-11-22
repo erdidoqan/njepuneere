@@ -57,7 +57,7 @@
 	            //return Redirect::to('BireyGiris');
 	            
 	            if($user->save()){
-	                Mail::send('emails.welcome', array('key' => 'value'), function($message)
+	                Mail::send('emails.activate', array('key' => 'value'), function($message)
 {
     $message->to('foo@example.com', 'John Smith')->subject('Welcome!');
 });
