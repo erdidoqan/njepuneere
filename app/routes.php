@@ -4,7 +4,7 @@
 Route::get('/', "HomeController@home");
 Route::get('ads/{id}', "HomeController@ads");
 Route::get('BireyKayit', "AuthController@getBireyKayit");
-Route::get('activate/{code}', "AuthController@getActivate");
+Route::get('activate{code}', "AuthController@getActivate");
 Route::get('BireyGiris', array('as'=>'BireyGiris', 'uses'=>'AuthController@getBireyGiris'));
 Route::get('logout', "AuthController@logout");
 Route::get('ilanVerme', "AuthController@getilanVerme");

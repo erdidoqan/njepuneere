@@ -1,6 +1,7 @@
 <?php
 
 return array(
+	
 	'driver' => 'smtp',
 
 	'host' => 'host13.registrar-servers.com',
