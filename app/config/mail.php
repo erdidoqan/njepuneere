@@ -1,14 +1,14 @@
 <?php
 
 return array(
-	
+
 	'driver' => 'smtp',
 
 	'host' => 'host13.registrar-servers.com',
 
 	'port' => 465,
 
-	'from' => array('address' => 'info@njepuneere.com', 'name' => 'Erdi'),
+	'from' => array('address' => 'info@njepuneere.com', 'name' => 'Njepuneere'),
 
 	'encryption' => 'ssl',
 
