@@ -9,7 +9,7 @@ return array(
 
 	'from' => array('address' => 'info@njepuneere.com', 'name' => 'Erdi'),
 
-	'encryption' => 'tls',
+	'encryption' => 'ssl',
 
 	'username' => 'info@njepuneere.com',
 
