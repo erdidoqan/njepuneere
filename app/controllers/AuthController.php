@@ -57,12 +57,10 @@
 	            //return Redirect::to('BireyGiris');
 	            
 	            if($user->save()){
-	                Mail::send('emails.auth.activate', 
-	                    array('link'=> URL::to('activate', $code), 'username' => $username), 
-	                    function($message) use ($user) {
-	                        $message->to($user->email, $user->adi)->subject('Activate your account');var_dump($message);
-	                    }
-	                );
+	                Mail::send('emails.welcome', array('key' => 'value'), function($message)
+{
+    $message->to('foo@example.com', 'John Smith')->subject('Welcome!');
+});
 	                return  Redirect::back()
 	                        ->with('success', 'Your account has been created. We have sent you an e-mail to activate your account.');
 				}
