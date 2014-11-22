@@ -22,6 +22,7 @@
 	        } else {
 
 				$username = Input::get('adi');
+				$sname = Input::get('soyadi');
 	            $email = Input::get('email');
 	            $password = Input::get('sifre');
 	            
@@ -36,7 +37,7 @@
 	            
 	            $user = new Birey_user;
 				$user->adi = $username;
-				$user->soyadi = Input::get('soyadi');
+				$user->soyadi =  $sname;
 				$user->email = $email;
 				$user->sifre = Hash::make($password);
 				$user->passwordConfirm = Hash::make(Input::get('passwordConfirm'));
@@ -58,7 +59,7 @@
 	            
 	            if($user->save()){
 	                Mail::send('emails.auth.activate', 
-	                	array('link'=> URL::to('activate', $code), 'username'=>$username), 
+	                	array('link'=> URL::to('activate', $code), 'username'=>$username, 'sname'=>$sname), 
 	                	function($message) use ($user)
 						{
 	    					$message->to($user->email, $user->adi)->subject('Activate your account!');
