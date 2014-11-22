@@ -116,19 +116,34 @@
 		
 		public function postBireyGiris()
 		{
-			$input = Input::all();
-			$rules = array('email' => 'required', 'sifre' => 'required');
-			$v = Validator::make($input, $rules);
-			if($v->passes())
-			{
-				$kimlik = array('email' => Input::get('email'), 'password' => Input::get('sifre'));
-				if(Auth::attempt($kimlik)){
-					return Redirect::back();
-				} else {
-					return Redirect::to('BireyGiris');
-				}
-			}
-			return Redirect::to('BireyGiris')->withErrors($v);
+			$validator = Validator::make(Input::all(), array(
+            'email' => 'required',
+            'sifre' => 'required'
+        ));
+        
+        if($validator->fails()) {
+            
+            return  Redirect::back()
+                    ->withErrors($validator)
+                    ->withInput();
+            
+        } else {
+            
+            $remember = (Input::has('remember')) ? true : false;
+                    
+            $auth = Auth::attempt(array(
+                'email' => Input::get('email'),
+                'sifre' => Input::get('sifre'),
+                'active' => 1
+            ), $remember);
+            
+            if($auth) {
+               return Redirect::intended('/');
+            } else {
+                return Redirect::to('BireyGiris')->with('error', 'Email or password wrong, or account not activated.');
+            }
+        }
+        return Redirect::to('BireyGiris')->with('error', 'There was a problem signing you in.');
 		}
 
 		public function user_update()

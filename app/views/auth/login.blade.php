@@ -10,14 +10,27 @@
                 <h2>Login Form <small>or you can easily <a href="BireyKayit">Register</a> </small> </h2>             
             </header>
                 <div>
-                    @if ($errors->count() > 0)
-                        <div class="alert alert-danger">
-                            <a href="#" class="close" data-dismiss="alert">&times;</a>
-                            @foreach ($errors->all() as $msg)
-                                <P>{{$msg}} </P>
-                            @endforeach
-                        </div>
+                    @if ($errors->has())
+                    <div class="alert alert-warning alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <strong>Error!</strong> {{$errors->first()}}
+                    </div>
                     @endif
+                    
+                    @if (Session::has('error'))
+                    <div class="alert alert-warning alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <strong>Error!</strong> {{Session::get('error')}}
+                    </div>
+                    @endif
+                    
+                    @if (Session::has('success'))
+                    <div class="alert alert-success alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <strong>Success!</strong> {{Session::get('success')}}
+                    </div>
+                    @endif   
+    
                     <div class="widget-body no-padding">
                         {{ Form::open(array('url' => URL::route('BireyGiris'),'id'=>'smart-form-register','class'=>'smart-form')) }}
 
@@ -33,6 +46,12 @@
                                     <label class="input"> <i class="icon-append fa fa-lock"></i>
                                         {{ Form::password('sifre', array('placeholder' => 'Password','id'=>'password')) }}
                                         <b class="tooltip tooltip-bottom-right">Don't forget your password</b> </label>
+                                </section>
+                                <label class="label col col-3">Remember Me:</label>
+                                <section class="col col-9">
+                                    <label class="checkbox">
+                                        {{Form::checkbox('remember')}}
+                                        <i></i>Keep me logged in</label>
                                 </section>
                             </fieldset>
                            
