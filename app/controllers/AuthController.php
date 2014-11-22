@@ -57,7 +57,9 @@
 	            //return Redirect::to('BireyGiris');
 	            
 	            if($user->save()){
-	                Mail::send('emails.auth.activate', array('link'=> URL::to('activate', $code), ['username' => $username]), function($message) use ($user)
+	                Mail::send('emails.auth.activate', 
+	                	array('link'=> URL::to('activate', $code), 'username'=>$username), 
+	                	function($message) use ($user)
 						{
 	    					$message->to($user->email, $user->adi)->subject('Activate your account!');
 						});
