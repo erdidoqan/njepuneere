@@ -59,7 +59,7 @@
 	            if($user->save()){
 	                Mail::send('emails.auth.activate', 
 	                    array('link'=> URL::to('activate', $code), 'username' => $username), 
-	                    function($message) use ($user) {
+	                    function($message) use ($user)asds {
 	                        $message->to($user->email, $user->adi)->subject('Activate your account');
 	                    }
 	                );
