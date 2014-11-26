@@ -126,72 +126,51 @@
              
     </div>
   </div>
-<hr>
 @if(Auth::user())
-  <div class ="navbar navbar-fixed-bottom">
-                <div class="row">
-                    <div class="col-lg-7" style="margin-left:100px;margin-bottom:-44px;">
-               <div class="row mobile-social-share">
-                <div class="col-md-9" style="margin-top:13px;">
-                {{ Form::open(array('route' => array('apply.store', $ads->id, $adsInfo->id, $adsInfo->user_id))) }}
-                    {{ Form::hidden('apply',1) }}
-                    {{ Form::hidden('ads',$ads->id) }}
-                    {{ Form::hidden('adsInfo',$adsInfo->id) }}
-                    {{ Form::hidden('sirket_id', $adsInfo->user_id) }}
-                  {{ Form::submit('Apply', array('title'=>'Apply','id' => 'apply','class' => 'btn btn-warning btn-lg')) }}
-                {{ Form::close() }}
-
-                </div>
-            <div id="socialHolder" class="col-sm-3">
-              <button type="button" class="btn btn-success" style="margin-top:18px;margin-left:-35px;">
-               Complain
-              </button>
-            <div id="socialShare" class="btn-group share-group dropup">
-                    <a data-toggle="dropdown" class="btn btn-success">
-                         <i class="fa fa-share-alt fa-inverse"></i>
-                    </a>
-            <button href="#" data-toggle="dropdown" class="btn btn-success dropdown-toggle share">
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li>
-                  <a data-original-title="Twitter" rel="tooltip"  href="#" class="btn btn-twitter" data-placement="left">
-                <i class="fa fa-twitter"></i>
-              </a>
-              </li>
-              <li>
-                <a data-original-title="Facebook" rel="tooltip"  href="#" class="btn btn-facebook" data-placement="left">
-                <i class="fa fa-facebook"></i>
-              </a>
-              </li>         
-              <li>
-                <a data-original-title="Google+" rel="tooltip"  href="#" class="btn btn-google" data-placement="left">
-                <i class="fa fa-google-plus"></i>
-              </a>
-              </li>
-                <li>
-                <a data-original-title="LinkedIn" rel="tooltip"  href="#" class="btn btn-linkedin" data-placement="left">
-                <i class="fa fa-linkedin"></i>
-              </a>
-              </li>
-              <li>
-                <a data-original-title="Pinterest" rel="tooltip"  class="btn btn-pinterest" data-placement="left">
-                <i class="fa fa-pinterest"></i>
-              </a>
-              </li>
-                        <li>
-                <a  data-original-title="Email" rel="tooltip" class="btn btn-mail" data-placement="left">
-                <i class="fa fa-envelope"></i>
-              </a>
-              </li>
-                    </ul>
-                    
-          </div>
-            </div>
-        </div>
-          </div>
-        </div>
+<div class="panel panel-primary">
+  <div class="panel-body">
+    <div class="col-sm-12">
+      <div class="col-sm-4">
+        {{ Form::open(array('route' => array('apply.store', $ads->id, $adsInfo->id, $adsInfo->user_id))) }}
+            {{ Form::hidden('apply',1) }}
+            {{ Form::hidden('ads',$ads->id) }}
+            {{ Form::hidden('adsInfo',$adsInfo->id) }}
+            {{ Form::hidden('sirket_id', $adsInfo->user_id) }}
+          {{ Form::submit('Apply', array('title'=>'Apply','id' => 'apply','class' => 'btn btn-warning btn-block')) }}
+        {{ Form::close() }}
       </div>
+      <div class="col-sm-4">
+        
+      </div>
+      <div class="col-sm-4">
+        <button type="button" class="btn btn-success">
+               Complain
+        </button>
+
+        <div class="btn-group">
+              <button type="button" class="btn btn-labeled btn-primary dropdown-toggle" data-toggle="dropdown">
+               <span class="btn-label">
+                <i class="fa fa-share-alt"></i> 
+               </>Share <span class="caret"></span>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="javascript:void(0);" class="fa fa-facebook"> Facebook</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);" class="fa fa-twitter"> Twitter</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);" class="fa fa-linkedin"> Linked In</a>
+                </li>
+              </ul>
+            </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
       @if($errors->any())
                <script type="text/javascript">
                   $('#apply').click(function() {
