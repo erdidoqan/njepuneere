@@ -32,6 +32,11 @@ class ApplyController extends \BaseController {
 	 */
 	public function store()
 	{
+		$cv = Cv::where('user_id','=',Auth::user()->id)->where('status','=',1)->first();
+			if(empty($cv)){
+				return Redirect::to('/my-resume')
+					->with('warning', 'First of all, you should complate your CVs than active your CVs');
+			}
 		$input = Input::all();
 		$v = Validator::make($input, Apply::$rules);
 		if ($v->passes())

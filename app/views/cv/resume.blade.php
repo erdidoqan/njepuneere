@@ -8,6 +8,12 @@
 		</header>
 		<div>					
 		<div class="widget-body">
+			@if (Session::has('warning'))
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <strong>Success!</strong> {{Session::get('warning')}}
+            </div>
+            @endif 
 		@if($cv->count())
 			<table class="table table-hover">
 				<thead>
@@ -178,4 +184,5 @@
 						e.preventDefault();
 					});
 </script>
+
 @stop
