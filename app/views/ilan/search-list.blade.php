@@ -20,9 +20,9 @@
                  
                  	<tr>
                    <a href="/ads/{{$r->id}}">
-                      <td><a href="/ads/{{$r->id}}">{{str_limit(ucwords($r->com_name), 20)}}</a></td>
+                      <td><a href="/ads/{{$r->id}}">{{str_limit(ucwords($r->com_name), 10)}}</a></td>
                       <td>{{ucwords($r->ads_name)}}</td>
-                      <td><span class="text-warning"><i class="fa fa-map-marker"></i> {{str_limit(ucwords($r->work_place), 20)}}</span></td>
+                      <td><span class="text-warning"><i class="fa fa-map-marker"></i> {{str_limit(ucwords($r->work_place), 10)}}</span></td>
                       <td><span class="label label-info">{{ Carbon::createFromTimestamp(strtotime($r->created_at))->addDays($r->pub_time)->diffForHumans() }}</span></td>
                       <td>
                       @if(Auth::user())
