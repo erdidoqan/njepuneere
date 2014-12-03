@@ -17,9 +17,11 @@
                  </thead>
                  @foreach($results as $r)
                  <tbody>
+                 
                  	<tr>
+                   <a href="/ads/{{$r->id}}">
                       <td><a href="/ads/{{$r->id}}">{{ucwords($r->com_name)}}</a></td>
-                      <td><a href="/ads/{{$r->id}}">{{ucwords($r->ads_name)}}</a></td>
+                      <td>{{ucwords($r->ads_name)}}</td>
                       <td><span class="text-warning"><i class="fa fa-map-marker"></i> {{ucwords($r->work_place)}}</span></td>
                       <td><span class="label label-info">{{ Carbon::createFromTimestamp(strtotime($r->created_at))->addDays($r->pub_time)->diffForHumans() }}</span></td>
                       <td>
@@ -29,7 +31,8 @@
                       	<a data-toggle="modal" href="#myModal"  class="btn btn-info btn-block glyphicon glyphicon-user"  rel="tooltip" data-placement="top" data-original-title="Quick Apply"></a>
                       @endif
                       </td>
-                     </tr>
+                    </a>
+                  </tr>
                  </tbody>
                  @endforeach
 		</table>
