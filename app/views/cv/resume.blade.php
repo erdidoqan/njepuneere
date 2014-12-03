@@ -8,12 +8,7 @@
 		</header>
 		<div>					
 		<div class="widget-body">
-			@if (Session::has('warning'))
-            <div class="alert alert-danger alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <strong>Success!</strong> {{Session::get('warning')}}
-            </div>
-            @endif 
+			
 		@if($cv->count())
 			<table class="table table-hover">
 				<thead>
@@ -68,9 +63,11 @@
 	        </table>
 	        @else
           <div class="alert alert-warning">
-            <p>-Did not create a CV</p>
-            <p>-Select CV languages, and Create a CV.</p>
-            <p>-Afterthat, please correctly fiil all fields.</p>
+          	<p class="text-danger">- You should complate your CVs than active your CVs</p>
+          	<p>- You can apply to JOB.</p>
+            <p>- Did not create a CV</p>
+            <p>- Select CV languages, and Create a CV.</p>
+            <p>- Afterthat, please correctly fiil all fields.</p>
           </div>
 	        @endif
 	        @if($errors->any())
@@ -87,9 +84,9 @@
 		            	{{ Form::open(array('route' => 'cv.store','id'=>'smart-form-register','class'=>'smart-form')) }}
 		            	{{Form::hidden('resume_name', 'My Resume')}}
 							<div class="row">
-								<div class="col col-2">
+								<div class="col col-3">
 									<label class="radio state">
-									{{Form::radio('languages','Albania')}}
+									{{Form::radio('languages','Albania')}} 
 									<i></i> Albanian 
 									</label>
 								</div>
