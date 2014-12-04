@@ -19,19 +19,17 @@
                  <tbody>
                  
                  	<tr>
-                   <a href="/ads/{{$r->id}}">
-                      <td><a href="/ads/{{$r->id}}">{{str_limit(ucwords($r->com_name), 20)}}</a></td>
+                      <td><a style="display:block" href="/ads/{{$r->id}}">{{str_limit(ucwords($r->com_name), 20)}}</a></td>
                       <td>{{str_limit(ucwords($r->ads_name), 20)}}</td>
                       <td><span class="text-warning"><i class="fa fa-map-marker"></i> {{ucwords($r->work_place)}}</span></td>
                       <td><span class="label label-info">{{ Carbon::createFromTimestamp(strtotime($r->created_at))->addDays($r->pub_time)->diffForHumans() }}</span></td>
                       <td>
                       @if(Auth::user())
-                        <a href="/ads/{{$r->id}}" class="btn btn-info btn-block"><i class="glyphicon glyphicon-plus"></i> See</a>
+                        <a href="/ads/{{$r->id}}" class="btn btn-info btn-block"><i class="glyphicon glyphicon-plus"></i> Apply </a>
                       @else
                       	<a data-toggle="modal" href="#myModal"  class="btn btn-info btn-block glyphicon glyphicon-user"  rel="tooltip" data-placement="top" data-original-title="Quick Apply"></a>
                       @endif
                       </td>
-                    </a>
                   </tr>
                  </tbody>
                  @endforeach
@@ -41,7 +39,6 @@
 						<h4>I'm sorry your search returned no results</h4>
 					</div>
 					@endif
-	
   </div>
 @stop
 

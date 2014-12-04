@@ -131,6 +131,13 @@
   <div class="panel-body">
     <div class="col-sm-12">
       <div class="col-sm-4">
+
+            @if (Session::has('warning'))
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <strong>Success!</strong> {{Session::get('warning')}}
+            </div>
+            @endif 
         {{ Form::open(array('route' => array('apply.store', $ads->id, $adsInfo->id, $adsInfo->user_id))) }}
             {{ Form::hidden('apply',1) }}
             {{ Form::hidden('ads',$ads->id) }}
@@ -156,13 +163,13 @@
 
               <ul class="dropdown-menu">
                 <li>
-                  <a href="javascript:void(0);" class="fa fa-facebook"> Facebook</a>
+                  <a href="#" class="fa fa-facebook"> Facebook</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="fa fa-twitter"> Twitter</a>
+                  <a href="#" class="fa fa-twitter"> Twitter</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="fa fa-linkedin"> Linked In</a>
+                  <a href="#" class="fa fa-linkedin"> Linked In</a>
                 </li>
               </ul>
             </div>
@@ -170,6 +177,23 @@
     </div>
   </div>
   </div>
+    @if(Session::has('warning'))
+      <script type="text/javascript">
+                  $('#apply').click(function() {
+                
+                    $.smallBox({
+                      title : "First of all, you should complate your CVs than active your CVs",
+                      content : "<i class='fa fa-clock-o'></i> <i>You did apply to ads</i>",
+                      color : "#C46A69",
+                      iconSmall : "fa fa-thumbs-up bounce animated",
+                      timeout : 4000
+                    });
+                
+                  })
+
+                </script>
+
+    @endif
   
       @if($errors->any())
                <script type="text/javascript">

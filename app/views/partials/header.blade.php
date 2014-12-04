@@ -6,7 +6,7 @@
 <link rel="icon" href="/ana.ico" type="image/x-icon">
 <meta name="google-site-verification" content="HpQgEQ1gHXC_DrfCXZTHSFVXZMkVxTLESkJuMz2hq8A" />
 <meta name="google-site-verification" content="j6Xus6PADbsA985dGBaga6UG9eBbp74lFvWmi-Y4CNA" />
-<title>Njepuneere</title>
+@yield('title')
 
 <!-- Bootstrap core CSS -->
 

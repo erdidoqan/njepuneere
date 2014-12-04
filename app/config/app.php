@@ -1,7 +1,7 @@
 <?php
 
 return array(
-	'debug' => true,
+	'debug' => false,
 	'url' => 'http://localhost',
 	'timezone' => 'UTC',
 	'locale' => 'en',
