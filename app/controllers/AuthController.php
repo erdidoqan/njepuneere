@@ -123,7 +123,7 @@
 				if(Auth::attempt($kimlik, $remember)){
 					return Redirect::back();
 				} else {
-					return Redirect::to('BireyGiris')->with('error', 'We could not activate your account. Please, try again later.');
+					return Redirect::to('BireyGiris')->with('error', 'We could not activate your account. Please, Check your mail inbox.');
 				}
 			}
 			return Redirect::to('BireyGiris')->withErrors($v);
