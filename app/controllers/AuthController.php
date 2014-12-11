@@ -123,7 +123,7 @@
 				if(Auth::attempt($kimlik, $remember)){
 					return Redirect::back();
 				} else {
-					return Redirect::to('BireyKayit');
+					return Redirect::to('BireyGiris')->withErrors($v);
 				}
 			}
 			return Redirect::to('BireyGiris')->withErrors($v);
