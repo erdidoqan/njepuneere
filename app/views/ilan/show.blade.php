@@ -1,6 +1,10 @@
 
 @extends('layouts.ads')
 
+@section('title')
+<title>{{ucwords($adsInfo->com_name)}} | Njepuneere</title>
+@stop
+
 @section('content')
 
 <div class="panel panel-fixed panel-primary">

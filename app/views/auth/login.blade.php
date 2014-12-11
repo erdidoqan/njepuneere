@@ -1,5 +1,9 @@
 @extends('layouts.auth')
 
+@section('title')
+<title>Login | Njepuneere</title>
+@stop
+
 @section('content')
 
 <section id="widget-grid" class="">
@@ -10,6 +14,12 @@
                 <h2>Login Form <small>or you can easily <a href="BireyKayit">Register</a> </small> </h2>             
             </header>
                 <div>
+                    @if($errors->any())
+                        <div class="alert alert-danger">
+                            <a href="#" class="close" data-dismiss="alert">&times;</a>
+                            {{ implode('', $errors->all('<li class="error">:message</li>')) }}
+                        </div>
+                    @endif
                     @if ($errors->has())
                     <div class="alert alert-warning alert-dismissible" role="alert">
                         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -68,21 +78,9 @@
                         {{ Form::close() }}              
                         
                     </div>
-                    <!-- end widget content -->
-                    
                 </div>
-                <!-- end widget div -->
-                
             </div>
-            <!-- end widget -->
-            
-            </div>
-
+        </div>
     </div>
-
-    <!-- END ROW -->
-
 </section>
-<!-- end widget grid -->
-
 @stop

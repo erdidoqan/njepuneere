@@ -1,5 +1,9 @@
 @extends('layouts.auth')
 
+@section('title')
+<title>Registration | Njepuneere</title>
+@stop
+
 @section('content')
     
 <section id="widget-grid" class="">
@@ -16,6 +20,26 @@
                             {{ implode('', $errors->all('<p class="error">:message</p>')) }}
                         </div>
                     @endif
+                     @if ($errors->has())
+                    <div class="alert alert-warning alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <strong>Error!</strong> {{$errors->first()}}
+                    </div>
+                    @endif
+                    
+                    @if (Session::has('error'))
+                    <div class="alert alert-warning alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <strong>Error!</strong> {{Session::get('error')}}
+                    </div>
+                    @endif
+                    
+                    @if (Session::has('success'))
+                    <div class="alert alert-success alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <strong>Success!</strong> {{Session::get('success')}}
+                    </div>
+                    @endif   
                     <div class="widget-body no-padding">
                         {{ Form::open(array('url' => 'BireyKayit','id'=>'smart-form-register','class'=>'smart-form')) }}
                             <header>Personal Information</header>

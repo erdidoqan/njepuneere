@@ -53,9 +53,6 @@
 	            $user->active = 0;
 	            $user->pr_img = 'img/avatars/male.png';
 
-	            //$user->save();
-	            //return Redirect::to('BireyGiris');
-	            
 	            if($user->save()){
 	                Mail::send('emails.auth.activate', 
 	                	array('link'=> URL::to('activate', $code), 'username'=>$username), 
@@ -126,7 +123,7 @@
 				if(Auth::attempt($kimlik, $remember)){
 					return Redirect::back();
 				} else {
-					return Redirect::to('BireyGiris');
+					return Redirect::to('BireyKayit');
 				}
 			}
 			return Redirect::to('BireyGiris')->withErrors($v);

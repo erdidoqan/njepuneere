@@ -1,6 +1,10 @@
 
 @extends('layouts.master')
 
+@section('title')
+<title>Njepuneere</title>
+@stop
+
 @section('content')
 <div class="section1">
 <div class="container">
