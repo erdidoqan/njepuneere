@@ -123,10 +123,10 @@
 				if(Auth::attempt($kimlik, $remember)){
 					return Redirect::back();
 				} else {
-					return Redirect::to('BireyGiris')->with('error', 'We could not activate your account. Please, Check your mail inbox.');
+					return Redirect::to('BireyGiris')->with('error', 'Email or password wrong, or account not activated.');
 				}
 			}
-			return Redirect::to('BireyGiris')->withErrors($v);
+			return Redirect::to('BireyGiris')->with('error', 'There was a problem signing you in.');
 		}
 
 		public function user_update()
