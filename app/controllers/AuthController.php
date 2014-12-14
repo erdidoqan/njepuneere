@@ -8,7 +8,7 @@
 			{
 			    return View::make('auth.register');
 			} else {
-				return Redirect::back();
+				return Redirect::to('/');
 			}
 			
 		}
