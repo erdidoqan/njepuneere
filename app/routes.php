@@ -20,6 +20,9 @@ Route::post('pr_img', "AuthController@postPr_img");
 Route::post('BireyKayit', "AuthController@postBireyKayit");
 Route::post('search', "HomeController@getSearch");
 
+//Afteer Auth Controller
+
+
 //Before Auth Controller
 Route::group(array('before' => 'auth'), function(){
 	Route::get('/my-page', "MyPageController@myPage");

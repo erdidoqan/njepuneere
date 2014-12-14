@@ -4,8 +4,13 @@
 		/* Kullanıcı Kayıdı */
 		public function getBireyKayit()
 		{
-
-			return View::make('auth.register');
+			if (!Auth::user())
+			{
+			    return View::make('auth.register');
+			} else {
+				return Redirect::back();
+			}
+			
 		}
 		public function postBireyKayit()
 		{
