@@ -3,8 +3,7 @@
   <head>
     
 @include('partials/header')
-
-
+<title>CV | Njepuneere</title>
   </head>
   <body>
 <div class="panel panel-success"  style="margin-top:30px;">
