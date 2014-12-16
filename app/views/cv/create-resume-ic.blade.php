@@ -1,4 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
 @include('partials/header')
+
+
+  </head>
+  <body>
 <div class="panel panel-success"  style="margin-top:30px;">
 	<div class="panel-body">
 		<span>Hits: 0</span>
@@ -174,3 +182,5 @@
             e.preventDefault();
           });
 </script>
+</body>
+</html>
