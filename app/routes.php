@@ -19,6 +19,7 @@ Route::post('BireyGiris', "AuthController@postBireyGiris");
 Route::post('pr_img', "AuthController@postPr_img");
 Route::post('BireyKayit', "AuthController@postBireyKayit");
 Route::post('search', "HomeController@getSearch");
+Route::post('forgot', "AuthController@forgot");
 
 //Afteer Auth Controller
 

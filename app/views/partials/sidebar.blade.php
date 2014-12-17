@@ -37,7 +37,7 @@
 
 
 
-<div class="panel panel-success" style="margin-top:51px;">
+<div class="panel panel-default" style="margin-top:51px;">
 	<div class="panel-body">
 	
 		<h4 class="text-info"><b>Special Jobs Ads</b></h4>

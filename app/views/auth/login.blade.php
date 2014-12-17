@@ -50,6 +50,7 @@
                                     <label class="input"> <i class="icon-append fa fa-lock"></i>
                                         {{ Form::password('sifre', array('placeholder' => 'Password','id'=>'password')) }}
                                         <b class="tooltip tooltip-bottom-right">Don't forget your password</b> </label>
+                                        <a class="pull-right text-muted" data-toggle="modal" href="#forgot"><small>Forgot your password?</small></a>
                                 </section>
                                 <label class="label col col-3">Remember Me:</label>
                                 <section class="col col-9">
@@ -77,4 +78,59 @@
         </div>
     </div>
 </section>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="forgot" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          &times;
+        </button>
+        <h4 class="modal-title">
+          <img src="/img/logo.png" width="150" alt="logo">
+        </h4>
+      </div>
+      <div class="modal-body no-padding">
+        {{ Form::open(array('url' => 'forgot','id' => 'smart-form-register','class'=>'smart-form')) }}
+              <fieldset>
+                <section>
+                  <div class="row">
+                    <label class="label col col-2">Email</label>
+                    <div class="col col-10">
+                      <label class="input"> <i class="icon-append fa fa-envelope"></i>
+                        {{ Form::email('email', Input::old('email'), array('placeholder' => 'Email address','id'=>'email')) }}
+                      </label>
+                    </div>
+                  </div>
+                </section>
+
+                <section>
+                  <div class="row">
+                    <div class="col col-2"></div>
+                    <div class="col col-10">
+                      
+                    </div>
+                  </div>
+                </section>
+              </fieldset>
+              
+              <footer>
+                <button type="submit" class="btn btn-primary">
+                  Send Me Password
+                </button>
+                
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  Cancel
+                </button>
+              </footer>
+            {{ Form::close() }}
+      </div>
+    </div>
+  </div>
+</div>
+
+
 @stop

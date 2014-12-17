@@ -4,10 +4,16 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<h2>Password Reset</h2>
+		Hello {{$username}},<br><br>
 
-		<div>
-			To reset your password, complete this form: {{ URL::to('password/reset', array($token)) }}.
-		</div>
+		It looks like you requested a new password. You'll need to use the following link to activate it. If you didn't request a new password, please ignore this email.<br><br>
+
+		New password: {{$password}}<br><br>
+
+		---<br>
+		{{$link}}<br>
+		---
 	</body>
 </html>
+
+
