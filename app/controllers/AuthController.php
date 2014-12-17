@@ -149,8 +149,6 @@
 			return Redirect::to('/');
 		}
 		
-
-
 		public function forgot()
 	    {
 	        $validator = Validator::make(Input::all(), array(
