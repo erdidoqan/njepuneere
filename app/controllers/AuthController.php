@@ -189,7 +189,7 @@
 	            }
 	            
 	        }
-	        return Redirect::to('password')->with('error', 'Could not request new password.');       
+	        return Redirect::to('BireyGiris')->with('error', 'Could not request new password.');       
 	    }
 	    
 	    public function getNewPassword($code)
@@ -199,15 +199,15 @@
 	            
 	            $user = $user->first();
 	            
-	            $user->password = $user->password_temp;
+	            $user->sifre = $user->password_temp;
 	            $user->password_temp = '';
 	            $user->code = '';
 	            
 	            if($user->save()) {
-	                return Redirect::to('login')->with('success', 'Your account has been recovered and you can sign in with your new password.');
+	                return Redirect::to('BireyGiris')->with('success', 'Your account has been recovered and you can sign in with your new password.');
 	            }
 	        }
 	        
-	        return Redirect::to('password')->with('error', 'Could not request new password.');
+	        return Redirect::to('BireyGiris')->with('error', 'Could not request new password.');
 	    }   
 	}

@@ -12,7 +12,7 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
-//	return View::make('site.404');
+	return View::make('site.404');
 });
 
 App::down(function()
