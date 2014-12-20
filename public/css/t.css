@@ -9,10 +9,11 @@ body #project-context > *:first-child, .project-context > *:first-child {color:#
 .erd {float: right;margin-top: -8px;}
 .search-box-p{
    font-family: 'Cabin';
+   color: #fff;
    font-size: 15px;
    margin-left: 15px;
    margin-top: 13px;
-   opacity : 0.5;
+   opacity : 0.8;
       filter : alpha( Opacity=50 );
       -moz-opacity : 0.5;
 }
@@ -20,12 +21,15 @@ body #project-context > *:first-child, .project-context > *:first-child {color:#
    margin-left: 204px;
 }
 .search-box-name {
-   color: #6E6E6E;
+   color: #fff;
    font-family: cabin;
    font-size: 25px;
-   font-weight: 600;
+   font-weight: 200;
    margin-bottom: 13px;
    margin-left: 380px;
+   opacity : 0.8;
+      filter : alpha( Opacity=30 );
+      -moz-opacity : 0.5;
 }
 .search-tags{
    font-family: 'Cabin';
