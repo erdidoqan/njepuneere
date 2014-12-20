@@ -35,14 +35,13 @@ body #project-context > *:first-child, .project-context > *:first-child {color:#
 }
 
 body .section1 {
-   background-color: #ffffff;
+   background-image: url(/img/hr3.jpg);
    margin: 0 auto;
    padding-bottom: 30px;
    padding-left: 0;
    padding-right: 0;
-   width: 1141px;
-   border-radius: 5px;
-   
+   padding-top: 50px;
+   height: 250px;
 }
 
 .ads {
@@ -79,3 +78,7 @@ body .section1 {
    font-size: 11px;
 }
 
+.containert{
+   width:1166px;
+   display: inline;
+}

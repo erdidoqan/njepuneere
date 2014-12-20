@@ -1,6 +1,3 @@
-
-
-
 {{HTML::script("//code.jquery.com/jquery-1.11.0.min.js")}}
 {{HTML::script("//code.jquery.com/jquery-migrate-1.2.1.min.js")}}
 {{HTML::script("/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js")}}
