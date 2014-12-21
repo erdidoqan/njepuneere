@@ -1,14 +1,14 @@
 
-<div class="container">
-    <div>
-		<a href="/">
-	    	<img src="http://104.131.119.56/img/logo.png">
-	    </a>
-    	
-	   <nav  class="navbar navbar-default navbar-static-top">
-	    	
+	   <nav  class="navbar navbar-default navbar-fixed-top">
+	 <div class="container">
 	<div class="turgittin">
+	<div class="project-context hidden-xs">
+		
+			<span id="logo"> <img src="http://104.131.119.56/img/logo.png" alt="SmartAdmin"> </span>
+					
+	</div>
 		<div class="project-context hidden-xs">
+
 	        <a class="project-selector" href="/"><i class="fa fa-home"></i></a>
 			
 		</div>
@@ -46,10 +46,11 @@
 	        </div>
 	        @endif
 	      </div>
+	      </div>
 	    </nav>
-		</div>
-</div>
-
+	    <div>
+	    	<hr><br><br>
+	    </div>
 @include('partials/scripts')
 
 @include('partials/modal')
