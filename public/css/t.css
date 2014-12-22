@@ -25,7 +25,6 @@ body #project-context > *:first-child, .project-context > *:first-child {color:#
    font-size: 25px;
    font-weight: 200;
    margin-bottom: 13px;
-   margin-left: 380px;
    opacity : 0.8;
       filter : alpha( Opacity=30 );
       -moz-opacity : 0.5;
@@ -34,7 +33,6 @@ body #project-context > *:first-child, .project-context > *:first-child {color:#
 .search-tags{
    font-family: 'Cabin';
    font-size: 15px;
-   margin-left: 370px;
    margin-top: 110px;
 }
 
@@ -128,8 +126,36 @@ ul, menu, dir {
    float: right !important;
 }
 .col-md-12 {
-   width: 1334px;
+   width: 1366px;
    float: none;
    margin: 0 auto;
+   text-align: center;
 }
 
+
+.colon-search {
+   width: 30.66666667%;
+   float: left;
+   padding-right: 5px;
+}
+.colon-place {
+   width: 16.66666667%;
+   float: left;
+   padding-right: 5px;
+}
+.colon-button {
+   width: 8.33333333%;
+   float: left;
+}
+
+body .input-lg {
+height: 60px;
+padding: 10px 16px;
+font-size: 17px;
+line-height: 1.33;
+border-radius: 5px;
+}
+
+body .btn-lg {
+padding: 18px 23px;
+}

@@ -13,23 +13,17 @@
       One of the 64,669 job ads for you!
   </div>
   <div class="search-form">
-  <div class="col-sm-1">
-    <div class="search-box-p">
-      Search
-    </div>
-  </div>
-    <div class="col-sm-5"> 
+
+    <div class="colon-search"> 
                 {{ Form::open(array('url' => 'search')) }}
-          <input style="border-radius: 5px;" class="form-control input-lg"  type="text" name="search" placeholder="Find jobs and more" data-autocomplete='
+          <input class="form-control input-lg"  type="text" name="search" placeholder="Find jobs and more" data-autocomplete='
           "ActionScript"'>
-          
-       
-        </div>
-    <div class="col-sm-2">
+    </div>
+    <div class="colon-place">
       {{Form::work_place()}}
     </div>
 
-    <div class="col-sm-1">
+    <div class="colon-button">
       <span class="input-group-btn">
         <button type="submit" class="btn btn-success btn-lg" style="border-radius: 5px;">
           <span class="fa fa-1x fa-search"></span> 
@@ -38,9 +32,10 @@
     </div>
     </div>
      {{ Form::close() }}
-  </div>
+  
   <div class="search-tags">
     Popular searches: <a href="#">Web Desing</a>, <a href="#">PHP Developer</a>, <a href="#">Mundësi Punësimi</a>
+  </div>
   </div>
 </div>
 </div>

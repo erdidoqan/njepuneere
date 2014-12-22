@@ -5,22 +5,7 @@
 			<div class="project-context hidden-xs">
 				<span id="logo"><a href="/"> <img src="http://104.131.119.56/img/logo.png" alt="SmartAdmin"> </a></span>
 			</div>
-			<div class="project-context hidden-xs">
-				<a class="project-selector" href="/"><i class="fa fa-home"></i></a>
-			</div>
-	       	<div class="project-context hidden-xs">
-	        	<a class="project-selector" href="/my-page"> My Page</a>
-	      	</div>
-			<div class="project-context hidden-xs">
-				<span class="project-selector dropdown-toggle"  data-toggle="dropdown"> My Career <i class="fa fa-angle-down"></i></span>
-				<ul class="dropdown-menu">
-				  <li><a href="/my-resume">My Resume (5)</a></li>
-				  <li><a href="/my-application">My Application</a></li>
-				  <li><a href="/pre-written">My Pre-Written</a></li>
-				  <li><a href="/">My Message</a></li>
-				  <li class="divider"></li><li><a href="/"><i class="fa fa-file-pdf-o"></i> File (PDF)</a></li>
-				</ul>
-			</div>
+			
 		</div>
 		<div class="pull-right" style="margin-right:35px;">
 			@if(!Auth::user())
@@ -53,16 +38,22 @@
 	</div>
 	<div class="scv-header-bottom">
             <div class="scv-container">
-                <ul class="scv-list-inline">
-                
-                </ul>
-                <div class="scv-top-phone scv-pull-right scv-pos-rel">
-                    <div class="scv-text-bold default-number">
-                    </div>
-                    <div class="scv-all-phones">
-                        
-                    </div>
-                </div>
+            	<div class="project-context hidden-xs">
+					<a class="project-selector" href="/"><i class="fa fa-home"></i></a>
+				</div>
+		       	<div class="project-context hidden-xs">
+		        	<a class="project-selector" href="/my-page"> My Page</a>
+		      	</div>
+				<div class="project-context hidden-xs">
+					<span class="project-selector dropdown-toggle"  data-toggle="dropdown"> My Career <i class="fa fa-angle-down"></i></span>
+					<ul class="dropdown-menu">
+					  <li><a href="/my-resume">My Resume (5)</a></li>
+					  <li><a href="/my-application">My Application</a></li>
+					  <li><a href="/pre-written">My Pre-Written</a></li>
+					  <li><a href="/">My Message</a></li>
+					  <li class="divider"></li><li><a href="/"><i class="fa fa-file-pdf-o"></i> File (PDF)</a></li>
+					</ul>
+				</div>
             </div>
         </div>
 </nav>
