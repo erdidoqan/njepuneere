@@ -3,11 +3,11 @@
 	<div class="container">
 		<div class="turgittin">
 			<div class="project-context hidden-xs">
-				<span id="logo"><a href="/"> <img src="http://104.131.119.56/img/logo.png" alt="SmartAdmin"> </a></span>
+				<span id="logo"><a href="/"> <img src="http://104.131.119.56/img/logo.png" alt="Njepuneere logo"> </a></span>
 			</div>
 			
 		</div>
-		<div class="pull-right" style="margin-right:35px;">
+		<div class="pull-right">
 			@if(!Auth::user())
 			<a style="margin-top:8px;" data-toggle="modal" href="#myModal" class="btn btn-primary pull-right header-btn hidden-mobile"><i class="fa fa-circle-arrow-up fa-lg"></i> Login & Register</a>
 			<a style="margin-bottom:-24px;margin-right:5px;" href="{{User::$img_sirket_src}}" class="btn btn-success header-btn"><i class="fa fa-circle-arrow-up fa-lg"></i> Employer</a>
@@ -38,9 +38,6 @@
 	</div>
 	<div class="scv-header-bottom">
             <div class="scv-container">
-            	<div class="project-context hidden-xs">
-					<a class="project-selector" href="/"><i class="fa fa-home"></i></a>
-				</div>
 		       	<div class="project-context hidden-xs">
 		        	<a class="project-selector" href="/my-page"> My Page</a>
 		      	</div>
@@ -58,7 +55,7 @@
         </div>
 </nav>
 </header>
-<div><hr><br><br></div>
+<div style="padding:35px;">asd</div>
 @include('partials/scripts')
 @include('partials/modal')
 
