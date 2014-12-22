@@ -9,7 +9,7 @@
 
   <body>
 
-      @include('partials/nav')
+      @include('partials/nav-in')
         
 
 <div class="container">

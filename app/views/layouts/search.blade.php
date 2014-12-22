@@ -4,7 +4,7 @@
     @include('partials/header')
   </head>
   <body>
-      @include('partials/nav')
+      @include('partials/nav-in')
 <div class="container">
         <div class="col-sm-4" style="margin-top:30px;">
           @include('ilan/filter')

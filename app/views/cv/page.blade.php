@@ -4,7 +4,7 @@
 @include('partials/header')
   </head>
   <body>
-      @include('partials/nav')
+      @include('partials/nav-in')
 <div class="container">
     <div style="margin-top:30px;">
       @include('cv/aside')
