@@ -3,7 +3,7 @@ body .navbar-default {
    margin-bottom: 10px;
 }
 body #project-context > *:first-child, .project-context > *:first-child {color:#f1f1f1;display: block;font-size: 15px;font-weight: 200;padding-left: 0;text-align: left;text-shadow: 0 0 0px #fff;text-transform: inherit;font-family: 'Cabin';}
-body #navbar-name a {color:#f1f1f1;display: block;font-size: 15px;font-weight: 200;padding-left: 0;text-align: left;text-shadow: 0 0 0px #fff;text-transform: inherit;font-family: 'Cabin';}
+body #navbar-name {color:#f1f1f1;display: block;font-size: 15px;font-weight: 200;padding-left: 0;text-align: left;text-shadow: 0 0 0px #fff;text-transform: inherit;font-family: 'Cabin';}
 .turgittin {float: left;margin-top: 8px;}
 .erd {float: right;margin-top: -8px;}
 .search-box-p{

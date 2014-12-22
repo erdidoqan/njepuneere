@@ -7,6 +7,16 @@
 			</div>
 			
 		</div>
+		@if()
+		<form class="navbar-form navbar-left" role="search">
+			<div class="form-group">
+				<input class="form-control" placeholder="Search" type="text">
+			</div>
+			<button type="submit" class="btn btn-success btn-sm" style="border-radius: 5px;">
+	        	<span class="fa fa-1x fa-search"></span> 
+	        </button>
+		</form>
+		@endif
 		<div class="pull-right">
 			@if(!Auth::user())
 			<a style="margin-top:8px;" data-toggle="modal" href="#myModal" class="btn btn-primary pull-right header-btn hidden-mobile"><i class="fa fa-circle-arrow-up fa-lg"></i> Login & Register</a>
@@ -20,7 +30,7 @@
 				</div> 
 
 				<div class="project-context pull-right">
-					<a href="/user-up">{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}</a>
+					<span><a href="/user-up" class="text-success">{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}</a></span>
 				</div>
 				<div class="project-context pull-right">
 					<span>
