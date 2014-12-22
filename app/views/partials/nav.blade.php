@@ -20,12 +20,7 @@
 				</div> 
 
 				<div class="project-context pull-right">
-					<span class="project-selector dropdown-toggle"  data-toggle="dropdown">{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }} <i class="fa fa-angle-down"></i></span>
-					<ul class="dropdown-menu">
-					  <li><a href="/user-up">Membership</a></li>
-					  <li><a href="/my-application">CV - Resume</a></li>
-					  <li><a href="/my-application">My Applicant</a></li>
-					</ul>
+					<a href="/user-up">{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}</a>
 				</div>
 				<div class="project-context pull-right">
 					<span>
