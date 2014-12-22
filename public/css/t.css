@@ -35,8 +35,9 @@ body #project-context > *:first-child, .project-context > *:first-child {color:#
 .search-tags{
    font-family: 'Cabin';
    font-size: 15px;
-   margin-top: 110px;
-}
+   margin-top: 90px;
+   text-shadow: 1px 1px rgba(15, 13, 13, 0.85);
+   color: #fff;}
 
 body .section1 {
    background-image: url(/img/hr3.jpg);
@@ -160,4 +161,8 @@ border-radius: 5px;
 
 body .btn-lg {
 padding: 18px 23px;
+}
+
+.text-turgay{
+   
 }
