@@ -85,4 +85,49 @@ body .section1 {
    display: inline;
 }
 
+/* scv header */
+.scv-header-bottom {
+   position: fixed;
+   top: 50px;
+   left: 0;
+   width: 100%;
+   height: 30px;
+   background-color: rgba(0,0,0,.6);
+   z-index: 9999;
+}
+.scv-container {
+   width: 1166px;
+   position: relative;
+   margin-right: auto;
+   margin-left: auto;
+}
 
+.scv-header-bottom ul {
+   margin: 10px 0;
+}
+.scv-list-inline {
+   display: inline-block;
+   padding-left: 0;
+   list-style: none;
+}
+
+ul, menu, dir {
+   display: block;
+   list-style-type: disc;
+      -webkit-margin-before: 1em;
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      -webkit-padding-start: 40px;
+}
+.scv-pos-rel {
+   position: relative !important;
+}
+.scv-pull-right {
+   float: right !important;
+}
+.col-md-12 {
+   width: 1334px;
+   float: none;
+   margin: 0 auto;
+}
