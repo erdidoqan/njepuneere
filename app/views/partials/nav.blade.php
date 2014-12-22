@@ -43,8 +43,7 @@
 	<div class="scv-header-bottom">
             <div class="scv-container">
                 <ul class="scv-list-inline">
-                    <li><a href="#" >Home</a></li>
-                    <li><a href="#" >My Page</a></li>
+                
                 </ul>
                 <div class="scv-top-phone scv-pull-right scv-pos-rel">
                     <div class="scv-text-bold default-number">

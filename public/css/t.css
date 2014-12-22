@@ -29,6 +29,7 @@ body #project-context > *:first-child, .project-context > *:first-child {color:#
    opacity : 0.8;
       filter : alpha( Opacity=30 );
       -moz-opacity : 0.5;
+   text-shadow: 2px 1px rgba(52, 52, 52, 0.7);
 }
 .search-tags{
    font-family: 'Cabin';
@@ -130,4 +131,11 @@ ul, menu, dir {
    width: 1334px;
    float: none;
    margin: 0 auto;
+}
+
+.input-lg{
+   height: 60px;
+}
+select.input-lg{
+   height: 60px;
 }
