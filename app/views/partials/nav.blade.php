@@ -29,14 +29,25 @@
 			@endif
 
 			@if(Auth::user())
-				<div id="logout" class="btn-header transparent pull-right">
-					<span> <a href="/logout" title="Sign Out" data-action="userLogout" data-logout-msg="Goodbye, {{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}..."><i class="fa fa-sign-out"></i></a> </span>
+			<div class="turgittin">
+				<div class="project-context pull-right">
+					<span> <a class="text-danger" href="/logout" title="Sign Out" data-action="userLogout" data-logout-msg="Goodbye, {{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}..."><i class="fa fa-sign-out"></i></a> </span>
+				</div> 
+
+				<div class="project-context pull-right">
+					<span class="project-selector dropdown-toggle"  data-toggle="dropdown">{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }} <i class="fa fa-angle-down"></i></span>
+					<ul class="dropdown-menu">
+					  <li><a href="/user-up">Membership</a></li>
+					  <li><a href="/my-application">CV - Resume</a></li>
+					  <li><a href="/my-application">My Applicant</a></li>
+					</ul>
 				</div>
-				<div class="project-context erd hidden-xs">
-					<div class="pull-right" style="margin-right:35px;margin-top:15px;">
-						<span>{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }},</span> <a href="user-up"> Membership Information</a>
-					</div>
+				<div class="project-context pull-right">
+					<span>
+						<img src="{{Auth::user()->pr_img}}" alt="...." class="img-circle" style="max-height:70px;">
+					</span>
 				</div>
+			</div>
 			@endif
 		</div>
 	</div>
