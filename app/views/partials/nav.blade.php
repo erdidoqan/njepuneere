@@ -5,9 +5,20 @@
 			<div class="project-context hidden-xs">
 				<span id="logo"><a href="/"> <img src="http://104.131.119.56/img/logo.png" alt="Njepuneere logo"> </a></span>
 			</div>
-			
 		</div>
-		
+		<div id="erds" data-spy="affixed-top.bs.affix" data-offset-top="600">
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<input class="form-control" placeholder="Search" type="text">
+				</div>
+				<div class="form-group">
+					{{Form::place()}}
+				</div>
+				<button type="submit" class="btn btn-success btn-sm" style="border-radius: 5px;">
+		        	<span class="fa fa-1x fa-search"></span> 
+		        </button>
+			</form>
+		</div>
 		<div class="pull-right">
 			@if(!Auth::user())
 			<a style="margin-top:8px;" data-toggle="modal" href="#myModal" class="btn btn-primary pull-right header-btn hidden-mobile"><i class="fa fa-circle-arrow-up fa-lg"></i> Login & Register</a>
@@ -32,7 +43,7 @@
 			@endif
 		</div>
 	</div>
-	<div class="scv-header-bottom">
+	<div class="scv-header-bottom" data-spy="affixed-top.bs.affix" data-offset-top="600" id="nav">
             <div class="scv-container">
 		       	<div class="project-context hidden-xs">
 		        	<a class="project-selector" href="/my-page"> My Page</a>
@@ -51,8 +62,23 @@
         </div>
 </nav>
 </header>
-<div style="padding:35px;">asd</div>
+<div style="padding:36px;">asd</div>
 @include('partials/scripts')
 @include('partials/modal')
 
+
+<script type="text/javascript">
+
+	$('#nav').affix({
+	  offset: {
+	    top: 200,
+	  }
+	})
+
+	$('#erds').affix({
+	  offset: {
+	    top: 200,
+	  }
+	})
+</script>
 

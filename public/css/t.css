@@ -4,6 +4,7 @@ body .navbar-default {
 }
 body #project-context > *:first-child, .project-context > *:first-child {color:#f1f1f1;display: block;font-size: 15px;font-weight: 200;padding-left: 0;text-align: left;text-shadow: 0 0 0px #fff;text-transform: inherit;font-family: 'Cabin';}
 body #navbar-name {color:#f1f1f1;display: block;font-size: 15px;font-weight: 200;padding-left: 0;text-align: left;text-shadow: 0 0 0px #fff;text-transform: inherit;font-family: 'Cabin';}
+
 .turgittin {float: left;margin-top: 8px;}
 .erd {float: right;margin-top: -8px;}
 .search-box-p{
@@ -90,7 +91,7 @@ body .section1 {
 /* scv header */
 .scv-header-bottom {
    position: fixed;
-   top: 53px;
+   top: 56px;
    left: 0;
    width: 100%;
    height: 35px;
@@ -169,4 +170,19 @@ padding: 18px 23px;
 
 body .navbar-default {
 border-color: rgba(0, 0, 0, 0.57);
+}
+
+#nav.affix {
+    margin-top: -52px;
+    top: 0;
+    width: 100%
+}
+
+#erds{
+   display: -webkit-inline-box;
+}
+
+#erds.affix{
+   display: block !important;
+   margin-left: 217px;
 }

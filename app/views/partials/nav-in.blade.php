@@ -58,7 +58,7 @@
         </div>
 </nav>
 </header>
-<div style="padding:35px;">asd</div>
+<div style="padding:36px;">asd</div>
 @include('partials/scripts')
 @include('partials/modal')
 

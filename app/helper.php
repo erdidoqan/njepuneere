@@ -702,5 +702,88 @@ HTML::macro('clever_link', function($route, $text) {
 
 
 
+Form::macro('place', function($name = "place", $selected = null) {
+    
+    $place = array(
+        '' => 'Place',
+'Tirana' => 'Tirana*',
+'Durres' => 'Durres',
+'Vlore' => 'Vlore',
+'Elbasan' => 'Elbasan',
+'Shkoder' => 'Shkoder',
+'Fier' => 'Fier',
+'Korce' => 'Korce',
+'Gjirokaster' => 'Gjirokaster',
+'Berat' => 'Berat',
+'Lushnje' => 'Lushnje',
+'Ballsh' => 'Ballsh',
+'Bilisht' => 'Bilisht',
+'Bulqizë' => 'Bulqizë',
+'Burrel' => 'Burrel',
+'Cërrik' => 'Cërrik',
+'Çorovodë' => 'Çorovodë',
+'Delvinë' => 'Delvinë',
+'Divjakë' => 'Divjakë',
+'Ersekë' => 'Ersekë',
+'Fushë-Arrëz' => 'Fushë-Arrëz',
+'Fushë-Krujë' => 'Fushë-Krujë',
+'Gramsh' => 'Gramsh',
+'Himarë' => 'Himarë',
+'Kamëz' => 'Kamëz',
+'Kavajë' => 'Kavajë',
+'Këlcyrë' => 'Këlcyrë',
+'Klos' => 'Klos',
+'Konispol' => 'Konispol',
+'Koplik' => 'Koplik',
+'Krastë' => 'Krastë',
+'Krujë' => 'Krujë',
+'Krumë' => 'Krumë',
+'Kuçovë' => 'Kuçovë',
+'Kukës' => 'Kukës',
+'Laç' => 'Laç',
+'Leskovik' => 'Leskovik',
+'Lezhë' => 'Lezhë',
+'Libohovë' => 'Libohovë',
+'Librazhd' => 'Librazhd',
+'Maliq' => 'Maliq',
+'Mamurras' => 'Mamurras',
+'Memaliaj' => 'Memaliaj',
+'Orikum' => 'Orikum',
+ 'Patos' => 'Patos',
+'Peqin' => 'Peqin',
+'Përmet' => 'Përmet',
+'Përrenjas' => 'Përrenjas',
+'Peshkopi' => 'Peshkopi',
+'Pogradec' => 'Pogradec',
+'Poliçan' => 'Poliçan',
+'Pukë' => 'Pukë',
+'Roskovec' =>'Roskovec',
+'Rrëshen' => 'Rrëshen',
+'Rrogozhinë' => 'Rrogozhinë',
+'Rubik' => 'Rubik',
+'Sarandë' => 'Sarandë',
+'Selenicë' => 'Selenicë',
+'Selitë' => 'Selitë',
+'Shëngjin' => 'Shëngjin',
+'Shijak' => 'Shijak',
+'Tepelenë' => 'Tepelenë',
+'Tropoja' => 'Tropoja',
+'Ulëz' => 'Ulëz',
+'Urë Vajgurore' => 'Urë Vajgurore',
+'Vorë' => 'Vorë'
+    );
+    
+    $select = '<select name="'.$name.'" class="form-control" >';
+    
+    foreach ($place as $abbr => $place)
+    {
+        $select .= '<option value="'.$abbr.'"'.($selected == $abbr ? ' selected="selected"' : '').'>'.$place.'</option> ';
+    }
+    
+    $select .= '</select>';
+    
+    return $select;
+
+});
 
 
