@@ -44,7 +44,7 @@
 				</div>
 				<div class="project-context pull-right">
 					<span>
-						<img src="{{Auth::user()->pr_img}}" alt="...." class="img-circle" style="width:100%">
+						<img src="{{Auth::user()->pr_img}}" alt="...." class="img-circle" style="max-height:70px;max-width:70px;">
 					</span>
 				</div>
 			</div>
