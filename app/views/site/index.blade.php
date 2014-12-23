@@ -34,7 +34,7 @@
      {{ Form::close() }}
   
   <div class="search-tags">
-    Popular searches: <a href="#" class="text-turgay">Web Desing</a>, <a href="#" class="text-turgay">PHP Developer</a>, <a href="#" class="text-turgay">Mundësi Punësimi</a>
+    Popular searches: <a href="#"  class="text-turgay">Web Desing</a>, <a href="#" class="text-turgay">PHP Developer</a>, <a href="#" class="text-turgay">Mundësi Punësimi</a>
   </div>
   </div>
 </div>

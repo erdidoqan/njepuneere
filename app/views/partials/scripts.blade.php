@@ -10,9 +10,10 @@
 {{HTML::script("/js/plugin/select2/select2.min.js")}}
 {{HTML::script("/js/plugin/bootstrap-slider/bootstrap-slider.min.js")}}
 {{HTML::script("/js/app.min.js")}}
+{{HTML::script("/js/app.config.js")}}
+{{HTML::script("/js/demo.min.js")}}
 {{HTML::script("/js/plugin/jquery-validate/jquery.validate.min.js")}}
-{{HTML::script("/js/jasny-bootstrap.js")}}
-{{HTML::script("/js/jasny-bootstrap.min.js")}}
+
 {{HTML::script("/js/sekil.js")}}
 
     <script>

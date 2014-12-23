@@ -32,11 +32,11 @@
 				</div> 
 
 				<div class="project-context pull-right">
-					<span><a href="/user-up" class="text-successi">{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}</a></span>
+					<span><a href="/user-up" class="text-successi" data-toggle="tooltip" data-placement="right" title="Tooltip on left">{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}</a></span>
 				</div>
 				<div class="project-context pull-right">
 					<span>
-						<img src="{{Auth::user()->pr_img}}" alt="...." class="img-circle imgpr" style="height:30px;width:30px;">
+						<img src="{{Auth::user()->pr_img}}" alt="...." class="img-rounded imgpr" style="height:30px;width:30px;">
 					</span>
 				</div>
 			</div>
@@ -80,5 +80,8 @@
 	    top: 200,
 	  }
 	})
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 </script>
 
