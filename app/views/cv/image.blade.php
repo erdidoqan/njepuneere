@@ -28,7 +28,7 @@
         		<div class="col-sm-12">
         			{{ Form::open(array('url' => array('pr_img',Auth::user()->id), 'enctype' => 'multipart/form-data')) }}
 						{{ form::file('pr_img') }}<br>
-						<input type="hidden" name="img_bckp" value="{{$data['logo']}}" /> 
+						<input type="hidden" name="img_bckp" value="{{$data['pr_img']}}" /> 
 						{{ form::submit('update', array('class'=>'btn btn-success')) }}
 					{{ Form::close() }}
 					<input type="hidden" id="modal" value="{{$data['modal']}}" /><br>
