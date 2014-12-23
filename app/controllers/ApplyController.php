@@ -34,7 +34,7 @@ class ApplyController extends \BaseController {
 	{
 		$cv = Cv::where('user_id','=',Auth::user()->id)->where('status','=',1)->first();
 			if(empty($cv)){
-				return Redirect::back()
+				return Redirect::to('/my-resume')
 					->with('warning', 'First of all, you should complate your CVs than active your CVs');
 			}
 		$input = Input::all();

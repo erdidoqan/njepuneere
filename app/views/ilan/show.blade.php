@@ -27,7 +27,12 @@
     </div>
   </div>
   </div>
-
+@if (Session::has('warning'))
+<div class="alert alert-danger alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <strong>Warning!</strong> {{Session::get('warning')}}
+</div>
+@endif 
   <div class="panel panel-fixed panel-primary">
     <div class="panel-body">
       <div class="col-sm-12">
@@ -136,12 +141,7 @@
     <div class="col-sm-12">
       <div class="col-sm-4">
 
-            @if (Session::has('warning'))
-            <div class="alert alert-danger alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <strong>Success!</strong> {{Session::get('warning')}}
-            </div>
-            @endif 
+            
         {{ Form::open(array('route' => array('apply.store', $ads->id, $adsInfo->id, $adsInfo->user_id))) }}
             {{ Form::hidden('apply',1) }}
             {{ Form::hidden('ads',$ads->id) }}
