@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <body>
-      @include('partials/nav-in')
+      @include('partials/nav')
 <div class="container">
     <div class="col-xs-3" style="margin-top:30;">
       @include('cv/create-side')
