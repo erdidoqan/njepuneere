@@ -1,7 +1,7 @@
 <div class="panel panel-success"  style="margin-top:30px;">
     <div class="panel-body">
 		<div class="col-sm-12">
-		<a href="#" data-toggle="modal" data-target=".slacker-modal">
+		<a href="/pr-image">
 			<img src="{{Auth::user()->pr_img}}" class="img-thumbnail" alt="demo user" style="width:100%">
 		</a>
 			<div class="padding-9">

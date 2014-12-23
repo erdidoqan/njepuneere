@@ -37,9 +37,12 @@ class CvController extends \BaseController {
 
 		if ($v->passes()){
 
+		$cv = Cv::where('user_id','=',Auth::user()->id)->update(array('status' => 0));
+
 		$cv = new Cv;
 		$cv->resume_name= Input::get('resume_name');
 		$cv->languages = Input::get('languages');
+		$cv->status = 1;
 		$cv->user_id = Auth::user()->id;
 		$cv->save();
 

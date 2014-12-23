@@ -37,6 +37,7 @@ Route::group(array('before' => 'auth'), function(){
 	Route::get('/pre-written', "MyPageController@pre_written");
 	Route::get('/user-up', "AuthController@user_update");
 	Route::get('/prewrittenic', "MyPageController@prewritten-ic");
+	Route::get('/pr-image', "MyPageController@image");
 
 	//Resource Controller
 	Route::resource('cv', "CvController");
@@ -50,6 +51,8 @@ Route::group(array('before' => 'auth'), function(){
 	Route::resource('apply', "ApplyController");
 	Route::resource('prewritten', "PrewrittenController");
 	Route::post('/cv/cvstatus' , "CvController@cvstatus");
+	Route::post('/pr_img/{id}' , "AuthController@post_img");
+	Route::post('/crop/{id}', "AuthController@crop");
 });
 
 //Message Controller
