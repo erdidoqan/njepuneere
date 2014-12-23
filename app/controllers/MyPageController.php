@@ -118,7 +118,7 @@ class MyPageController extends BaseController {
 	}
 	public function image()
 	{
-		$data['logo'] = Session::get('logo');
+		$data['pr_img'] = Session::get('pr_img');
 		$data['modal'] = (Session::get('modal') == null ? 'false' : 'true');
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
