@@ -96,7 +96,7 @@
 	        };
 
 	loadScript("/js/plugin/jcrop/jquery.Jcrop.min.js", function() {
-		loadScript("/js/plugin/jcrop/jquery.color.min.js", pagefunction);
+	loadScript("/js/plugin/jcrop/jquery.color.min.js", pagefunction);
 	});
 
 </script>

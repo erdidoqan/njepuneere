@@ -36,7 +36,7 @@
 				</div>
 				<div class="project-context pull-right">
 					<span>
-						<img src="{{Auth::user()->pr_img}}" alt="...." class="img-rounded imgpr" style="height:30px;width:30px;">
+						<a href="/pr-image"><img src="{{Auth::user()->pr_img}}" alt="...." class="img-rounded imgpr" style="height:30px;width:30px;"></a>
 					</span>
 				</div>
 			</div>

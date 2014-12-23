@@ -225,7 +225,7 @@
 				if(Input::hasFile('pr_img')){
 					$pr_img = Input::file('pr_img');
 			        $filename  = Auth::user()->adi.'-'.Auth::user()->id. '.'.$pr_img->getClientOriginalExtension();
-			        $path = "/var/www/njepuneere/public/img/pr_img/".$filename;
+			        $path = "/public/img/pr_img/".$filename;
 		            Image::make($pr_img->getRealPath())->save($path);
 			        $pr_img = 'img/pr_img/'.$filename;
 			        $pr_img = Birey_user::where('id','=',$id)->update(array('pr_img' => $pr_img));
