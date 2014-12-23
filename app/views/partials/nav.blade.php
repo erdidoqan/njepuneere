@@ -7,9 +7,9 @@
 			</div>
 		</div>
 		<div id="erds" data-spy="affixed-top.bs.affix" data-offset-top="600">
-			<form class="navbar-form navbar-left" role="search">
+			{{ Form::open(array('url' => 'search', 'class'=>'navbar-form navbar-left')) }}
 				<div class="form-group">
-					<input class="form-control" placeholder="Search" type="text">
+					<input class="form-control" placeholder="Find jobs and more" type="text">
 				</div>
 				<div class="form-group">
 					{{Form::place()}}
@@ -17,7 +17,7 @@
 				<button type="submit" class="btn btn-success btn-sm" style="border-radius: 5px;">
 		        	<span class="fa fa-1x fa-search"></span> 
 		        </button>
-			</form>
+			{{Form::close()}}
 		</div>
 		<div class="pull-right">
 			@if(!Auth::user())

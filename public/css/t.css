@@ -176,6 +176,7 @@ border-color: rgba(0, 0, 0, 0.57);
     margin-top: -52px;
     top: 0;
     width: 100%
+     transition: all 1s ease-in-out;
 }
 
 #erds{
