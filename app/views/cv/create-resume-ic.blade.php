@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
-@include('partials/header')
-<title>CV | Njepuneere</title>
+    <title>CV | Njepuneere</title>
   </head>
   <body>
 <div class="panel panel-success"  style="margin-top:30px;">
