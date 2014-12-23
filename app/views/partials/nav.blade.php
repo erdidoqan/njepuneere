@@ -32,7 +32,7 @@
 				</div> 
 
 				<div class="project-context pull-right">
-					<span><a href="/user-up" class="text-success">{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}</a></span>
+					<span><a href="/user-up" class="text-successi">{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}</a></span>
 				</div>
 				<div class="project-context pull-right">
 					<span>
