@@ -12,7 +12,11 @@ class HomeController extends BaseController {
 		$last = Ads::orderBy('created_at','DESC')->paginate(12); 
 		$adsInfo = AdsInfo::find($id);
 		$ads = Ads::find($id);
-		
+		if (Auth::check()){
+			$checkCv = CV::where('user_id','=',Auth::user()->id)->first();
+			$cv = CV::where('user_id','=',Auth::user()->id)->orderBy('created_at','DESC')->paginate(5);
+		}
+
 		return View::make('ilan.show')->with(compact('adsInfo', 'ads', 'cv', 'last', 'checkCv'));
 		
 	}
