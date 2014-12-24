@@ -1,5 +1,10 @@
 @extends('cv.page')
 
+@section('title')
+<title>My Messages | Njepuneere</title>
+@stop
+
+
 @section('content')
 <div class="col-sm-12" style="margin-top:30px;">
   <div class="jarviswidget jarviswidget-color-greenDark" id="wid-id-1"

@@ -141,14 +141,8 @@
     <div class="col-sm-12">
       <div class="col-sm-4">
 
-            
-        {{ Form::open(array('route' => array('apply.store', $ads->id, $adsInfo->id, $adsInfo->user_id))) }}
-            {{ Form::hidden('apply',1) }}
-            {{ Form::hidden('ads',$ads->id) }}
-            {{ Form::hidden('adsInfo',$adsInfo->id) }}
-            {{ Form::hidden('sirket_id', $adsInfo->user_id) }}
-          {{ Form::submit('Apply', array('title'=>'Apply','id' => 'apply','class' => 'btn btn-warning btn-block')) }}
-        {{ Form::close() }}
+            <a href="#apply" class="btn btn-warning btn-block" data-toggle="modal">Apply</a>
+        
       </div>
       <div class="col-sm-4">
         
@@ -181,42 +175,79 @@
     </div>
   </div>
   </div>
-    @if(Session::has('warning'))
+
+
+<!-- Modal -->
+<div class="modal fade" id="apply" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          &times;
+        </button>
+        <h4 class="modal-title">
+          {{ucwords($adsInfo->com_name)}} <small>({{ucwords($adsInfo->ads_name)}} )</small>
+        </h4>
+      </div>
+      <div class="modal-body no-padding">
+      {{ Form::open(array('route' => array('apply.store', $ads->id, $adsInfo->id, $adsInfo->user_id),'id'=>'smart-form-register','class'=>'smart-form')) }}
+              <fieldset>
+                <section>
+                  <div class="row">
+                    <label class="label col col-2">Resume</label>
+                    <div class="col col-10">
+                      <label class="input"> 
+                        @if($cv->count())
+                        <select class="form-control" id="category">
+                          @foreach($cv as $c)
+                          <option value="{{$c->id}}">{{ ucwords($c->resume_name) }}</option>
+                          @endforeach
+                        </select>
+                        @else
+                          <a href="/my-resume" class="btn btn-block btn-danger">You must create a CV !</a>
+                        @endif
+                      </label>
+                    </div>
+                  </div>
+                </section>
+
+                <section>
+                  <div class="row">
+                    <div class="col col-2"></div>
+                    <div class="col col-10">
+                      <label class="textarea">
+                          <i class="icon-append fa fa-comment"></i>
+                          {{Form::textarea('prewritten', '', array('rows'=>'4', 'id'=>'message', 'placeholder'=>'Pre Written'))}}
+                      </label>
+                      <div class="note">
+                          <strong>Note:</strong> works in Chrome, Firefox, Opera and IE10.
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </fieldset>
+              
+              <footer>
+                
+                {{ Form::hidden('apply',1) }}
+                {{ Form::hidden('ads',$ads->id) }}
+                {{ Form::hidden('adsInfo',$adsInfo->id) }}
+                {{ Form::hidden('sirket_id', $adsInfo->user_id) }}
+                {{ Form::submit('Apply', array('title'=>'Apply','id' => 'applied','class' => 'btn btn-warning')) }}
+                
+                
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  Cancel
+                </button>
+              </footer>
+            {{ Form::close() }}
+      </div>
+    </div>
+  </div>
+</div>
+
       <script type="text/javascript">
-                  $('#apply').click(function() {
-                
-                    $.smallBox({
-                      title : "First of all, you should complate your CVs than active your CVs",
-                      content : "<i class='fa fa-clock-o'></i> <i>You did apply to ads</i>",
-                      color : "#C46A69",
-                      iconSmall : "fa fa-thumbs-up bounce animated",
-                      timeout : 4000
-                    });
-                
-                  })
-
-                </script>
-
-    @endif
-  
-      @if($errors->any())
-               <script type="text/javascript">
-                  $('#apply').click(function() {
-                
-                    $.smallBox({
-                      title : "{{$adsInfo->ads_name}}",
-                      content : "<i class='fa fa-clock-o'></i> <i>You did apply to ads</i>",
-                      color : "#C46A69",
-                      iconSmall : "fa fa-thumbs-up bounce animated",
-                      timeout : 4000
-                    });
-                
-                  })
-
-                </script>
-      @endif  
-      <script type="text/javascript">
-      $('#apply').click(function() {
+      $('#applied').click(function() {
     
         $.smallBox({
           title : "{{$adsInfo->ads_name}}",
