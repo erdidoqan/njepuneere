@@ -175,16 +175,18 @@ border-color: rgba(0, 0, 0, 0.57);
 #nav.affix {
     margin-top: -52px;
     top: 0;
-    width: 100%
-     transition: all 1s ease-in-out;
+    width: 100%;
+     animation-delay: 2s, 4ms;
 }
 
 #erds{
    display: -webkit-inline-box;
+    -moz-inline-box;
 }
 
 #erds.affix{
    display: block !important;
+   display: -moz-box;
    margin-left: 217px;
 }
 

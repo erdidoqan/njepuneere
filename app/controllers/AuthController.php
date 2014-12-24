@@ -213,33 +213,7 @@
 	    }   
 	
 
-		public function post_img($id)
-		{
-			
-			$input = Input::all();
-			$rules = array ('pr_img' => 'required|image|max:1000');
-			$v = Validator::make($input,$rules);
-
-			if($v->passes())
-			{
-				if(Input::hasFile('pr_img')){
-					$pr_img = Input::file('pr_img');
-			        $filename  = Auth::user()->adi.'-'.Auth::user()->id. '.'.$pr_img->getClientOriginalExtension();
-			        $path = "/var/www/njepuneere/public/img/pr_img/".$filename;
-		            Image::make($pr_img->getRealPath())->save($path);
-			        $pr_img = '/img/pr_img/'.$filename;
-			        $pr_img = Birey_user::where('id','=',$id)->update(array('pr_img' => $pr_img));
-
-			        Session::put('modal', 'true');
-			    } else {
-			    	$path = Input::get('img_bckp');
-			    }
-		        Session::put('pr_img', $path);
-		        return Redirect::back();
-		    }
-		    return Redirect::back()->withErrors($v);
-		}
-
+		
 		public function crop($id)
 		{
 			Session::forget('modal');

@@ -3,13 +3,13 @@
 	<div class="container">
 		<div class="turgittin">
 			<div class="project-context hidden-xs">
-				<span id="logo"><a href="/"> <img src="http://104.131.119.56/img/logo.png" alt="Njepuneere logo"> </a></span>
+				<span id="logo"><a href="/"> <img src="/img/logo1.png" alt="Njepuneere logo"> </a></span>
 			</div>
 		</div>
 		<div id="erds" data-spy="affixed-top.bs.affix" data-offset-top="600">
 			{{ Form::open(array('url' => 'search', 'class'=>'navbar-form navbar-left')) }}
 				<div class="form-group">
-					<input class="form-control" placeholder="Find jobs and more" type="text">
+					<input class="form-control" placeholder="Find jobs and more" type="text" id="project">
 				</div>
 				<div class="form-group">
 					{{Form::place()}}
@@ -62,7 +62,7 @@
         </div>
 </nav>
 </header>
-<div style="padding:36px;">asd</div>
+<div style="padding:36px;">&nbsp;</div>
 @include('partials/scripts')
 @include('partials/modal')
 

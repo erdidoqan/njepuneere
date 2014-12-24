@@ -26,10 +26,24 @@
         			</div>
         		</div>
         		<div class="col-sm-12">
-        			{{ Form::open(array('url' => array('pr_img',Auth::user()->id), 'enctype' => 'multipart/form-data')) }}
-						{{ form::file('pr_img') }}<br>
-						<input type="hidden" name="img_bckp" value="{{$data['pr_img']}}" /> 
-						{{ form::submit('update', array('class'=>'btn btn-success')) }}
+        			{{ Form::open(array('url' => array('pr_img',Auth::user()->id), 'class'=>'smart-form', 'enctype' => 'multipart/form-data')) }}
+					<div class="row">
+						<div class="col-sm-5">
+							<label for="file" class="input input-file state-success">
+								<div class="button state-success">
+									<input type="pr_img" name="file" onchange="this.parentNode.nextSibling.value = this.value" class="valid">
+									Browse
+								</div>
+									<input type="text" placeholder="Include some files" readonly="" class="valid">
+							</label>
+						</div>
+							<input type="hidden" name="img_bckp" value="{{$data['pr_img']}}" /> 
+						<div class="col-sm-5">
+							<button type="submit" class="btn btn-success">
+										Validate Form
+									</button><br>
+						</div>
+					</div>
 					{{ Form::close() }}
 					<input type="hidden" id="modal" value="{{$data['modal']}}" /><br>
         		</div>		
@@ -76,6 +90,7 @@
 	            $('#cropbox').Jcrop({
 	                aspectRatio : 4,
 	                onSelect : updateCoords
+	                
 	            });
 	            $('#myModal').modal({show: modal});
 	        });
