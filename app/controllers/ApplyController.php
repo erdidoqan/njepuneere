@@ -37,6 +37,7 @@ class ApplyController extends \BaseController {
 				return Redirect::to('/my-resume')
 					->with('warning', 'First of all, you should complate your CVs than active your CVs');
 			}
+
 		$input = Input::all();
 		$v = Validator::make($input, Apply::$rules);
 		if ($v->passes())
@@ -48,6 +49,7 @@ class ApplyController extends \BaseController {
 			$apply->ads_id = Input::get('ads');
 			$apply->user_id = Auth::user()->id;
 			$apply->sirket_id = Input::get('sirket_id');
+			$apply->cv_id = $cv->id;
 			$apply->save();
 
 			return Redirect::back();
