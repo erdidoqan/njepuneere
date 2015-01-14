@@ -1,4 +1,4 @@
-ass
+
 <nav class="navbar navbar-default" id="navbar">
 	<div class="container">
 		<div class="turgittin">
