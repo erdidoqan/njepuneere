@@ -71,19 +71,19 @@
 
 	$('#nav').affix({
 	  offset: {
-	    top: 150,
+	    top: 210,
 	  }
 	})
 
 	$('#navbar').affix({
 	  offset: {
-	    top: 150,
+	    top: 210,
 	  }
 	})
 
 	$('#erds').affix({
 	  offset: {
-	    top: 150,
+	    top: 210,
 	  }
 	})
 $(function () {
