@@ -1,5 +1,5 @@
 <?php
-
+git stash -u
 use Illuminate\Auth\UserTrait;
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableTrait;
@@ -20,7 +20,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		'email' => 'required|unique:birey_user',
 		'sifre' => 'required' 
 		);
-	public static $img_sirket_src = 'http://institutional.njepuneere.loc/';//kullanilisi -> User::$img_sirket_src."".
+	public static $img_sirket_src = 'http://institutional.njepuneere.com/';//kullanilisi -> User::$img_sirket_src."".
 	//public static $img_home_src = 'http://njepuneere.com';
 
 	/**
