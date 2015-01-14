@@ -6,7 +6,7 @@
 @stop
 
 @section('content')
-<div class="section1" style="background-image: url(/img/hr1.jpg);">
+<div class="section1">
 <div class="containert">
   <div class="col-md-12">
   <div class="search-box-name">

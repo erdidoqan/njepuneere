@@ -49,12 +49,17 @@ body #navbar-name {color:#f1f1f1;display: block;font-size: 15px;font-weight: 200
    color: #fff;}
 
 body .section1 {
+   background: url("/img/hr1.jpg");
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: center;
    margin: 0 auto;
    padding-bottom: 30px;
    padding-left: 0;
    padding-right: 0;
    padding-top: 50px;
    height:350px;
+   width: 100%;
 }
 
 .ads {
