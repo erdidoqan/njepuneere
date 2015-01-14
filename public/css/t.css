@@ -53,6 +53,7 @@ body .section1 {
    background-color: transparent;
    background-repeat: no-repeat;
    background-position: center;
+   background-size: cover;
    margin: 0 auto;
    padding-bottom: 30px;
    padding-left: 0;
