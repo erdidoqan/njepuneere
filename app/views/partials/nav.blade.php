@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="turgittin">
 			<div class="project-context hidden-xs">
-				<span id="logo"><a href="/"> <img src="/img/logo1.png" alt="Njepuneere logo"> </a></span>
+				<span id="logo"><a href="/"> <img src="/img/logo.png" alt="Njepuneere logo"> </a></span>
 			</div>
 		</div>
 		<div id="erds" data-spy="affixed-top.bs.affix" data-offset-top="600">
