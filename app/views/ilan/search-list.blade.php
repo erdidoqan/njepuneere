@@ -1,4 +1,9 @@
 @extends('layouts.search')
+
+@section('title')
+<title>{{ucwords($search)}}  Njepuneere</title>
+@stop
+
 @section('content')
 <div class="panel panel-fixed panel-primary">
   <div class="panel-body">

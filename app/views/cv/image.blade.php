@@ -29,19 +29,22 @@
         			{{ Form::open(array('url' => array('pr_img',Auth::user()->id), 'class'=>'smart-form', 'enctype' => 'multipart/form-data')) }}
 					<div class="row">
 						<div class="col-sm-5">
-							<label for="file" class="input input-file state-success">
-								<div class="button state-success">
-									<input type="pr_img" name="file" onchange="this.parentNode.nextSibling.value = this.value" class="valid">
-									Browse
-								</div>
-									<input type="text" placeholder="Include some files" readonly="" class="valid">
-							</label>
+							<section>	
+								<label class="input input-file">
+								<span class="button">
+									<input class="" type="file" name="pr_img" onchange="this.parentNode.nextSibling.value = this.value" value="">Browse
+								</span><input class="" type="text" name="file-display" placeholder="Browse your profile photo" readonly="" value="">	
+								</label>
+							</section>
 						</div>
 							<input type="hidden" name="img_bckp" value="{{$data['pr_img']}}" /> 
-						<div class="col-sm-5">
-							<button type="submit" class="btn btn-success">
-										Validate Form
-									</button><br>
+							</div>
+						<div class="row">
+							<div class="col-sm-5">
+							<footer>
+								<button class="btn btn-primary btn-md " type="submit">Submit</button>
+							</footer>
+							</div>
 						</div>
 					</div>
 					{{ Form::close() }}

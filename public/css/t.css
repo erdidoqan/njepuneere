@@ -1,12 +1,20 @@
 body .navbar-default {
-   background-color: #fff;
-   margin-bottom: 10px;
+   background-color: #ffffff;
+   width: 100%;
+   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+   box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+   height: 65px;
+   z-index: 999999999;
+   position: fixed;
+   top: 0;
+   left: 0;
+   padding: 7px 0;
 }
 body #project-context > *:first-child, .project-context > *:first-child {color:#f1f1f1;display: block;font-size: 15px;font-weight: 200;padding-left: 0;text-align: left;text-shadow: 0 0 0px #fff;text-transform: inherit;font-family: 'Cabin';}
 body #navbar-name {color:#f1f1f1;display: block;font-size: 15px;font-weight: 200;padding-left: 0;text-align: left;text-shadow: 0 0 0px #fff;text-transform: inherit;font-family: 'Cabin';}
 
-.turgittin {float: left;margin-top: 8px;}
-.erd {float: right;margin-top: -8px;}
+.turgittin {float: left;margin-top: 0px;}
+.erd {float: right;margin-top: 0px;}
 .search-box-p{
    font-family: 'Cabin';
    color: #fff;
@@ -91,12 +99,12 @@ body .section1 {
 /* scv header */
 .scv-header-bottom {
    position: fixed;
-   top: 56px;
+   top: 65px;
    left: 0;
    width: 100%;
-   height: 35px;
-   background-color: rgba(115, 158, 115, 0.8);
-   z-index: 9999;
+   height: 33px;
+   background-color: rgba(0,0,0,.6);
+   z-index: 99999;
 }
 .scv-container {
    width: 1166px;
@@ -153,11 +161,11 @@ ul, menu, dir {
 }
 
 body .input-lg {
-height: 60px;
-padding: 10px 16px;
-font-size: 17px;
-line-height: 1.33;
-border-radius: 5px;
+   height: 60px;
+   padding: 10px 16px;
+   font-size: 17px;
+   line-height: 1.33;
+   border-radius: 5px;
 }
 
 body .btn-lg {
@@ -168,26 +176,40 @@ padding: 18px 23px;
    height: 40px;
 }
 
-body .navbar-default {
-border-color: rgba(0, 0, 0, 0.57);
+#navbar.affix{
+   height: 55px;
+   padding: 3px;
+   top: 0;
+   -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
+}
+
+#nav{
+   -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
 }
 
 #nav.affix {
-    margin-top: -52px;
-    top: 0;
-    width: 100%;
-     animation-delay: 2s, 4ms;
+   top:0;
+   -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
 }
 
 #erds{
    display: -webkit-inline-box;
-    -moz-inline-box;
+   display: -moz-inline-box;
 }
 
 #erds.affix{
    display: block !important;
    display: -moz-box;
-   margin-left: 217px;
+   margin-left: 222px;
 }
 
 .imgpr{

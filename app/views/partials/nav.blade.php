@@ -1,5 +1,5 @@
-<header>
-<nav  class="navbar navbar-default navbar-fixed-top">
+
+<nav class="navbar navbar-default" id="navbar">
 	<div class="container">
 		<div class="turgittin">
 			<div class="project-context hidden-xs">
@@ -43,26 +43,26 @@
 			@endif
 		</div>
 	</div>
-	<div class="scv-header-bottom" data-spy="affixed-top.bs.affix" data-offset-top="600" id="nav">
-            <div class="scv-container">
-		       	<div class="project-context hidden-xs">
-		        	<a class="project-selector" href="/my-page"> My Page</a>
-		      	</div>
-				<div class="project-context hidden-xs">
-					<span class="project-selector dropdown-toggle"  data-toggle="dropdown"> My Career <i class="fa fa-angle-down"></i></span>
-					<ul class="dropdown-menu">
-					  <li><a href="/my-resume">My Resume (5)</a></li>
-					  <li><a href="/my-application">My Application</a></li>
-					  <li><a href="/pre-written">My Pre-Written</a></li>
-					  <li><a href="/">My Message</a></li>
-					  <li class="divider"></li><li><a href="/"><i class="fa fa-file-pdf-o"></i> File (PDF)</a></li>
-					</ul>
-				</div>
-            </div>
-        </div>
 </nav>
-</header>
-<div style="padding:36px;">&nbsp;</div>
+<div class="scv-header-bottom" id="nav">
+    <div class="scv-container">
+       	<div class="project-context hidden-xs">
+        	<a class="project-selector" href="/my-page"> My Page</a>
+      	</div>
+		<div class="project-context hidden-xs">
+			<span class="project-selector dropdown-toggle"  data-toggle="dropdown"> My Career <i class="fa fa-angle-down"></i></span>
+			<ul class="dropdown-menu">
+			  <li><a href="/my-resume">My Resume (5)</a></li>
+			  <li><a href="/my-application">My Application</a></li>
+			  <li><a href="/pre-written">My Pre-Written</a></li>
+			  <li><a href="/">My Message</a></li>
+			  <li class="divider"></li><li><a href="/"><i class="fa fa-file-pdf-o"></i> File (PDF)</a></li>
+			</ul>
+		</div>
+    </div>
+</div>
+
+<div style="padding:18px;">&nbsp;</div>
 @include('partials/scripts')
 @include('partials/modal')
 
@@ -71,13 +71,19 @@
 
 	$('#nav').affix({
 	  offset: {
-	    top: 200,
+	    top: 150,
+	  }
+	})
+
+	$('#navbar').affix({
+	  offset: {
+	    top: 150,
 	  }
 	})
 
 	$('#erds').affix({
 	  offset: {
-	    top: 200,
+	    top: 150,
 	  }
 	})
 $(function () {

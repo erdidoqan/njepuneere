@@ -31,7 +31,7 @@
             @yield('content')
 <div class="container">
 
-        <div class="col-sm-8" style="margin-top:20px;">
+        <div class="col-sm-8" style="margin-top:10px;">
 
            @include('partials/ilan')
          </div>
