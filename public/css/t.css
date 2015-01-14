@@ -49,7 +49,7 @@ body #navbar-name {color:#f1f1f1;display: block;font-size: 15px;font-weight: 200
    color: #fff;}
 
 body .section1 {
-   background-image: url(/img/hr1.jpg);
+   background: url("/img/hr1.jpg") center center no-repeat scroll;
    margin: 0 auto;
    padding-bottom: 30px;
    padding-left: 0;
