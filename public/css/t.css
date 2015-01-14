@@ -221,9 +221,16 @@ padding: 18px 23px;
 .imgpr{
    height:30px;
    width:30px;
-   margin-top: -5px;
+   margin-top: 0px;
    margin-right: -17px;
 }
 
 .text-successi{
    color: #000000;
+   font-family: 'Cabin';
+   font-size: 20px;
+}
+.ext{
+   font-size: 20px;
+   font-family: 'Cabin';
+}

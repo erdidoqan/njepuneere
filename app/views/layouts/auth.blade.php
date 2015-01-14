@@ -7,7 +7,7 @@
         @include('partials/nav')
             
         <div class="container">
-            <div class="col-sm-8" style="margin-top:30px;margin-left:165px;">
+            <div class="col-sm-8" style="margin-top:70px;margin-left:165px;">
                 @yield('content')
             </div>
         </div>
