@@ -10,7 +10,7 @@
     <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
         <div class="media">
             <a class="pull-left" href="ads/{{$p->id}}" target="_parent">
-            <img alt="{{ucwords($p->com_name)}}" class="img-responsive" src="{{User::$img_sirket_src."".$p->logo}}"></a>
+            <img alt="{{ucwords($p->com_name)}}" class="img-responsive" src="{{User::$img_sirket_src."".$p->logo}}" style="max-width: 191px;max-height: 75px;"></a>
 
             <div class="clearfix visible-sm"></div>
 
