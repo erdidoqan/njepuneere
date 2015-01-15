@@ -1,21 +1,35 @@
 @if($adsInfo->count())
     @foreach($adsInfo as $p)
-        <a href="ads/{{$p->id}}">
-            <div class="ads">
-                <div class="ads-img">
-                    <img src="{{User::$img_sirket_src."".$p->logo}}" class="img-rounded" />
-                </div>
+        
+    
 
-                <div class="ads-text">
-                    <div class="com_name">
-                        {{ucwords($p->com_name)}}
-                    </div>
-                    <div class="ads_name">
-                        {{$p->ads_name}}
-                    </div>
-                    
-                </div>
+
+
+
+    <!-- Begin Listing: 609 W GRAVERS LN-->
+    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+        <div class="media">
+            <a class="pull-left" href="ads/{{$p->id}}" target="_parent">
+            <img alt="{{ucwords($p->com_name)}}" class="img-responsive" src="{{User::$img_sirket_src."".$p->logo}}"></a>
+
+            <div class="clearfix visible-sm"></div>
+
+            <div class="media-body fnt-smaller">
+                <a href="#" target="_parent"></a>
+
+                <h4 class="media-heading">
+                  <a href="#" target="_parent">{{ucwords($p->ads_name)}} <small class="pull-right">{{ucwords($p->com_name)}}</small></a></h4>
+
+
+                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                    <li><i class="fa fa-location-arrow"></i> {{ucwords($p->work_place)}}</li>
+                </ul>
+
+                <p class="hidden-xs">{{str_limit($p->job_desc, 210)}}
+                </p><span class="fnt-smaller fnt-lighter fnt-arial">{{str_limit($p->qua, 50)}}</span>
             </div>
-        </a>
+        </div>
+    </div><!-- End Listing-->
+
     @endforeach
 @endif
