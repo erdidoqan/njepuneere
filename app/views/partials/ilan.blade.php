@@ -8,10 +8,10 @@
 
                 <div class="ads-text">
                     <div class="com_name">
-                        {{ucwords($p->com_name)}}
+                        {{ucwords(str_limit($p->com_name, 20))}}
                     </div>
                     <div class="ads_name">
-                        {{$p->ads_name}}
+                        {{ucwords(str_limit($p->ads_name, 20))}}
                     </div>
                     
                 </div>
