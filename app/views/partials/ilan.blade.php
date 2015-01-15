@@ -25,7 +25,7 @@
                     <li><i class="fa fa-location-arrow"></i> {{ucwords($p->work_place)}}</li>
                 </ul>
 
-                <p class="hidden-xs">{{str_limit($p->job_desc, 210)}}
+                <p class="hidden-xs">{{str_limit($p->job_desc, 50)}}
                 </p><span class="fnt-smaller fnt-lighter fnt-arial">{{str_limit($p->qua, 50)}}</span>
             </div>
         </div>
