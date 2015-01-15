@@ -74,7 +74,7 @@ body .section1 {
 }
 .ads-img {
      background: none repeat scroll 0 0 #fff;
-   border-radius: 10px;
+   /*border-radius: 10px;*/
    display: flex;
    height: 100%;
    margin: 0 auto;
@@ -87,7 +87,7 @@ body .section1 {
    text-align: center;
    width: 100%;
 }
-.ads-img img {height: 30px;margin: 15px 0 0 20px!important;width: 107px;border-radius: 8px;  }
+.ads-img img {height: 30px;margin: 15px 0 0 20px!important;width: 107px;}
 
 .com_name{
    font-size: 12px;
