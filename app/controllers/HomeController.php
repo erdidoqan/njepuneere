@@ -3,7 +3,7 @@
 class HomeController extends BaseController {
 	public function home()
 	{
-		$adsInfo = AdsInfo::orderBy('created_at','DESC')->paginate(6); 
+		$adsInfo = AdsInfo::orderBy('created_at','DESC')->paginate(20); 
 		return View::make('site.index')->with('adsInfo', $adsInfo);
 	}
 
