@@ -4,7 +4,7 @@
     <title>CV | Njepuneere</title>
   </head>
   <body>
-<div class="panel panel-success"  style="margin-top:30px;">
+<div class="panel panel-success"  style="margin-top:70px;">
 	<div class="panel-body">
 		<span>Hits: 0</span>
 		<div class="btn-group right">
