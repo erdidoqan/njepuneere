@@ -26,7 +26,7 @@
         			</div>
         		</div>
         		<div class="col-sm-12">
-        			{{ Form::open(array('url' => array('pr_img',Auth::user()->id), 'class'=>'smart-form', 'enctype' => 'multipart/form-data')) }}
+        			{{ Form::open(array('url' => array('/pr_img',Auth::user()->id), 'class'=>'smart-form', 'enctype' => 'multipart/form-data')) }}
 					<div class="row">
 						<div class="col-sm-5">
 							<section>	

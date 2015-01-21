@@ -91,24 +91,7 @@
 	        return Redirect::to('BireyGiris')->with('error', 'We could not activate your account. Please, try again later.');
 	    }
 
-		public function postPr_img()
-		{
-			$input = Input::all();
-			$rules = array ('pr_img' => 'required|image|max:1000');
-			$v = Validator::make($input,$rules);
-
-			if($v->passes()){
-				$pr_img = Input::file('pr_img');
-				$filename = Auth::user()->adi.Auth::user()->soyadi.'-'.Auth::user()->id.'.jpg';//burada ayni isimde kaydettiriyorum sorun olabilir!
-				$path = public_path('img/pr_img/' . $filename);
-				Image::make($pr_img->getRealPath())->resizeCanvas(10, -10, 'center', true)->save($path);
-				$pr_img = '/img/pr_img/'.$filename;
-				$pr_img = User::where('id', '=', Auth::user()->id)->update(array('pr_img' => $pr_img));
-
-				return Redirect::back();
-			}
-			return Redirect::back()->withErrors($v);
-		}
+		
 
 		/* Kullanıcı Girişi */
 		public function getBireyGiris()
@@ -212,8 +195,25 @@
 	        return Redirect::to('BireyGiris')->with('error', 'Could not request new password.');
 	    }   
 	
+		public function post_img($id)
+		{
+			$input = Input::all();
+			$rules = array ('pr_img' => 'required|image|max:1000');
+			$v = Validator::make($input,$rules);
 
-		
+			if($v->passes()){
+				$pr_img = Input::file('pr_img');
+				$filename = Auth::user()->adi.Auth::user()->soyadi.'-'.Auth::user()->id.'.jpg';//burada ayni isimde kaydettiriyorum sorun olabilir!
+				$path = public_path('img/pr_img/' . $filename);
+				Image::make($pr_img->getRealPath())->resizeCanvas(10, -10, 'center', true)->save($path);
+				$pr_img = '/img/pr_img/'.$filename;
+				$pr_img = User::where('id', '=', Auth::user()->id)->update(array('pr_img' => $pr_img));
+
+				return Redirect::back();
+			}
+			return Redirect::back()->withErrors($v);
+		}
+
 		public function crop($id)
 		{
 			Session::forget('modal');
