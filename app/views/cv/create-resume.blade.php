@@ -6,10 +6,10 @@
   <body>
       @include('partials/nav')
 <div class="container">
-    <div class="col-xs-3" style="margin-top:30;">
+    <div class="col-xs-3" style="margin-top:70;">
       @include('cv/create-side')
     </div>
-    <div class="col-xs-9" style="margin-top:30;">
+    <div class="col-xs-9" style="margin-top:70;">
       @include('cv/create-resume-ic')
     </div>
 </div>
