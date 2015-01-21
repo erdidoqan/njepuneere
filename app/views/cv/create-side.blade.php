@@ -1,5 +1,5 @@
 
-<div class="panel panel-success"  style="position: fixed; margin-top: 70px;">
+<div class="panel panel-success"  style="position: fixed; margin-top: 70px;" id="side-panel"  data-spy="affixed-top.bs.affix" data-offset-top="600">
     <div class="panel-body">
       <div class="col-sm-12">
       <section class="col col-5">
@@ -12,7 +12,7 @@
               {{$cv->rate}}% Complete
             </div>
           </div><hr>
-          <ul class="inbox-menu-lg">
+          <ul class="inbox-menu-lg" >
               <li class="active">
                 <a class="inbox-load" href="#pers"><i class="fa fa-caret-right"></i> Personal Information </a>
               </li>
@@ -41,3 +41,14 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+    $('#side-panel').affix({
+      offset: {
+        top: 210,
+      }
+    })
+
+    $('body').scrollspy({ target: '.inbox-menu-lg' })
+
+  </script>

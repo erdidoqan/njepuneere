@@ -16,14 +16,11 @@ body{
   background: #EDEFF1;
   height: auto;
   padding-bottom: 30px;
-  position: relative;
   width: 100%;
   border-bottom: 1px solid #CCCCCC;
   border-top: 1px solid #DDDDDD;
 }
-.footer p {
-  margin: 0;
-}
+
 .footer img {
   max-width: 100%;
 }
@@ -60,7 +57,6 @@ body{
 }
 .newsletter-box input#appendedInputButton {
   background: #FFFFFF;
-  display: inline-block;
   float: left;
   height: 30px;
   clear: both;
@@ -73,7 +69,6 @@ body{
   -o-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
-  display: inline-block;
   height: 40px;
   padding: 0;
   width: 100%;

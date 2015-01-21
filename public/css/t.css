@@ -202,6 +202,14 @@ padding: 18px 23px;
    transition: all 0.5s ease-out;
 }
 
+#side-panel.affix{
+  top: 20px;
+   -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
+}
+
 #nav.affix {
    top:0;
    -webkit-transition: all 0.5s ease-out;

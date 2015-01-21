@@ -75,6 +75,8 @@
 	  }
 	})
 
+	
+
 	$('#navbar').affix({
 	  offset: {
 	    top: 210,
