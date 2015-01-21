@@ -2,7 +2,7 @@
     <div class="panel-body">
 		<div class="col-sm-12">
 		<a href="/pr-image">
-			<img src="{{Auth::user()->pr_img}}" class="img-thumbnail" alt="demo user" style="width:100%">
+			<img src="{{Auth::user()->pr_img}}" class="img-thumbnail" alt="demo user" style="width:100%"><hr>
 		</a>
 			<div class="padding-9">
 				<h4 class="font-md"><strong class="text-danger">{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}</strong>
