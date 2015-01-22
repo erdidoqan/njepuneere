@@ -32,7 +32,7 @@
 <div class="panel panel-default" style="margin-top:20px;">
 	<div class="panel-body">
 	
-		<h4 class="text-info"><b>Special Jobs Ads</b></h4>
+		<h4 class="text-primary"><b>Special Jobs Ads</b></h4>
 		<div class="col-sm-6">
 			<a href="#"><span class="text-primary">Region Pages</span></a><br>
 			<a href="#"><span class="text-primary">Disabled</span></a><br>
@@ -60,7 +60,7 @@
 			<a href="#"><span class="text-primary">Part-Time</span></a><br>
 			<a href="#"><span class="text-primary">All Jobs Ads <span class="glyphicon glyphicon-forward"></span></span></a><br><br>
 		</div>
-		<h4 class="text-info"><b>Regional Jobs Ads</b></h4>
+		<h4 class="text-primary"><b>Regional Jobs Ads</b></h4>
 		<div class="col-sm-6">
 			<a href="#"><span class="text-primary">Region Pages</span></a><br>
 			<a href="#"><span class="text-primary">Disabled</span></a><br>
