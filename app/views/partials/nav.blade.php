@@ -6,7 +6,7 @@
 				<span id="logo"><a href="/"> <img src="/img/logo.png" alt="Njepuneere logo"> </a></span>
 			</div>
 		</div>
-		<div id="erds" data-spy="affixed-top.bs.affix" data-offset-top="600">
+		<div id="erds" class="erds" data-spy="affixed-top.bs.affix" data-offset-top="600">
 			{{ Form::open(array('url' => 'results', 'method'=>'get', 'class'=>'navbar-form navbar-left')) }}
 				<div class="form-group">
 					<input class="form-control" name="search" placeholder="Find jobs and more" type="text" id="project">

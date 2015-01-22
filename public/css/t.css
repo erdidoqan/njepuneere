@@ -220,7 +220,13 @@ padding: 18px 23px;
 
 #erds{
    display: -webkit-inline-box;
-   display: -moz-inline-box;
+   
+}
+
+@-moz-document url-prefix() {
+      #erds {
+      margin-top: -53px;
+  }
 }
 
 #erds.affix{
