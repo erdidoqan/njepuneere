@@ -7,7 +7,7 @@
 @section('content')
 <div class="panel panel-fixed panel-primary">
   <div class="panel-body">
-  <small>Display options : {{ ucwords($search) }}</small>
+  <small>Display options : {{ $search }}</small>
   </div>
   </div>
   	@if($results->count())
@@ -44,6 +44,8 @@
 						<h4>I'm sorry your search returned no results</h4>
 					</div>
 					@endif
+  {{$results->appends(array('search' => $search, 'work_place' => $workPlace))->links()}}
   </div>
+
 @stop
 

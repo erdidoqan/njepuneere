@@ -154,7 +154,7 @@ Form::macro('work_place', function($name = "work_place", $selected = null) {
 'Vorë' => 'Vorë'
     );
     
-    $select = '<select name="'.$name.'" class="form-control input-lg" >';
+    $select = '<select name="'.$name.'" class="form-control input-lg" required="" title="You must select a place!">';
     
     foreach ($work_place as $abbr => $work_place)
     {
@@ -702,7 +702,7 @@ HTML::macro('clever_link', function($route, $text) {
 
 
 
-Form::macro('place', function($name = "place", $selected = null) {
+Form::macro('place', function($name = "work_place", $selected = null) {
     
     $place = array(
         '' => 'Place',
@@ -773,7 +773,7 @@ Form::macro('place', function($name = "place", $selected = null) {
 'Vorë' => 'Vorë'
     );
     
-    $select = '<select name="'.$name.'" class="form-control" >';
+    $select = '<select name="'.$name.'" class="form-control" required="" title="You must select a place!">';
     
     foreach ($place as $abbr => $place)
     {

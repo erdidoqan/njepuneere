@@ -2,7 +2,7 @@
 
 //get Controller
 Route::get('/', "HomeController@home");
-Route::get('ads/{id}', "HomeController@ads");
+Route::get('ads/{id}/{ads_name}', "HomeController@ads");
 Route::get('BireyKayit', "AuthController@getBireyKayit");
 Route::get('activate/{code}', "AuthController@getActivate");
 Route::get('BireyGiris', array('as'=>'BireyGiris', 'uses'=>'AuthController@getBireyGiris'));
@@ -15,11 +15,12 @@ Route::get('privacy', "HomeController@privacy");
 Route::get('term-of-membership', "HomeController@membership");
 Route::get('new-password/{code}', 'AuthController@getNewPassword');
 Route::get('forgot', "AuthController@getforgot");
+Route::get('results', "HomeController@getSearch");
+
 
 //Post Controller
 Route::post('BireyGiris', "AuthController@postBireyGiris");
 Route::post('BireyKayit', "AuthController@postBireyKayit");
-Route::post('search', "HomeController@getSearch");
 Route::post('forgot', "AuthController@forgot");
 
 

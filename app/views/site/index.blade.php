@@ -15,7 +15,7 @@
   <div class="search-form">
 
     <div class="colon-search"> 
-                {{ Form::open(array('url' => 'search')) }}
+                {{ Form::open(array('url' => 'results', 'method'=>'get')) }}
           <input class="form-control input-lg"  type="text" name="search" placeholder="Find jobs and more" id="project">
     </div>
     <div class="colon-place">
@@ -39,38 +39,8 @@
 </div>
 </div>
 
- <script>
-  $(function() {
-    var projects = [
-      {
-        value: "php",
-        label: "Php Developer"
-      }
-      
-    ];
- 
-    $( "#project" ).autocomplete({
-      minLength: 0,
-      source: projects,
-      focus: function( event, ui ) {
-        $( "#project" ).val( ui.item.label );
-        return false;
-      },
-      select: function( event, ui ) {
-        $( "#project" ).val( ui.item.label );
-        $( "#project-id" ).val( ui.item.value );
-        $( "#project-description" ).html( ui.item.desc );
-        $( "#project-icon" ).attr( "src", "images/" + ui.item.icon );
- 
-        return false;
-      }
-    })
-    .autocomplete( "instance" )._renderItem = function( ul, item ) {
-      return $( "<li>" )
-        .append( "<a>" + item.label + "<br>" + item.desc + "</a>" )
-        .appendTo( ul );
-    };
-  });
-  </script>
+<script>
+
+</script>
 
 @stop

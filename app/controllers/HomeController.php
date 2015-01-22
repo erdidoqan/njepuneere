@@ -7,7 +7,7 @@ class HomeController extends BaseController {
 		return View::make('site.index')->with('adsInfo', $adsInfo);
 	}
 
-	public function ads($id)
+	public function ads($id, $ads_name)
 	{
 		$last = Ads::orderBy('created_at','DESC')->paginate(12); 
 		$adsInfo = AdsInfo::find($id);
@@ -29,10 +29,13 @@ class HomeController extends BaseController {
 	public function getSearch()
 	{
 		$search = Input::get('search');
-  		//$data = $this->AdsInfo->getByPage($page, 50);
-		$results = AdsInfo::where('ads_name', 'LIKE', '%'.$search.'%')->paginate();
+		$workPlace = Input::get('work_place');
 
-		return View::make('ilan.search-list', compact('search', 'results'));
+		$results = Ara::where('work_place', $workPlace)->search($search)->paginate(10);
+  		//$data = $this->AdsInfo->getByPage($page, 50);
+		//$results = AdsInfo::where('ads_name', 'LIKE', '%'.$search.'%')->paginate();
+
+		return View::make('ilan.search-list', compact('search', 'results','workPlace'));
 
 	}
 

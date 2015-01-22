@@ -6,7 +6,7 @@
 				<section>
 					<label class="label"><b>Keyword</b></label>
 					<label class="input"> <i class="icon-append fa fa-question-circle"></i>
-						{{ Form::text('search','', array('placeholder' => 'Filter')) }}
+						{{ Form::text('search','', array('placeholder' => $search)) }}
 						
 						<b class="tooltip tooltip-top-right">
 							<i class="fa fa-warning txt-color-teal"></i> 

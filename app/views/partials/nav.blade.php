@@ -7,9 +7,9 @@
 			</div>
 		</div>
 		<div id="erds" data-spy="affixed-top.bs.affix" data-offset-top="600">
-			{{ Form::open(array('url' => 'search', 'class'=>'navbar-form navbar-left')) }}
+			{{ Form::open(array('url' => 'results', 'method'=>'get', 'class'=>'navbar-form navbar-left')) }}
 				<div class="form-group">
-					<input class="form-control" placeholder="Find jobs and more" type="text" id="project">
+					<input class="form-control" name="search" placeholder="Find jobs and more" type="text" id="project">
 				</div>
 				<div class="form-group">
 					{{Form::place()}}

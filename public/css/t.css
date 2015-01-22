@@ -203,7 +203,7 @@ padding: 18px 23px;
 }
 
 #side-panel.affix{
-  top: 20px;
+  top: 10px;
    -webkit-transition: all 0.5s ease-out;
    -moz-transition: all 0.5s ease-out;
    -o-transition: all 0.5s ease-out;
