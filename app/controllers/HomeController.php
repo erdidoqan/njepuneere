@@ -7,7 +7,7 @@ class HomeController extends BaseController {
 		return View::make('site.index')->with('adsInfo', $adsInfo);
 	}
 
-	public function ads($id, $ads_name)
+	public function ads($id)
 	{
 		$last = Ads::orderBy('created_at','DESC')->paginate(12); 
 		$adsInfo = AdsInfo::find($id);

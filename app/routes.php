@@ -2,7 +2,7 @@
 
 //get Controller
 Route::get('/', "HomeController@home");
-Route::get('ads/{id}/{ads_name}', "HomeController@ads");
+Route::get('ads/{id}', "HomeController@ads");
 Route::get('BireyKayit', "AuthController@getBireyKayit");
 Route::get('activate/{code}', "AuthController@getActivate");
 Route::get('BireyGiris', array('as'=>'BireyGiris', 'uses'=>'AuthController@getBireyGiris'));
