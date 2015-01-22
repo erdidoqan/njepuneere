@@ -32,7 +32,11 @@
                 </td>
                 <td class="inbox-data-from hidden-xs hidden-sm">
                   <div>
-                    {{str_limit(ucwords($r->com_name), 20)}}
+                    {{str_limit(ucwords($r->com_name), 20)}}<br>
+                    
+                  </div>
+                  <div class="checkbox">
+                  <small> {{str_limit(ucwords($r->ads_name),70)}} </small>
                   </div>
                 </td>
                 <td class="inbox-data-attachment hidden-xs">
