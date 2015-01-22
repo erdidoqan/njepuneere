@@ -42,20 +42,20 @@
                 </td>
                 <td class="inbox-data-attachment hidden-xs">
                   <div>
-                    <a href="/ads/{{$r->id}}"><span class="text-warning"><i class="fa fa-map-marker"></i> {{ucwords($r->work_place)}}</span></a>
+                    <a href="/ads/{{$r->id}}"><span class="text-success"><i class="fa fa-map-marker"></i> {{ucwords($r->work_place)}}</span></a>
                   </div>
                 </td>
                 <td class="inbox-data-attachment hidden-xs">
                   <div>
-                    <a href="/ads/{{$r->id}}"><span class="label label-info">{{ Carbon::createFromTimestamp(strtotime($r->created_at))->addDays($r->pub_time)->diffForHumans() }}</a>
+                    <a href="/ads/{{$r->id}}"><span class="label label-primary">{{ Carbon::createFromTimestamp(strtotime($r->created_at))->addDays($r->pub_time)->diffForHumans() }}</a>
                   </div>
                 </td>
                 <td class="inbox-data-date hidden-xs">
                   <div>
                     @if(Auth::user())
-                      <a href="/ads/{{$r->id}}" class="btn btn-info btn-sm"><i class="glyphicon glyphicon-plus"></i> </a>
+                      <a href="/ads/{{$r->id}}" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-plus"></i> </a>
                     @else
-                      <a data-toggle="modal" href="#myModal"  class="btn btn-info btn-sm glyphicon glyphicon-user"  rel="tooltip" data-placement="top" data-original-title="Quick Apply"></a>
+                      <a data-toggle="modal" href="#myModal"  class="btn btn-primary btn-sm glyphicon glyphicon-user"  rel="tooltip" data-placement="top" data-original-title="Quick Apply"></a>
                     @endif
                   </div>
                 </td>

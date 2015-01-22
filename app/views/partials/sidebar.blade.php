@@ -12,15 +12,7 @@
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img src="http://104.131.119.56/img/5.PNG">
-      <div class="carousel-caption">
-        Build your career with njepuneere..
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://104.131.119.56/img/5.PNG">
-      <div class="carousel-caption">
-        Doors of a new world..
-      </div>
+      
     </div>
   </div>
 
@@ -37,7 +29,7 @@
 
 
 
-<div class="panel panel-default" style="margin-top:51px;">
+<div class="panel panel-default" style="margin-top:20px;">
 	<div class="panel-body">
 	
 		<h4 class="text-info"><b>Special Jobs Ads</b></h4>
