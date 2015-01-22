@@ -36,7 +36,7 @@
                     
                   </div>
                   <div class="checkbox">
-                  <small> {{str_limit(ucwords($r->ads_name),70)}} </small>
+                  <small> {{str_limit(ucwords($r->ads_name),30)}} </small>
                   </div>
                 </td>
                 <td class="inbox-data-attachment hidden-xs">
