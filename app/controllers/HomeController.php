@@ -31,7 +31,7 @@ class HomeController extends BaseController {
 		$search = Input::get('search');
 		$workPlace = Input::get('work_place');
 
-		$results = Ara::where('work_place', $workPlace)->search($search)->paginate(10);
+		$results = Ara::where('work_place', $workPlace)->search($search)->orderBy('id','DESC')->paginate(10);
   		//$data = $this->AdsInfo->getByPage($page, 50);
 		//$results = AdsInfo::where('ads_name', 'LIKE', '%'.$search.'%')->paginate();
 
