@@ -32,7 +32,7 @@
                 </td>
                 <td class="inbox-data-from hidden-xs hidden-sm">
                   <div>
-                    {{str_limit(ucwords($r->com_name), 50)}}<br>
+                    {{str_limit(ucwords($r->com_name), 70)}}<br>
                     
                   </div>
                   <div class="checkbox">
