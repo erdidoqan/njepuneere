@@ -1,6 +1,9 @@
-<div class="panel panel-primary">
-	<div class="panel-heading">Filter Results</div>
-	<div class="panel-body">
+	<div class="jarviswidget jarviswidget-color-greenDark" id="wid-id-1" data-widget-colorbutton="true" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false">
+		<header>
+			<h2>Filter Jobs</h2>				
+		</header>
+		<div>					
+		<div class="widget-body">
 		{{ Form::open(array('url' => 'search', 'class'=>'smart-form')) }}
 			<fieldset>
 				<section>
@@ -40,9 +43,9 @@
 			</fieldset>
 			<fieldset>
 				<section>
-					<button type="submit" class="btn btn-warning btn-lg btn-block">Filter</button>
+					<button type="submit" class="btn btn-success btn-lg btn-block">Filter</button>
 				</section>
 			</fieldset>
 		{{ Form::close() }}
-	</div>
+	</div></div>
 	</div>
