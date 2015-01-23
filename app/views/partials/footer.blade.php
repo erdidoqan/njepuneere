@@ -85,7 +85,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12">
-                        <button type="submit" class="btn btn-default btn-block">Mesajı İlet</button>
+                        <button type="submit" class="btn btn-default btn-block">Forward the message</button>
                     </div>
                         
                     </form>
