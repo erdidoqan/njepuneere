@@ -1,7 +1,7 @@
 <div class="newbg footerTopSection">
         <div class="container">
             <div class="col-sm-8">
-                <p style="color:#fff;font-size:20px;margin: 3px 0px 0px 0px;">To view our latest news and special deals newsletter follow on social media</p>
+                <p style="color:#fff;font-size:20px;margin: 3px 0px 0px 0px;">To view our latest news and special offers newsletter follow on social media</p>
             </div>
             <div class="col-sm-4">
                     <div class="text-center social">
