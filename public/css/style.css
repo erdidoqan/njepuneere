@@ -11,12 +11,16 @@ body{
   display: block;
 }
 .footer {
-  background: #EDEFF1;
   height: auto;
   padding-bottom: 30px;
   width: 100%;
-  border-bottom: 1px solid #CCCCCC;
+  /*border-bottom: 1px solid #CCCCCC;*/
   border-top: 1px solid #DDDDDD;
+  background: url(http://pyro.com.tr/yeni/img/footerbg.png);
+}
+
+.cizgi {
+  border:1px solid #DDDDDD;
 }
 
 .footer img {
@@ -120,9 +124,10 @@ body{
   color: #EDEFF1 !important;
 }
 .footer-bottom {
-  border-top: 1px solid #DDDDDD;
+ /* border-top: 1px solid #DDDDDD;*/
   padding-top: 10px;
   padding-bottom: 10px;
+  background: url(http://pyro.com.tr/yeni/img/footerbg.png);
 }
 .footer-bottom p.pull-left {
   padding-top: 6px;
