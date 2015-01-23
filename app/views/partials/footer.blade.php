@@ -1,8 +1,24 @@
+<div class="newbg footerTopSection">
+        <div class="container">
+            <div class="col-sm-8">
+                <p style="color:#fff;font-size:20px;margin: 3px 0px 0px 0px;">To view our latest news and special deals newsletter follow on social media</p>
+            </div>
+            <div class="col-sm-4">
+                    <div class="text-center social">
+                            <a href="https://www.facebook.com/njepuneere"><i id="social" class="fa fa-facebook-square fa-3x social-fb"></i></a>
+                            <a href="https://twitter.com/njepuneere"><i id="social" class="fa fa-twitter-square fa-3x social-tw"></i></a>
+                            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social" class="fa fa-google-plus-square fa-3x social-gp"></i></a>
+                            <a href="mailto:njepuneere@gmail.com"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
 <footer>
     <div class="footer" id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                <div class="col-lg-2">
                     <h3> About </h3>
                     <ul>
                     	<li> <a href="/aboutus"> About Us </a> </li>
@@ -11,7 +27,7 @@
                         <li> <a href="http://njeboteere.org/web/category/ndermjetsim/" target="_blank"> Mentorship </a> </li>
                     </ul>
                 </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                <div class="col-lg-2">
                     <h3> Privacy </h3>
                     <ul>
                         <li> <a href="/privacy"> Privacy </a> </li>
@@ -20,7 +36,7 @@
                         <li> <a href="/use-of-content"> Use of Content </a> </li>
                     </ul>
                 </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                <div class="col-lg-2">
                     <h3> Terms of Use </h3>
                     <ul>
                         <li> <a href="/term-of-use"> Terms of Use </a> </li>
@@ -29,7 +45,7 @@
                         <li> <a href="/use-of-content"> Use of Cookies </a> </li>
                     </ul>
                 </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                <div class="col-lg-2">
                     <h3> Advertise </h3>
                     <ul>
                         <li> <a href="#"> Advertise </a> </li>
@@ -37,22 +53,20 @@
                         <li> <a href="#"> Alumni Directory </a> </li>
                     </ul>
                 </div>
-                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
-                    <h3> Contact </h3>
+                <div class="col-lg-2">
+                    <h3> Advertise </h3>
                     <ul>
-                        <li>
-                            <div class="input-append newsletter-box text-center">
-                                <input type="text" class="full text-center" placeholder="Email ">
-                                <button class="btn  bg-gray" type="button"> Contact Us <i class="fa fa-long-arrow-right"> </i> </button>
-                            </div>
-                        </li>
+                        <li> <a href="#"> Advertise </a> </li>
+                        <li> <a href="#"> Web Advertise </a> </li>
+                        <li> <a href="#"> Alumni Directory </a> </li>
                     </ul>
-                    <ul class="social">
-                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                </div>
+                <div class="col-lg-2">
+                    <h3> Advertise </h3>
+                    <ul>
+                        <li> <a href="#"> Advertise </a> </li>
+                        <li> <a href="#"> Web Advertise </a> </li>
+                        <li> <a href="#"> Alumni Directory </a> </li>
                     </ul>
                 </div>
             </div>
