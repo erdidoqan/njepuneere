@@ -71,17 +71,17 @@
                     
                     <div class="col-sm-6">
                         <div class="form-group" style="margin-bottom:5px;">
-                            <input type="text" id="isim" name="isim" class="form-control" placeholder="İsim Soyisim">
+                            <input type="text" id="isim" name="isim" class="form-control" placeholder="Name & Surname">
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="femail" name="femail" placeholder="email adresiniz">
+                            <input type="text" class="form-control" id="femail" name="femail" placeholder="Email">
                         </div>
                     </div>
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <textarea name="mesaj" id="mesaj" class="form-control" rows="3" required="" placeholder="Bize iletmek istediğiniz mesajınız..."></textarea>
+                            <textarea name="mesaj" id="mesaj" class="form-control" rows="3" required="" placeholder="Your message you want to send us..."></textarea>
                         </div>
                     </div>
                     <div class="col-sm-12">
