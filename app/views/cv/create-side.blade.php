@@ -49,6 +49,12 @@
       }
     })
 
+    $('#side-panel').affix({
+      offset: {
+        top: 510,
+      }
+    })
+
     $('body').scrollspy({ target: '.inbox-menu-lg' })
 
   </script>
