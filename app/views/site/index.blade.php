@@ -33,7 +33,7 @@
      {{ Form::close() }}
   
   <div class="search-tags">
-    Popular searches: <a href="#"  class="text-turgay">Web Desing</a>, <a href="#" class="text-turgay">PHP Developer</a>, <a href="#" class="text-turgay">Mundësi Punësimi</a>
+    Popular searches: <a href="results?search=Web+Desing+&work_place=Tirana" class="text-turgay">Web Desing</a>, <a href="results?search=Php+Developer&work_place=Tirana" class="text-turgay">PHP Developer</a>, <a href="results?search=Mund%C3%ABsi+Pun%C3%ABsimi&work_place=Tirana" class="text-turgay">Mundësi Punësimi</a>
   </div>
   </div>
 </div>

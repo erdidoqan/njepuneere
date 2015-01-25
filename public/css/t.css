@@ -210,8 +210,13 @@ padding: 18px 23px;
    transition: all 0.5s ease-out;
 }
 
-#side-panel.affix{
-   
+#side-rel {
+  position: relative;
+}
+
+.side-fix {
+  position: fixed; 
+  margin-top: 70px;
 }
 
 #nav.affix {
@@ -308,7 +313,6 @@ a {
 .clr-535353 {
     color: #535353;
 }
-
 
 
 

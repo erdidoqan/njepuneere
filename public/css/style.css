@@ -264,13 +264,13 @@ width: 100%;
 }
 
 .newbg {
-background-color: #2C3E5B;
-position: relative;
-min-height: 1px;
-padding-right: 15px;
-padding-left: 15px;
-padding-top: 15px;
-padding-bottom: 15px;
+  background-color: #2C3E5B;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #social:hover {

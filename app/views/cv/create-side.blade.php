@@ -1,5 +1,5 @@
 
-<div class="panel panel-success"  style="position: fixed; margin-top: 70px;" id="side-panel"  data-spy="affixed-top.bs.affix" data-offset-top="600">
+<div class="panel panel-success side-fix" id="side-panel" >
     <div class="panel-body">
       <div class="col-sm-12">
       <section class="col col-5">
@@ -43,18 +43,13 @@
   </div>
 
   <script type="text/javascript">
-    $('#side-panel').affix({
-      offset: {
-        top: 210,
-      }
-    })
+    $(window).scroll(function (event) {
 
-    $('#side-panel').affix({
-      offset: {
-        top: 510,
-      }
-    })
-
-    $('body').scrollspy({ target: '.inbox-menu-lg' })
-
+      var scroll = $(window).scrollTop();
+        if (scroll = 300) {
+          $('#side-panel').removeClass('side-fix');
+          $('#side-panel').addClass('#side-res');
+            
+        }
+    });
   </script>

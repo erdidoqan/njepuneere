@@ -15,6 +15,7 @@
 {{HTML::script("/js/plugin/jquery-validate/jquery.validate.min.js")}}
 
 {{HTML::script("/js/sekil.js")}}
+{{HTML::script("/js/bootstrap-tooltip.js")}}
 
     <script>
       if (!window.jQuery) {
