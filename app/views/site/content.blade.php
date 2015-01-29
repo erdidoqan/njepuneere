@@ -11,49 +11,35 @@
 
       @include('partials/nav')
         
-         <div class="section1">     
-<div class="container">
+         <div class="section1">
+<div class="containert">
   <div class="col-md-12">
-    
-    <div class="col-sm-7"> 
+  <div class="search-box-name">
+      One of the 64,669 job ads for you!
+  </div>
+  <div class="search-form">
+
+    <div class="colon-search"> 
                 {{ Form::open(array('url' => 'search')) }}
-          <input id="search-fld" class="form-control input-lg"  type="text" name="search" placeholder="Find jobs and more" data-autocomplete='
-          "ActionScript",
-          "AppleScript",
-          "Asp",
-          "BASIC",
-          "C",
-          "C++",
-          "Clojure",
-          "COBOL",
-          "ColdFusion",
-          "Erlang",
-          "Fortran",
-          "Groovy",
-          "Haskell",
-          "Java",
-          "JavaScript",
-          "Lisp",
-          "Perl",
-          "PHP",
-          "Python",
-          "Ruby",
-          "Scala",
-          "Scheme"'>
-          
-       
-        </div>
-    <div class="col-sm-3">
-                
-                {{Form::work_place()}}
+          <input class="form-control input-lg"  type="text" name="search" placeholder="Find jobs and more" id="project">
+    </div>
+    <div class="colon-place">
+      {{Form::work_place()}}
     </div>
 
-    <div class="col-sm-2">
-               <span class="input-group-btn">
-                    <button type="submit" class="btn btn-success btn-block btn-lg" ><span class="glyphicon glyphicon-search"></span> Job Search</button>
-                </span>
+    <div class="colon-button">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-success btn-lg" style="border-radius: 5px;">
+          <span class="fa fa-1x fa-search"></span> 
+        </button>
+      </span>
+    </div>
     </div>
      {{ Form::close() }}
+  
+  <div class="search-tags">
+    Popular searches: <a href="#"  class="text-turgay">Web Desing</a>, <a href="#" class="text-turgay">PHP Developer</a>, <a href="#" class="text-turgay">Mundësi Punësimi</a>
+  </div>
   </div>
 </div>
 </div>
