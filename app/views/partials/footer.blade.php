@@ -22,12 +22,12 @@
                     <h3> About </h3>
                     <ul>
                     	<li> <a href="/aboutus"> About Us </a> </li>
-                        <li> <a href="http://njeboteere.org/web/" target="_blank"> Nje Bote e Re </a> </li>
-                        <li> <a href="http://njeboteere.org/web/misioni/" target="_blank"> Vision </a> </li>
+                        <li> <a href="http://njeboteere.org/" target="_blank"> Nje Bote e Re </a> </li>
+                        <li> <a href="http://njeboteere.org/misioni-vizioni/" target="_blank"> Vision </a> </li>
                         <li> <a href="http://njeboteere.org/web/category/ndermjetsim/" target="_blank"> Mentorship </a> </li>
                         <li> <a href="/aboutus"> About Us </a> </li>
-                        <li> <a href="http://njeboteere.org/web/" target="_blank"> Nje Bote e Re </a> </li>
-                        <li> <a href="http://njeboteere.org/web/misioni/" target="_blank"> Vision </a> </li>
+                        <li> <a href="http://njeboteere.org/" target="_blank"> Nje Bote e Re </a> </li>
+                        <li> <a href="http://njeboteere.org/misioni-vizioni/" target="_blank"> Vision </a> </li>
                     </ul>
                 </div>
                 <div class="col-lg-2">
