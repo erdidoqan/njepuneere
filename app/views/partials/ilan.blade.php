@@ -1,7 +1,7 @@
 @if($adsInfo->count())
     @foreach($adsInfo as $p)
-      <a href="ads/{{$p->id}}" class="hvr-grow-shadow">
-            <div class="ads">
+      <a href="ads/{{$p->id}}">
+            <div class="ads hvr-float-shadow">
                 <div class="ads-img">
                     <img src="{{User::$img_sirket_src."".$p->logo}}" class="img-rounded" />
                 </div>
