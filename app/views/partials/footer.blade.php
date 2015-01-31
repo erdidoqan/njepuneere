@@ -65,7 +65,7 @@
                         <li> <a href="#"> Alumni Directory </a> </li><li> <a href="#"> Advertise </a> </li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-xs-4 hidden-xs">
+                <div class="col-lg-4 col-xs-4 hidden-xs hidden-sm">
                     <h3> Contact Us </h3>
                     <form role="form" method="post" id="iletisim">
                     
