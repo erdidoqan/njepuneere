@@ -12,7 +12,4 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
-    RewriteCond %{REQUEST_URI} !^/mobile.*$
-    RewriteCond %{HTTP_USER_AGENT} "android|blackberry|ipad|iphone|ipod|iemobile|opera mobile|palmos|webos|googlebot-mobile" [NC]
-    RewriteRule ^(.*)$ /mobile%{REQUEST_URI} [L,R=302]
 </IfModule>
