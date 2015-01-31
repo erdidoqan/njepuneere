@@ -28,7 +28,11 @@
 			@if(Auth::user())
 			<div class="turgittin">
 				<div class="project-context pull-right">
-					<span> <a class="text-danger ext" href="/logout" title="Sign Out" data-action="userLogout" data-logout-msg="Goodbye, {{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}..."><i class="fa fa-sign-out"></i></a> </span>
+					<span> <a class="btn btn-danger hvr-icon-wobble-horizontal hvr-glow" href="/logout" title="Sign Out" data-action="userLogout" data-logout-msg="Goodbye, {{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}..."> Exit </a> </span>
+				</div> 
+
+				<div class="project-context pull-right">
+					<span> <a class="btn btn-success hvr-icon-float-away hvr-glow" href="/my-resume"> Create CV </a> </span>
 				</div> 
 
 				<div class="project-context pull-right">

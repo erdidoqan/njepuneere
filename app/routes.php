@@ -13,15 +13,14 @@ Route::get('term-of-use', "HomeController@term");
 Route::get('use-of-content', "HomeController@content");
 Route::get('privacy', "HomeController@privacy");
 Route::get('term-of-membership', "HomeController@membership");
-Route::get('new-password/{code}', 'AuthController@getNewPassword');
-Route::get('forgot', "AuthController@getforgot");
+Route::get('new-password/{code}', "HomeController@getNewPassword");
 Route::get('results', "HomeController@getSearch");
 
 
 //Post Controller
 Route::post('BireyGiris', "AuthController@postBireyGiris");
 Route::post('BireyKayit', "AuthController@postBireyKayit");
-Route::post('forgot', "AuthController@forgot");
+Route::post('forgot', "HomeController@forgot");
 
 
 //Afteer Auth Controller
