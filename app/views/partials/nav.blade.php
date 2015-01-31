@@ -27,6 +27,7 @@
 
 			@if(Auth::user())
 			<div class="turgittin">
+			<div class="col-xs-5 col-sm-5">
 				<div class="project-context pull-right">
 					<span> <a class="btn btn-danger hvr-icon-wobble-horizontal hvr-glow" href="/logout" title="Sign Out" data-action="userLogout" data-logout-msg="Goodbye, {{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}..."> Exit </a> </span>
 				</div> 
@@ -43,6 +44,7 @@
 						<a href="/pr-image"><img src="{{Auth::user()->pr_img}}" alt="...." class="img-rounded imgpr hvr-glow" style="height:30px;width:30px;"></a>
 					</span>
 				</div>
+			</div>
 			</div>
 			@endif
 		</div>
