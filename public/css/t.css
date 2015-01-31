@@ -85,6 +85,17 @@ body .section1 {
     border-width: 1px;
 }
 
+.tooltip.right .tooltip-inner {
+    background-color:#0F75BD;
+    position: fixed;
+    z-index: 99999999999999;
+}
+.tooltip.right .tooltip-arrow {
+      border-right-color: #0F75BD;
+      position: fixed;
+      z-index: 99999999999999;
+}
+
 .ads-text {
       margin-top: 5px;
    text-align: center;

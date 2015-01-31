@@ -18,7 +18,7 @@
     <div class="footer" id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-xs-3">
                     <h3> About </h3>
                     <ul>
                     	<li> <a href="/aboutus"> About Us </a> </li>
@@ -30,7 +30,7 @@
                         <li> <a href="http://njeboteere.org/misioni-vizioni/" target="_blank"> Vision </a> </li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-xs-3">
                     <h3> Privacy </h3>
                     <ul>
                         <li> <a href="/privacy"> Privacy </a> </li>
@@ -42,7 +42,7 @@
                         <li> <a href="/term-of-membership"> Terms of Membership </a> </li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-xs-3">
                     <h3> Terms of Use </h3>
                     <ul>
                         <li> <a href="/term-of-use"> Terms of Use </a> </li>
@@ -55,7 +55,7 @@
 
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-xs-3">
                     <h3> Advertise </h3>
                     <ul>
                         <li> <a href="#"> Advertise </a> </li>
@@ -65,7 +65,7 @@
                         <li> <a href="#"> Alumni Directory </a> </li><li> <a href="#"> Advertise </a> </li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-xs-4 hidden-xs">
                     <h3> Contact Us </h3>
                     <form role="form" method="post" id="iletisim">
                     
