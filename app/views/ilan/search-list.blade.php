@@ -28,7 +28,7 @@
                 <td class="inbox-table-icon">
                 <a href="/ads/{{$r->id}}">
                   <div>
-                    <img src="{{User::$img_sirket_src."".$r->logo}}" style="width:120px;height:30px;">
+                    <img src="{{User::$img_sirket_src."".$r->logo}}" style="width:120px;height:50px;">
                   </div>
                   </a>
                 </td>
