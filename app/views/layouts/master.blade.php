@@ -10,6 +10,7 @@
               <div class="container">
                 <div class="col-sm-8" >
                   @include('partials/ilan')
+                  
                 </div>
                 <div class="col-sm-4" style="margin-top:20px;">
                   @include('partials/sidebar')
