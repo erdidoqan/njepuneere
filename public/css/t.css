@@ -262,9 +262,11 @@ padding: 18px 23px;
 }
 
 .text-successi{
-   color: #000000;
+   color: #496949;
    font-family: 'Cabin';
    font-size: 20px;
+   margin-top: 20px;
+   text-shadow: 2px;
 }
 .ext{
    font-size: 20px;
