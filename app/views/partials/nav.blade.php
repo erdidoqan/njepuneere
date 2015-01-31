@@ -6,7 +6,7 @@
 				<span id="logo"><a href="/"> <img src="/img/logo.png" alt="Njepuneere logo"> </a></span>
 			</div>
 		</div>
-		<div id="erds" class="erds" data-spy="affixed-top.bs.affix" data-offset-top="600">
+		<div id="erds" class="erds hidden-xs" data-spy="affixed-top.bs.affix" data-offset-top="600">
 			{{ Form::open(array('url' => 'results', 'method'=>'get', 'class'=>'navbar-form navbar-left')) }}
 				<div class="form-group">
 					<input class="form-control" name="search" placeholder="Find jobs and more" type="text" id="project">
@@ -27,7 +27,6 @@
 
 			@if(Auth::user())
 			<div class="turgittin">
-			<div class="col-xs-5 col-sm-5">
 				<div class="project-context pull-right">
 					<span> <a class="btn btn-danger hvr-icon-wobble-horizontal hvr-glow" href="/logout" title="Sign Out" data-action="userLogout" data-logout-msg="Goodbye, {{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}..."> Exit </a> </span>
 				</div> 
@@ -44,7 +43,6 @@
 						<a href="/pr-image"><img src="{{Auth::user()->pr_img}}" alt="...." class="img-rounded imgpr hvr-glow" style="height:30px;width:30px;"></a>
 					</span>
 				</div>
-			</div>
 			</div>
 			@endif
 		</div>
