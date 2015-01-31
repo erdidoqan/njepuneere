@@ -79,7 +79,7 @@ body .section1 {
    display: flex;
    height: 100%;
    margin: 0 auto;
-   max-width: 191px;
+   max-width: 191px !important;
    max-height: 75px;
    border-style: solid;
     border-width: 1px;
@@ -90,7 +90,8 @@ body .section1 {
    text-align: center;
    width: 100%;
 }
-.ads-img img {height: 30px;margin: 22px 0 0 33px!important;width: 100px;}
+.ads-img img {height: 30px;margin: 22px 0 0 33px!important;width: 100px !important;}
+
 
 .com_name{
    font-size: 12px;
