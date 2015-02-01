@@ -68,7 +68,7 @@
                   Cancel
                 </button>
 
-                
+                <!--
                 <a href="facebook/kayit" class="btn btn-facebook"><i class="fa fa-facebook"></i></a>
                <!-- <a type="button" class="btn btn-linkedin"><i class="fa fa-linkedin"></i></a>
                 -->
