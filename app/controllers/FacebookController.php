@@ -30,7 +30,7 @@ class FacebookController extends \BaseController
 			$user->email = $user_fb->getProperty('email');
 			$user->adi = $user_fb->getProperty('first_name');
 			$user->soyadi = $user_fb->getProperty('last_name');
-			$user->d_tarihi = date(strtotime($user_fb->getProperty('birthday')));
+			$user->d_tarihi = $user_fb->getProperty('birthday');
 			$user->pr_img = 'http://graph.facebook.com/' . $user_fb->getProperty('id') . '/picture?type=large';
 			$user->uid_fb = $user_fb->getProperty('id');
 
