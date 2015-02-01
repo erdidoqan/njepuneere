@@ -33,6 +33,15 @@ class FacebookHelper
 		return $this->session;
 	}
 
+	public function generateSessionFromToken($token){
+		$this->session = new FacebookSession($token);
+		return $this->session;
+	}
+
+	public function getToken(){
+		return $this->session->getToken();
+	}
+
 	public function getGraph(){
 		$request = new FacebookRequest($this->session, 'GET', '/me');
 		$response = $request->execute();
