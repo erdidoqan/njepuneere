@@ -14,6 +14,11 @@ class FacebookController extends \BaseController
 	}
 
 	public function callback(){
-		dd(Input::all());
+		if ( !$this->fb->generateSessionFromRedirect()){
+			return Redirect::to('BireyGiris')->with('error',"Error connection to Facebook.");
+		}
+
+		dd($this->fb->getGraph());
+
 	}
 }
