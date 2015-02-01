@@ -39,7 +39,7 @@ return array(
 		'Way\Generators\GeneratorsServiceProvider',
 		'Intervention\Image\ImageServiceProvider',
 		'Shift31\LaravelElasticsearch\LaravelElasticsearchServiceProvider',
-		'Felixkiss\UniqueWithValidator\UniqueWithValidatorServiceProvider'
+		'Felixkiss\UniqueWithValidator\UniqueWithValidatorServiceProvider',
 	),
 	'manifest' => storage_path().'/meta',
 	'aliases' => array(
@@ -85,7 +85,7 @@ return array(
 		'Carbon'		  => 'Carbon\Carbon',
 		'Image' 		  => 'Intervention\Image\Facades\Image',
 		'Es'			  => 'Elasticsearch\Client',
-		'Gravatar' 		  => 'Thomaswelton\LaravelGravatar\Facades\Gravatar'
+		'Gravatar' 		  => 'Thomaswelton\LaravelGravatar\Facades\Gravatar',
 	),
 
 );

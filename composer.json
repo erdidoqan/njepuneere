@@ -10,7 +10,9 @@
 		"shift31/laravel-elasticsearch": "1.0.*@dev",
 		 "felixkiss/uniquewith-validator": "1.1.*",
 		 "thomaswelton/laravel-gravatar": "0.1.x",
-		 "nicolaslopezj/searchable": "1.*"
+		 "nicolaslopezj/searchable": "1.*",
+		 "cartalyst/sentry": "2.1.*",
+		"facebook/php-sdk-v4": "~4.0"
 	},
 	"autoload": {
 		"classmap": [

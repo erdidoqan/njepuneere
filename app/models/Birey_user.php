@@ -48,4 +48,8 @@ class Birey_user extends Eloquent implements UserInterface, RemindableInterface 
 		return $this->hasMany('Post');
 	}
 
+	public function fb() {
+	  $this->hasOne('Userfb', 'userID');
+	}
+
 }

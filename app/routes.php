@@ -15,7 +15,10 @@ Route::get('privacy', "HomeController@privacy");
 Route::get('term-of-membership', "HomeController@membership");
 Route::get('new-password/{code}', "HomeController@getNewPassword");
 Route::get('results', "HomeController@getSearch");
-
+Route::get('facebook/login', "FacebookController@login");
+Route::get('facebook/login/callback', "FacebookController@callback");
+Route::get('facebook/kayit', "FacebookController@getKayit");
+Route::get('facebook/kayit/callback', "FacebookController@getKayitCallback");
 
 //Post Controller
 Route::post('BireyGiris', "AuthController@postBireyGiris");
