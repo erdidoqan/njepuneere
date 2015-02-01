@@ -19,6 +19,11 @@ class FacebookController extends \BaseController
 		}
 
 		$user_fb = $this->fb->getGraph();
+		$BireyUser = Birey_user::all();
+
+		if ($user_fb->getProperty('email') == $BireyUser->email){
+			return Redirect::to('BireyGiris')->with('Warning',"You have already registered with this email");
+		}
 
 		if(empty($user_fb)) {
 			return Redirect::to('BireyGiris')->with('Error',"Failed to retrieve data from facebook");
@@ -31,6 +36,10 @@ class FacebookController extends \BaseController
 			$user->adi = $user_fb->getProperty('first_name');
 			$user->soyadi = $user_fb->getProperty('last_name');
 			$user->d_tarihi = $user_fb->getProperty('birthday');
+			$user->cinsiyet = $user_fb->getProperty('gender');
+			$user->sehir = $user_fb->getProperty('location');
+			$user->uni = $user_fb->getProperty('education');
+			$user->about = $user_fb->getProperty('about');
 			$user->pr_img = 'http://graph.facebook.com/' . $user_fb->getProperty('id') . '/picture?type=large';
 			$user->uid_fb = $user_fb->getProperty('id');
 
