@@ -41,7 +41,7 @@ class FacebookController extends \BaseController
 			$user->cinsiyet = $user_fb->getProperty('gender');
 			$user->sehir = $user_fb->getProperty('location');
 			$user->uni = $user_fb->getProperty('education');
-			$user->about = $user_fb->getProperty('about');
+			$user->about_me = $user_fb->getProperty('about');
 			$user->pr_img = 'http://graph.facebook.com/' . $user_fb->getProperty('id') . '/picture?type=large';
 			$user->uid_fb = $user_fb->getProperty('id');
 
