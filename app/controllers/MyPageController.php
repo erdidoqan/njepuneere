@@ -131,7 +131,9 @@ class MyPageController extends BaseController {
 
 	public function changePass()
 	{
-		return View::make('cv.password');
+		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
+		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
+		return View::make('cv.password')->compact('noti_cv','noti_app');
 	}
 }
 
