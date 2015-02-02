@@ -32,6 +32,13 @@ class CvController extends \BaseController {
 	 */
 	public function store()
 	{
+		$user = Birey_user::where('id','=',Auth::user()->id)->first();
+		
+		if (empty($user->sifre)){
+			return Redirect::to('/change-password')
+				->with('warning',"Firstly you have to create a password.");
+		}
+
 		$input = Input::all();
 		$v = Validator::make($input, Cv::$rules);
 
