@@ -1,6 +1,6 @@
 <?php
  
-$con=mysqli_connect("karriera","testuser","testuser","localhost");
+$con=mysqli_connect("localhost","testuser","testuser","karriera");
  
 if (mysqli_connect_errno())
 {
@@ -8,7 +8,7 @@ if (mysqli_connect_errno())
 }
  
 // This SQL statement selects ALL from the table 'Locations'
-$sql = "SELECT * FROM birey_user";
+$sql = "SELECT * FROM karriera.birey_user";
  
 // Check if there are results
 if ($result = mysqli_query($con, $sql))
@@ -35,6 +35,5 @@ if ($result = mysqli_query($con, $sql))
 // Close connections
 mysqli_close($con);
 
-echo "string";
 
 ?>
