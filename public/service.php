@@ -28,8 +28,13 @@ if ($result = mysqli_query($con, $sql))
  
 	// Finally, encode the array to JSON and output the results
 	echo json_encode($resultArray);
+}else{
+	echo "baglanamadi";
 }
  
 // Close connections
 mysqli_close($con);
+
+echo "string";
+
 ?>
