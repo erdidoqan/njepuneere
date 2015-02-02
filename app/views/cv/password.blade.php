@@ -40,26 +40,26 @@
                 @endif 
 
                 {{ Form::open(array('url' => 'BireyKayit','id'=>'smart-form-register','class'=>'smart-form')) }}
-                <div class="col-sm-8">
-                <section>
-                    <label class="input"> <i class="icon-append fa fa-lock"></i>
-                        {{ Form::password('sifre', array('placeholder' => 'Password','id'=>'password')) }}
-                        <b class="tooltip tooltip-bottom-right">Don't forget your password</b> </label>
-                </section>
+                <div class="col-sm-8 col-sm-offset-4">
+	                <section>
+	                    <label class="input"> <i class="icon-append fa fa-lock"></i>
+	                        {{ Form::password('sifre', array('placeholder' => 'Password','id'=>'password')) }}
+	                        <b class="tooltip tooltip-bottom-right">Don't forget your password</b> </label>
+	                </section>
 
-                <section>
-                    <label class="input"> <i class="icon-append fa fa-lock"></i>
-                        {{ Form::password('passwordConfirm', array('placeholder' => 'Confirm password')) }}
-                        <b class="tooltip tooltip-bottom-right">Don't forget your password</b> </label>
-                </section>
-<footer>
-                                <button type="submit" class="btn btn-primary">
-                                    Register
-                                </button>
-                                <button type="cancel" class="btn btn-default">
-                                    Clear
-                                </button>
-                            </footer>
+	                <section>
+	                    <label class="input"> <i class="icon-append fa fa-lock"></i>
+	                        {{ Form::password('passwordConfirm', array('placeholder' => 'Confirm password')) }}
+	                        <b class="tooltip tooltip-bottom-right">Don't forget your password</b> </label>
+	                </section>
+					<footer>
+	                    <button type="submit" class="btn btn-primary">
+	                        Register
+	                    </button>
+	                    <button type="cancel" class="btn btn-default">
+	                        Clear
+	                    </button>
+	                </footer>
                 </div>
 
                 {{ Form::close() }}       
