@@ -1,6 +1,6 @@
 <?php
  
-$con=mysqli_connect("localhost","testuser","testuser","karriera");
+$con=mysqli_connect("karriera","testuser","testuser","localhost");
  
 if (mysqli_connect_errno())
 {
