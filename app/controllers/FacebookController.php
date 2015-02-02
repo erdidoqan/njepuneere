@@ -19,18 +19,20 @@ class FacebookController extends \BaseController
 		}
 
 		$user_fb = $this->fb->getGraph();
-		$BireyUser = Birey_user::all();
 
-		if ($user_fb->getProperty('email') == $BireyUser->email){
-			return Redirect::to('BireyGiris')->with('Warning',"You have already registered with this email");
-		}
 
 		if(empty($user_fb)) {
 			return Redirect::to('BireyGiris')->with('Error',"Failed to retrieve data from facebook");
 		}
 
 		$user = Birey_user::whereUidFb($user_fb->getProperty('id'))->first();
+
+		if(Birey_user::where('email', '=', $user_fb->getProperty('email'))->exists()){
+		   return Redirect::to('BireyGiris')->with('warning',"You have already registered with this email");
+		}
+
 		if(empty($user)){
+
 			$user = new Birey_user;
 			$user->email = $user_fb->getProperty('email');
 			$user->adi = $user_fb->getProperty('first_name');
