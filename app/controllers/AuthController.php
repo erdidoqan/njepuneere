@@ -163,30 +163,7 @@ class AuthController extends BaseController
 		return Redirect::back();
 	}
 
-	public function password(){
-
-		$input = Input::all();
-		$rules = array ('sifre' => 'required|min:8','birthday' => 'required','tel'=>'required');
-		$v = Validator::make($input,$rules);
-
-		if($v->fails()) {
-            return  Redirect::back()->withErrors($v)->withInput();
-        } else {
-
-            $password = Input::get('sifre');
-            $d_tarihi = Input::get('yy') . '-' . Input::get('mm') . '-' . Input::get('dd');
-            //$user = Birey_user::find($id);
-            $user = new Birey_user::find(Auth::user()->id);
-
-			$user->sifre = Hash::make($password);
-			$user->passwordConfirm = Hash::make(Input::get('passwordConfirm'));
-			$user->tel = Input::get('tel');
-			$user->d_tarihi = $d_tarihi;
-			$user->save();
-
-			return Redirect::to()->with('success', "Information has been changed.")
-		}
-	}
+	
 
 }
 	
