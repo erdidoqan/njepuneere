@@ -40,7 +40,7 @@
                 @endif 
 
                 {{ Form::open(array('url' => 'BireyKayit','id'=>'smart-form-register','class'=>'smart-form')) }}
-                <div class="col-sm-8 col-sm-offset-4">
+                <div class="col-sm-8" style="margin-left:165px;">
 	                <section>
 	                    <label class="input"> <i class="icon-append fa fa-lock"></i>
 	                        {{ Form::password('sifre', array('placeholder' => 'Password','id'=>'password')) }}
