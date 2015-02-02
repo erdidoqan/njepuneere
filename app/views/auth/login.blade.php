@@ -73,7 +73,7 @@
                                     Login
                                 </button>
             
-                                <a class="btn btn-facebook"><i class="fa fa-facebook"></i> Login with Facebook</a>
+                                <a class="btn btn-facebook" href="/facebook/login"><i class="fa fa-facebook"></i> Login with Facebook</a>
                                 {{ HTML::link('BireyKayit', 'Register', array('class' => 'btn btn-success')) }}
                             </footer>
                         {{ Form::close() }}              
