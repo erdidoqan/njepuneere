@@ -17,6 +17,7 @@ Route::get('new-password/{code}', "HomeController@getNewPassword");
 Route::get('results', "HomeController@getSearch");
 Route::get('facebook/login', "FacebookController@login");
 Route::get('facebook/login/callback', "FacebookController@callback");
+Route::get('show-api', "ApiController@showApi");
 
 //Post Controller
 Route::post('BireyGiris', "AuthController@postBireyGiris");

@@ -8,7 +8,7 @@ if (mysqli_connect_errno())
 }
  
 // This SQL statement selects ALL from the table 'Locations'
-$sql = "SELECT * FROM karriera.birey_user";
+$sql = "SELECT * FROM birey_user";
  
 // Check if there are results
 if ($result = mysqli_query($con, $sql))
