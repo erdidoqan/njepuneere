@@ -27,12 +27,7 @@ class FacebookController extends \BaseController
 
 		$user = Birey_user::whereUidFb($user_fb->getProperty('id'))->first();
 
-		if(Birey_user::where('email', '=', $user_fb->getProperty('email'))->exists()){
-		   return Redirect::to('BireyGiris')->with('warning',"You have already registered with this email...");
-		}
-
 		if(empty($user)){
-
 			$user = new Birey_user;
 			$user->email = $user_fb->getProperty('email');
 			$user->adi = $user_fb->getProperty('first_name');
@@ -44,12 +39,12 @@ class FacebookController extends \BaseController
 			$user->pr_img = 'http://graph.facebook.com/' . $user_fb->getProperty('id') . '/picture?type=large';
 			$user->uid_fb = $user_fb->getProperty('id');
 
-			//$user->save();
+			$user->save();
 		}
 		$user->access_token_fb = $this->fb->getToken();
-		//$user->save();
+		$user->save();
 
-		//Auth::login($user);
-		//return Redirect::to('/')->with('success',"connection with facebook");
+		Auth::login($user);
+		return Redirect::to('/')->with('success',"connection with facebook");
 	}
 }
