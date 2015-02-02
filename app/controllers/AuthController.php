@@ -163,7 +163,7 @@ class AuthController extends BaseController
 		return Redirect::back();
 	}
 
-	public function password($id){
+	public function password(){
 
 		$input = Input::all();
 		$rules = array ('sifre' => 'required|min:8','birthday' => 'required','tel'=>'required');
@@ -175,8 +175,8 @@ class AuthController extends BaseController
 
             $password = Input::get('sifre');
             $d_tarihi = Input::get('yy') . '-' . Input::get('mm') . '-' . Input::get('dd');
-            $user = Birey_user::find($id);
-            $user = new Birey_user;
+            //$user = Birey_user::find($id);
+            $user = new Birey_user::find(Auth::user()->id);
 
 			$user->sifre = Hash::make($password);
 			$user->passwordConfirm = Hash::make(Input::get('passwordConfirm'));
