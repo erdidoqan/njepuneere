@@ -17,8 +17,6 @@ Route::get('new-password/{code}', "HomeController@getNewPassword");
 Route::get('results', "HomeController@getSearch");
 Route::get('facebook/login', "FacebookController@login");
 Route::get('facebook/login/callback', "FacebookController@callback");
-Route::get('facebook/kayit', "FacebookController@getKayit");
-Route::get('facebook/kayit/callback', "FacebookController@getKayitCallback");
 
 //Post Controller
 Route::post('BireyGiris', "AuthController@postBireyGiris");
@@ -32,6 +30,7 @@ Route::post('forgot', "HomeController@forgot");
 //Before Auth Controller
 Route::group(array('before' => 'auth'), function(){
 	Route::get('/my-page', "MyPageController@myPage");
+	Route::get('/change-password', "MyPageController@change-password");
 	Route::get('/my-resume', "MyPageController@resume");
 	Route::get('/create-resume', "MyPageController@create_resume");
 	Route::get('/create-resume/{id}', "MyPageController@create_resume_id")->where('id', '[0-9]+');

@@ -128,6 +128,11 @@ class MyPageController extends BaseController {
 		->with('noti_cv',$noti_cv)
 		->with('noti_app',$noti_app);	
 	}
+
+	public function changePass()
+	{
+		return View::make('cv.password');
+	}
 }
 
 

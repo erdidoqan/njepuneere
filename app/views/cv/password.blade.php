@@ -1,7 +1,7 @@
 @extends('cv.page')
 
 @section('title')
-<title>My Page | Njepuneere</title>
+<title>Change Some Information | Njepuneere</title>
 @stop
 
 @section('content')
@@ -11,8 +11,8 @@
 			<h2>Change Some Information</h2>				
 		</header>
 		<div>
-			
-		
+
+
 		</div>
 	</div>
 </div>
