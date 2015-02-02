@@ -44,12 +44,12 @@ class FacebookController extends \BaseController
 			$user->pr_img = 'http://graph.facebook.com/' . $user_fb->getProperty('id') . '/picture?type=large';
 			$user->uid_fb = $user_fb->getProperty('id');
 
-			$user->save();
+			//$user->save();
 		}
 		$user->access_token_fb = $this->fb->getToken();
-		$user->save();
+		//$user->save();
 
-		Auth::login($user);
-		return Redirect::to('/')->with('success',"connection with facebook");
+		//Auth::login($user);
+		//return Redirect::to('/')->with('success',"connection with facebook");
 	}
 }
