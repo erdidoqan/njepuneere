@@ -4,8 +4,8 @@ class ApiController extends \BaseController {
 
     public function showApi()
     {   
-        $users = Birey_user::all();
+        $ads = AdsInfo::all();
 
-        return Response::json($users);
+        return Response::json($ads);
     }
 }

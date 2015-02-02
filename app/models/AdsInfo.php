@@ -14,7 +14,7 @@ class AdsInfo extends \Eloquent {
 
 	public function getByPage($page = 1, $limit = 10)
 	{
-	  $results = AdsInfo;
+	  $results = new AdsInfo;
 	  $results->page = $page;
 	  $results->limit = $limit;
 	  $results->totalItems = 0;
@@ -27,4 +27,16 @@ class AdsInfo extends \Eloquent {
 	 
 	  return $results;
 	}
+
+	public function toArray(){
+        $attributes = parent::toArray();
+        $array = array();
+
+        foreach($attributes as $key => $value){
+            $newKey = snake_case($key);
+            $array[$newKey] = $value;
+        }
+
+        return $array;
+    }
 }
