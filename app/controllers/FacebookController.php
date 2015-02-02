@@ -28,7 +28,7 @@ class FacebookController extends \BaseController
 		$user = Birey_user::whereUidFb($user_fb->getProperty('id'))->first();
 
 		if(Birey_user::where('email', '=', $user_fb->getProperty('email'))->exists()){
-		   return Redirect::to('BireyGiris')->with('warning',"You have already registered with this email");
+		   return Redirect::to('BireyGiris')->with('warning',"You have already registered with this email...");
 		}
 
 		if(empty($user)){
