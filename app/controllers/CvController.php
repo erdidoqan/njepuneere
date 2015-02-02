@@ -40,7 +40,7 @@ class CvController extends \BaseController {
 			$user->d_tarihi = $d_tarihi;
 			$user->save();
 
-			return Redirect::to()->with('success', "Information has been changed.");
+			return Redirect::to('/my-resume')->with('success', "Information has been changed.");
 		}
 	}
 
