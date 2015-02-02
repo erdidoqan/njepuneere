@@ -17,16 +17,11 @@ class FacebookController extends \BaseController
 		if ( !$this->fb->generateSessionFromRedirect()){
 			return Redirect::to('BireyGiris')->with('error',"Error connection to Facebook.");
 		}
-
 		$user_fb = $this->fb->getGraph();
-
-
 		if(empty($user_fb)) {
 			return Redirect::to('BireyGiris')->with('Error',"Failed to retrieve data from facebook");
 		}
-
 		$user = Birey_user::whereUidFb($user_fb->getProperty('id'))->first();
-
 		if(empty($user)){
 			$user = new Birey_user;
 			$user->email = $user_fb->getProperty('email');
