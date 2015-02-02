@@ -39,7 +39,7 @@
                 </div>
                 @endif 
 
-                {{ Form::open(array('url' => 'password','id'=>'smart-form-register','class'=>'smart-form')) }}
+                {{ Form::open(array('url' => URL::route('password'),'id'=>'smart-form-register','class'=>'smart-form')) }}
                 <div class="col-sm-8" style="margin-left:155px;">
 	                <section>
 	                    <label class="input"> <i class="icon-append fa fa-lock"></i>
