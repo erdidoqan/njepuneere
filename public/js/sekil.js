@@ -44,6 +44,9 @@
                     sonis : {
                         required : true
                     },
+                    tel : {
+                        required : true
+                    },
                     uni : {
                         required : true
                     },
@@ -82,6 +85,9 @@
                     },
                     dd : {
                         required : 'Please select your birthday'
+                    },
+                    tel : {
+                        required : 'The text of the phone will be shown to companies'
                     },
                     sonis : {
                         required : 'Please write your recent work experience'

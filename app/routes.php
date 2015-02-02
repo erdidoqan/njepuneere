@@ -54,6 +54,7 @@ Route::group(array('before' => 'auth'), function(){
 	Route::post('/cv/cvstatus' , "CvController@cvstatus");
 	Route::post('/pr_img/{id}' , "AuthController@post_img");
 	Route::post('/crop/{id}', "AuthController@crop");
+	Route::post('/password', "AuthController@password");
 });
 
 //Message Controller

@@ -39,8 +39,8 @@
                 </div>
                 @endif 
 
-                {{ Form::open(array('url' => 'BireyKayit','id'=>'smart-form-register','class'=>'smart-form')) }}
-                <div class="col-sm-8" style="margin-left:165px;">
+                {{ Form::open(array('url' => 'password','id'=>'smart-form-register','class'=>'smart-form')) }}
+                <div class="col-sm-8" style="margin-left:155px;">
 	                <section>
 	                    <label class="input"> <i class="icon-append fa fa-lock"></i>
 	                        {{ Form::password('sifre', array('placeholder' => 'Password','id'=>'password')) }}
@@ -52,6 +52,30 @@
 	                        {{ Form::password('passwordConfirm', array('placeholder' => 'Confirm password')) }}
 	                        <b class="tooltip tooltip-bottom-right">Don't forget your password</b> </label>
 	                </section>
+	                <div class="row">
+                        <label class="label col col-3">Birthday:</label>
+                        <section class="col col-3 col-sm-offset-1">
+                            <label class="select">
+                                {{Form::dd()}}<i></i> </label>
+                        </section>
+                        <section class="col col-3">
+                            <label class="select">
+                                {{Form::mm()}}<i></i> </label>
+                        </section>
+                        <section class="col col-3">
+                            <label class="select">
+                                {{Form::yy()}}<i></i> </label>
+                        </section>
+	                </div>
+	                <div class="row">
+                        <label class="label col col-3">Contact Phone:</label>
+                        <section class="col col-9">
+                            <label class="input"> <i class="icon-append fa fa-phone"></i>
+                            {{ Form::text('tel', '', array('class'=>'form-control','placeholder' => 'Phone','data-mask' => '(999) 99-999-9999')) }}
+                            </label>
+                        </section>
+	                </div>
+
 					<footer>
 	                    <button type="submit" class="btn btn-primary">
 	                        Register
