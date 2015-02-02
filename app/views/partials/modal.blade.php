@@ -61,17 +61,12 @@
               <footer>
 
                 <button type="submit" class="btn btn-primary">
-                  Sign in
+                  Login
                 </button>
                 
-                <button type="button" class="btn btn-default" data-dismiss="modal">
-                  Cancel
-                </button>
-
-                
-                <a href="facebook/login" class="btn btn-facebook"><i class="fa fa-facebook"></i></a>
-               <!-- <a type="button" class="btn btn-linkedin"><i class="fa fa-linkedin"></i></a>
-                -->
+                <a href="facebook/login" class="btn btn-facebook"><i class="fa fa-facebook"></i> Login with Facebook</a>
+                <!--<a type="button" class="btn btn-linkedin"><i class="fa fa-linkedin"></i> Login with Link</a>-->
+               
               </footer>
             {{ Form::close() }}
             

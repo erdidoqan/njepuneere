@@ -72,9 +72,8 @@
                                 <button type="submit" class="btn btn-primary">
                                     Login
                                 </button>
-                                <button type="cancel" class="btn btn-default">
-                                    Clear
-                                </button>
+            
+                                <a class="btn btn-facebook"><i class="fa fa-facebook"></i> Login with Facebook</a>
                                 {{ HTML::link('BireyKayit', 'Register', array('class' => 'btn btn-success')) }}
                             </footer>
                         {{ Form::close() }}              

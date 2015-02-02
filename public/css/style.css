@@ -764,13 +764,11 @@ body.modal-open #wrap{
 
 .btn-facebook {
     background-color: #3D5B96 !important;
-    width: 51px;
     color:#FFFFFF!important;
 }
 
-.btn-facebook {
-    background-color: #3D5B96 !important;
-    width: 51px;
+.btn-facebook:hover {
+    background-color: #466AB0 !important;
     color:#FFFFFF!important;
 }
 
@@ -782,7 +780,6 @@ body.modal-open #wrap{
 
 .btn-linkedin {
     background-color: #1884BB !important;
-    width: 51px;
     color:#FFFFFF!important;
 }
 
