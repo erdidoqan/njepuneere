@@ -133,7 +133,7 @@ class MyPageController extends BaseController {
 	{
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
-		return View::make('cv.password')->compact('noti_cv','noti_app');
+		return View::make('cv.password', compact('noti_cv','noti_app'));
 	}
 }
 
