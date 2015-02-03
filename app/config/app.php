@@ -40,7 +40,6 @@ return array(
 		'Intervention\Image\ImageServiceProvider',
 		'Shift31\LaravelElasticsearch\LaravelElasticsearchServiceProvider',
 		'Felixkiss\UniqueWithValidator\UniqueWithValidatorServiceProvider',
-		'RyanNielson\Shareable\ShareableServiceProvider',
 	),
 	'manifest' => storage_path().'/meta',
 	'aliases' => array(
@@ -87,7 +86,6 @@ return array(
 		'Image' 		  => 'Intervention\Image\Facades\Image',
 		'Es'			  => 'Elasticsearch\Client',
 		'Gravatar' 		  => 'Thomaswelton\LaravelGravatar\Facades\Gravatar',
-		'Shareable' 	  => 'RyanNielson\Shareable\Facades\Shareable',
 	),
 
 );

@@ -162,7 +162,7 @@
               <ul class="dropdown-menu">
                 <li>
                   <a class="fa fa-facebook" href="http://njepuneere.com/ads/39"> Facebook</a>
-                  {{ Shareable::facebook($options = array()) }}
+                  
                 </li>
                 <li>
                   <a href="#" class="fa fa-twitter"> Twitter</a>
