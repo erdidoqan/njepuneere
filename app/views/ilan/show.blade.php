@@ -161,7 +161,9 @@
 
               <ul class="dropdown-menu">
                 <li>
-                <a href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=http://njepuneere.com/ads/39&amp;p[images][0]=https://duapune.com/img/logo.png&amp;p[title]=Sales Account Manager nga Printec Albania Ltd - DuaPune.com" class="fa fa-facebook"> Facebook</a>
+                <a href="http://www.facebook.com/sharer.php?s=100&p[url]=http://njepuneere.com/ads/39/&p[images][0]=http://institutional.njepuneere.com/img/logo/360%20Group%20shpk-38.jpg&p[title]=Title&p[summary]=Summary" class="fa fa-facebook"> Facebook</a>
+                
+
                 </li>
                 <li>
                   <a href="#" class="fa fa-twitter"> Twitter</a>
