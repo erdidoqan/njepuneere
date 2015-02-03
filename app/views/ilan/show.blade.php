@@ -161,7 +161,7 @@
 
               <ul class="dropdown-menu">
                 <li>
-                  <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" class="fa fa-facebook" target="_blank"> Facebook</a>
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=http://njepuneere.com/ads/39" class="fa fa-facebook" target="_blank"> Facebook</a>
                 
                 </li>
                 <li>
