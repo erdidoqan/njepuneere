@@ -162,7 +162,7 @@
               <ul class="dropdown-menu">
                 <li>
                   <a href="https://www.facebook.com/sharer/sharer.php?u=http://njepuneere.com/ads/39" class="fa fa-facebook" target="_blank"> Facebook</a>
-                
+                <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
                 </li>
                 <li>
                   <a href="#" class="fa fa-twitter"> Twitter</a>
@@ -246,30 +246,13 @@
     </div>
   </div>
 </div>
+<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=764883146931663&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
-      <script type="text/javascript">
-
-
-
-      $('#applied').click(function() {
-    
-        $.smallBox({
-          title : "{{$adsInfo->ads_name}}",
-          content : "<i class='fa fa-clock-o'></i> <i>You did apply to ads</i>",
-          color : "#C79121",
-          iconSmall : "fa fa-thumbs-up bounce animated",
-          timeout : 4000
-        });
-    
-      })
-
-      </script>
       @endif
 @stop
