@@ -161,7 +161,7 @@
 
               <ul class="dropdown-menu">
                 <li>
-                <a href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=http://njepuneere.com/ads/39&amp;p[images][0]=http://institutional.njepuneere.com/img/logo/360%20Group%20shpk-38.jpg&amp;p[title]=360 Group shpk nga GRAPHIC DESIGNER Ltd - njepuneere.com" class="fa fa-facebook"> Facebook</a>
+                <a href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=https://duapune.com/jobs/13949&amp;p[images][0]=https://duapune.com/img/logo.png&amp;p[title]=Sales Account Manager nga Printec Albania Ltd - DuaPune.com" class="fa fa-facebook"> Facebook</a>
                 </li>
                 <li>
                   <a href="#" class="fa fa-twitter"> Twitter</a>
@@ -247,6 +247,14 @@
 </div>
 
 <script>
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=764883146931663&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
 </script>
       @endif
