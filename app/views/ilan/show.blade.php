@@ -161,7 +161,7 @@
 
               <ul class="dropdown-menu">
                 <li>
-<div class="fb-share-button" data-href="http://njepuneere.com/ads/39" data-layout="button_count"> facebook</div>
+<div class="fb-share-button" data-href="http://njepuneere.com/ads/39" data-layout="fa fa-facebook"> Facebook</div>
                 </li>
                 <li>
                   <a href="#" class="fa fa-twitter"> Twitter</a>
@@ -245,13 +245,17 @@
     </div>
   </div>
 </div>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
+
+<script>
+
+(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=764883146931663&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+
+</script>
       @endif
 @stop
