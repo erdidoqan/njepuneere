@@ -12,8 +12,7 @@
 		 "thomaswelton/laravel-gravatar": "0.1.x",
 		 "nicolaslopezj/searchable": "1.*",
 		 "cartalyst/sentry": "2.1.*",
-		"facebook/php-sdk-v4": "~4.0",
-		"ryannielson/shareable": "1.0.*"
+		"facebook/php-sdk-v4": "~4.0"
 	},
 	"autoload": {
 		"classmap": [
