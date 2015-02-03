@@ -161,7 +161,7 @@
 
               <ul class="dropdown-menu">
                 <li>
-<div class="fa fa-facebook" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"> facebook</div>
+<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"> facebook</div>
                 </li>
                 <li>
                   <a href="#" class="fa fa-twitter"> Twitter</a>
