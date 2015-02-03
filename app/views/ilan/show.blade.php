@@ -162,7 +162,6 @@
               <ul class="dropdown-menu">
                 <li>
                   <a href="https://www.facebook.com/sharer/sharer.php?u=http://njepuneere.com/ads/39" class="fa fa-facebook" target="_blank"> Facebook</a>
-                <a class="fa fa-facebook" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"> Facebook</a>
                 </li>
                 <li>
                   <a href="#" class="fa fa-twitter"> Twitter</a>
