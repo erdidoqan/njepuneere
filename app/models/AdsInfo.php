@@ -8,6 +8,8 @@ class AdsInfo extends \Eloquent {
 		'logo' => 'required|image|max:500',
 		'job_desc'=> 'required'
 		);
+
+	public $json;
 	public function user(){
 		return $this->belongsTo('User','user_id');
 	}

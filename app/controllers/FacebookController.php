@@ -40,6 +40,6 @@ class FacebookController extends \BaseController
 		$user->save();
 
 		Auth::login($user);
-		return Redirect::back()->with('success',"connection with facebook");
+		return Redirect::to('/')->with('success',"connection with facebook");
 	}
 }
