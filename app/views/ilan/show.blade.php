@@ -161,6 +161,7 @@
 
               <ul class="dropdown-menu">
                 <li>
+                <div class="fb-share-button" data-href="http://njepuneere.com/ads/39" data-layout="button_count"></div>
                   <a href="https://www.facebook.com/sharer/sharer.php?u=http://njepuneere.com/ads/39" class="fa fa-facebook" target="_blank"> Facebook</a>
                 </li>
                 <li>
