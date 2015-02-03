@@ -18,8 +18,8 @@
         @endif
       <div class="col-sm-12">
       <div class="col-sm-6">
-      <h1 class="text-danger"><b> {{$adsInfo->ads_name}}</b></h1>
-                <h6>{{$adsInfo->ref_code}}</h6>
+      <h1 class="text-danger"><b> {{ucwords($adsInfo->com_name)}}</b></h1>
+                <h6>{{ucwords($adsInfo->ads_name)}}</h6>
             </div>
             <div class="col-sm-6">
                 <img src="{{User::$img_sirket_src."".$adsInfo->logo}}" alt="post img" class="pull-right img-responsive img-thumbnail" style="width:200px; height=150px; ">
