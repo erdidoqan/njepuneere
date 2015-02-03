@@ -161,8 +161,7 @@
 
               <ul class="dropdown-menu">
                 <li>
-                  <a class="fa fa-facebook" href="https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&appId=764883146931663"> Facebook</a>
-
+<div class="fa fa-facebook" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"> facebook</div>
                 </li>
                 <li>
                   <a href="#" class="fa fa-twitter"> Twitter</a>
