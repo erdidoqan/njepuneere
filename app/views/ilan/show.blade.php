@@ -161,7 +161,8 @@
 
               <ul class="dropdown-menu">
                 <li>
-                  <a href="#" class="fa fa-facebook"> Facebook</a>
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" class="fa fa-facebook" target="_blank"> Facebook</a>
+                
                 </li>
                 <li>
                   <a href="#" class="fa fa-twitter"> Twitter</a>
@@ -245,8 +246,18 @@
     </div>
   </div>
 </div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
       <script type="text/javascript">
+
+
+
       $('#applied').click(function() {
     
         $.smallBox({
