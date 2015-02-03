@@ -161,7 +161,7 @@
 
               <ul class="dropdown-menu">
                 <li>
-                <a class="fa fa-twitter"><div class="fb-share-button" data-href="http://njepuneere.com/ads/39"> Facebook</div></a>
+                <a class="fa fa-facebook"><div class="fb-share-button" data-href="http://njepuneere.com/ads/39"> Facebook</div></a>
                 </li>
                 <li>
                   <a href="#" class="fa fa-twitter"> Twitter</a>
