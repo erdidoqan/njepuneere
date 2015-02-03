@@ -161,7 +161,7 @@
 
               <ul class="dropdown-menu">
                 <li>
-                  <a class="fa fa-facebook" href="https://developers.facebook.com/docs/plugins/njepuneere.com/ads/39"> Facebook</a>
+                  <a class="fa fa-facebook" href="http://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&appId=764883146931663"> Facebook</a>
 
                 </li>
                 <li>
