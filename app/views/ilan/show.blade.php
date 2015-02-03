@@ -161,7 +161,7 @@
 
               <ul class="dropdown-menu">
                 <li>
-                  <a class="fa fa-facebook" data-href="https://developers.facebook.com/docs/plugins/njepuneere.com/ads/39"> Facebook</a>
+                  <a class="fa fa-facebook" href="https://developers.facebook.com/docs/plugins/njepuneere.com/ads/39"> Facebook</a>
 
                 </li>
                 <li>
