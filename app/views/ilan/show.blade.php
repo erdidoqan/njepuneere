@@ -161,7 +161,7 @@
 
               <ul class="dropdown-menu">
                 <li>
-                <a href="http://www.facebook.com/sharer.php?s=100&p[url]=http://njepuneere.com/ads/39/&p[images][0]=http://institutional.njepuneere.com/img/logo/360%20Group%20shpk-38.jpg&p[title]=Title&p[summary]=Summary" class="fa fa-facebook"> Facebook</a>
+                <a href="http://www.facebook.com/sharer.php?s=100&p[url]=http://njepuneere.com/ads/{{$adsInfo->id}}/&p[images][0]=http://institutional.njepuneere.com/img/logo/360%20Group%20shpk-38.jpg&p[title]=Title&p[summary]=Summary" class="fa fa-facebook"> Facebook</a>
                 
 
                 </li>
