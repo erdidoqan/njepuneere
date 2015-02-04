@@ -44,6 +44,23 @@ class CvController extends \BaseController {
 		}
 	}
 
+	public function resumeName($id)
+	{
+		$input = Input::all();
+		$rules = array('resume'=>'required|min:3');
+		$v = Validator::make($input, $rules);
+
+		if ($v->fails()) {
+			return Redirect::back()->with('error', "Cv name could not be updated.");
+		}else{
+			$resume = Input::get('resume');
+			Cv::where('id',$id)->update(array('resume_name' => $resume));
+
+			return Redirect::to('/my-resume')->with('success', "Resume name succesfully updated.");
+		}
+		
+	}
+
 	/**
 	 * Store a newly created resource in storage.
 	 * POST /cv

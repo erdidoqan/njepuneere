@@ -10,12 +10,12 @@
 <div class="panel panel-fixed panel-primary">
 
   <div class="panel-body">
-  @if($errors->any())
-          <div class="alert alert-danger">
-            <a href="#" class="close" data-dismiss="alert">&times;</a>
-            {{ implode('', $errors->all('<p class="error">Daha önce başvuru yapılmış</p>')) }}
-          </div>
-        @endif
+@if($errors->any())
+  <div class="alert alert-danger">
+    <a href="#" class="close" data-dismiss="alert">&times;</a>
+    {{ implode('', $errors->all('<p class="error">You apply before.</p>')) }}
+  </div>
+@endif
       <div class="col-sm-12">
       <div class="col-sm-6">
       <h1 class="text-danger"><b> {{ucwords($adsInfo->com_name)}}</b></h1>
