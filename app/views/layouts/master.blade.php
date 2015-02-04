@@ -8,7 +8,11 @@
       @include('partials/nav')
             @yield('content')
               <div class="container">
+              <div class="col-sm-8">
+                
+              </div>
                 <div class="col-sm-8" >
+
                   @include('partials/ilan')
                   
                 </div>
