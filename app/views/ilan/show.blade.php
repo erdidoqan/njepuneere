@@ -187,7 +187,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
           &times;
         </button>
-        <h4 class="modal-title">
+        <h4 class="modal-title showcase-modal">
           {{ucwords($adsInfo->com_name)}} <small>({{ucwords($adsInfo->ads_name)}} )</small>
         </h4>
       </div>
