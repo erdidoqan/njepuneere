@@ -8,7 +8,7 @@
 @section('content')
 <div class="section1">
 <div class="containert">
-  <div class="col-md-12">
+  <div class="col-md-12" style="margin: 60px auto;">
   <div class="search-box-name">
       One of the 64,669 job ads for you!
   </div>
