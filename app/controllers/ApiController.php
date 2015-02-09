@@ -2,10 +2,18 @@
 
 class ApiController extends \BaseController {
 
-    public function showApi()
+    public function showAdsApi()
     {   
-        $ads = AdsInfo::all();
-        //$ads = '{"physical":"cables","data link":"mac address","network":"ip address","transport":"tcp","session":"application connections","presentation":"translation","application":"email"}';
+        $ads = AdsInfo::get(array('ads_name', 'com_name', 'job_desc', 'qua', 'logo'));
+
+        $ads = json_decode($ads, true);
+
+        return Response::json($ads);
+    }
+    public function showUserApi()
+    {   
+        $ads = Birey_user::all();
+
         $ads = json_decode($ads, true);
 
         return Response::json($ads);
