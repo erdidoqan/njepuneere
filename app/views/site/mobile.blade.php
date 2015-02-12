@@ -23,7 +23,7 @@
         <div class="container">
             <div class="navbar-header">
                 
-                <a class="navbar-brand" href="#page-top"> <img src="/img/logo.png" class="img-responsive"> </a>
+                <a class="navbar-brand" href="#page-top"> <img src="/img/logo.png" class="img-thumbnail"> </a>
             </div>
 
             <!-- /.navbar-collapse -->
