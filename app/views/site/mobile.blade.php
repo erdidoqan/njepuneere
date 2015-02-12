@@ -20,7 +20,7 @@
 <nav class="navbar navbar-default navbar-fixed-top" id="nav">
 <div class="container">
     <div>
-        <a class="navbar-brand" href="/"><img src="/img/logo.png" class="img-responsive" style="width:50%;height:auto;"></a>
+        <a class="navbar-brand" href="/"><img src="/img/logo.png" class="img-responsive" style="width:50%;height:auto;margin-left:0"></a>
     </div>
     <!-- /.navbar-collapse -->
 </div>
