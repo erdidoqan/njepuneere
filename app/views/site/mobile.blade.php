@@ -21,9 +21,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="navbar-header page-scroll">
+            <div class="navbar-header">
                 
-                <a class="navbar-brand page-scroll" href="#page-top"> <img src="/img/logo.png" class="img-responsive"> </a>
+                <a class="navbar-brand" href="#page-top"> <img src="/img/logo.png" class="img-responsive"> </a>
             </div>
 
             <!-- /.navbar-collapse -->
