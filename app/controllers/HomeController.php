@@ -4,11 +4,11 @@ class HomeController extends BaseController {
 
 	public function home()
 	{
-		$adsInfo = AdsInfo::orderBy('created_at','DESC')->paginate(24); 
-		return View::make('site.index')->with('adsInfo', $adsInfo);
-
-		if(!Agent::isDesktop()){
-
+		if(Agent::isMobile()){
+			return View::make('site.mobile')->with('adsInfo', $adsInfo);
+		}else{
+			$adsInfo = AdsInfo::orderBy('created_at','DESC')->paginate(24); 
+			return View::make('site.index')->with('adsInfo', $adsInfo);
 		}
 	}
 
