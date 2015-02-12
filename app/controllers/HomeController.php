@@ -5,6 +5,10 @@ class HomeController extends BaseController {
 	{
 		$adsInfo = AdsInfo::orderBy('created_at','DESC')->paginate(24); 
 		return View::make('site.index')->with('adsInfo', $adsInfo);
+
+		if (Agent::isMobile()){
+			return View::make('site.mobile')->with('adsInfo',$adsInfo);
+		}
 	}
 
 	public function ads($id)

@@ -1,6 +1,8 @@
 <?php
 
 //get Controller
+Route::get('mobile', "HomeController@mobile");
+
 Route::get('/', "HomeController@home");
 Route::get('ads/{id}', "HomeController@ads");
 Route::get('BireyKayit', "AuthController@getBireyKayit");
