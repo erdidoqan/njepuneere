@@ -140,9 +140,7 @@
   <div class="panel-body">
     <div class="col-sm-12">
       <div class="col-sm-4">
-
-            <a href="#apply" class="btn btn-warning btn-block" data-toggle="modal">Apply</a>
-        
+        <a href="#apply" class="btn btn-warning btn-block" data-toggle="modal">Apply</a>
       </div>
       <div class="col-sm-4">
         
@@ -174,11 +172,58 @@
               </ul>
             </div>
       </div>
+      
     </div>
   </div>
   </div>
+@endif
 
 
+@if(!Auth::user())
+<div class="panel panel-primary">
+  <div class="panel-body">
+    <div class="col-sm-12">
+      <div class="col-sm-4">
+        <a href="#myModal" class="btn btn-warning btn-block" data-toggle="modal">For Apply to Login</a>
+      </div>
+      <div class="col-sm-4">
+        
+      </div>
+      <div class="col-sm-4">
+        <button type="button" class="btn btn-success">
+               Complain
+        </button>
+
+        <div class="btn-group">
+              <button type="button" class="btn btn-labeled btn-primary dropdown-toggle" data-toggle="dropdown">
+               <span class="btn-label">
+                <i class="fa fa-share-alt"></i> 
+               </>Share <span class="caret"></span>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li>
+                <a href="http://www.facebook.com/sharer.php?s=100&p[url]=http://njepuneere.com/ads/{{$adsInfo->id}}/&p[images][0]=http://institutional.njepuneere.com/img/logo/360%20Group%20shpk-38.jpg&p[title]=Title&p[summary]=Summary" class="fa fa-facebook" target="_blank"> Facebook</a>
+                
+
+                </li>
+                <li>
+                  <a href="#" class="fa fa-twitter"> Twitter</a>
+                </li>
+                <li>
+                  <a href="#" class="fa fa-linkedin"> Linked In</a>
+                </li>
+              </ul>
+            </div>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+@endif
+
+
+@if(Auth::user())
 <!-- Modal -->
 <div class="modal fade" id="apply" tabindex="-1" role="dialog">
   <div class="modal-dialog">
@@ -259,5 +304,5 @@
 }(document, 'script', 'facebook-jssdk'));
 
 </script>
-      @endif
+@endif
 @stop
