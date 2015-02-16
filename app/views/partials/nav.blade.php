@@ -21,7 +21,7 @@
 		</div>
 		<div class="pull-right">
 			@if(!Auth::user())
-			<a style="margin-top:8px;" data-toggle="modal" href="#myModal" class="btn btn-primary pull-right header-btn hidden-mobile hvr-glow"><i class="fa fa-circle-arrow-up fa-lg"></i> Login & Register</a>
+			<a style="margin-top:8px;" data-toggle="modal" href="#login" class="btn btn-primary pull-right header-btn hidden-mobile hvr-glow"><i class="fa fa-circle-arrow-up fa-lg"></i> Login & Register</a>
 			<a style="margin-bottom:-21px;margin-right:5px;" href="{{User::$img_sirket_src}}" class="btn btn-success header-btn hvr-glow"><i class="fa fa-circle-arrow-up fa-lg"></i> Employer</a>
 			@endif
 
@@ -36,7 +36,7 @@
 				</div> 
 
 				<div class="project-context pull-right">
-					<span style="margin-top:8px;"><a href="/user-up" class="text-successi ">{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}</a></span>
+					<span style="margin-top:8px;"><a class="text-successi ">{{ ucwords(Auth::user()->adi)." ".ucwords(Auth::user()->soyadi) }}</a></span>
 				</div>
 				<div class="project-context pull-right">
 					<span>
@@ -65,6 +65,17 @@
 		</div>
     </div>
 </div>
+@if(Auth::user())
+	@if(Auth::user()->active == 0)
+	<div class="alert-header-bottom" id="alert">
+	    <div class="alert-container" style="text-align: center;">
+	       	<div class="project-context hidden-xs">
+	        	<a class="project-selector" href="https://{{Auth::user()->email}}" target="_blank">We sent an email to your email address ({{Auth::user()->email}}). Please comfirm your account.</a>
+	      	</div>
+	    </div>
+	</div>
+	@endif
+@endif
 
 <div style="padding:18px;">&nbsp;</div>
 @include('partials/scripts')
@@ -79,7 +90,11 @@
 	  }
 	})
 
-	
+	$('#alert').affix({
+	  offset: {
+	    top: 210,
+	  }
+	})	
 
 	$('#navbar').affix({
 	  offset: {

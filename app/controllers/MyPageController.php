@@ -10,12 +10,14 @@ class MyPageController extends BaseController {
 			}
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
+		$noti_pre = Pre::where('user_id','=',Auth::user()->id)->count();
  		$apply = DB::table('vi_new_app')->where('user_id','=',Auth::user()->id)->orderBy('created_at','DESC')->paginate(15);
 		
 		return View::make('cv.my-page')
 		->with('cv',$cv)
 		->with('apply',$apply)
 		->with('noti_cv',$noti_cv)
+		->with('noti_pre',$noti_pre)
 		->with('noti_app',$noti_app);	
 	}
 
@@ -23,12 +25,14 @@ class MyPageController extends BaseController {
 	{
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
+		$noti_pre = Pre::where('user_id','=',Auth::user()->id)->count();
 		$pre = DB::table('tbl_prewritten')->where('user_id','=',Auth::user()->id)->orderBy('created_at','DESC')->paginate();
 
 		return View::make('cv.prewritten')
 		
 		->with('pre',$pre)
 		->with('noti_cv',$noti_cv)
+		->with('noti_pre',$noti_pre)
 		->with('noti_app',$noti_app);	
 	}
 
@@ -36,12 +40,14 @@ class MyPageController extends BaseController {
 	{
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
+		$noti_pre = Pre::where('user_id','=',Auth::user()->id)->count();
 		$cv = Cv::where('user_id','=',Auth::user()->id)->orderBy('status','DESC')->paginate(5);
 
 		return View::make('cv.resume')
 
 		->with('cv',$cv)
 		->with('noti_cv',$noti_cv)
+		->with('noti_pre',$noti_pre)
 		->with('noti_app',$noti_app);
 	}
 
@@ -102,38 +108,31 @@ class MyPageController extends BaseController {
 	{
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
+		$noti_pre = Pre::where('user_id','=',Auth::user()->id)->count();
 		$apply = DB::table('vi_new_app')->where('user_id','=',Auth::user()->id)->orderBy('created_at','DESC')->paginate();
 
 		return View::make('cv.application')
 		
 		->with('apply',$apply)
 		->with('noti_cv',$noti_cv)
+		->with('noti_pre',$noti_pre)
 		->with('noti_app',$noti_app);	
 	}
 	public function prewrittenic()
 	{
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
-		return View::make('cv.prewritten-ic')->with('noti_cv',$noti_cv)->with('noti_app',$noti_app);
+		$noti_pre = Pre::where('user_id','=',Auth::user()->id)->count();
+		return View::make('cv.prewritten-ic')->with('noti_cv',$noti_cv)->with('noti_app',$noti_app)->with('noti_pre',$noti_pre);
 	}
-	public function image()
-	{
-		$data['pr_img'] = Session::get('pr_img');
-		$data['modal'] = (Session::get('modal') == null ? 'false' : 'true');
-		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
-		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
-		
-		return View::make('cv.image')
-		->with('data',$data)
-		->with('noti_cv',$noti_cv)
-		->with('noti_app',$noti_app);	
-	}
+
 
 	public function changePass()
 	{
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
+		$noti_pre = Pre::where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
-		return View::make('cv.password', compact('noti_cv','noti_app'));
+		return View::make('cv.password', compact('noti_cv','noti_app','noti_pre'));
 	}
 }
 

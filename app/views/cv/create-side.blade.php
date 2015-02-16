@@ -1,5 +1,5 @@
 
-<div class="panel panel-success side-fix" id="side-panel" >
+<div class="panel panel-success side-fix" id="side-panel" style="margin-top:70px">
     <div class="panel-body">
       <div class="col-sm-12">
       <section class="col col-5">

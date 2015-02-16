@@ -11,7 +11,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="http://104.131.119.56/img/5.PNG">
+      <img src="http://njepuneere.com/img/5.PNG">
       
     </div>
   </div>

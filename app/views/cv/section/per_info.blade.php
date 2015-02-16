@@ -32,7 +32,7 @@
 </div>
 </div>
 <div class="col-sm-2">
-	<a href="#" data-toggle="modal" data-target=".slacker-modal">
+	<a href="/pr-image">
 		<img src="{{Auth::user()->pr_img}}" alt="demo user" class="img-circle" style="width:100%">
 	</a>
 </div>

@@ -1,6 +1,6 @@
         <div class="col-sm-2">
             <a href="/my-page" class="btn btn-xlarge {{ Request::path() == 'my-page' ? 'active' :'' }}">
-                <i class="glyphicon glyphicon-home fa-4x"></i><br>My Page </a>
+                <i class="glyphicon glyphicon-home fa-4x"></i><b class="badge alert-danger" style="margin-left:-20px;padding: 7px 9px;">{{$noti_app}}</b><br>My Resume </a>
         </div>
         <div class="col-sm-2" style="margin-left: 31px;">
             <a href="/my-resume" class="btn btn-xlarge {{ Request::path() == 'my-resume' ? 'active' : '' }}">
@@ -14,7 +14,7 @@
 
         <div class="col-sm-2" style="margin-left: 31px;">
             <a href="/pre-written" class="btn btn-xlarge {{ Request::path() == 'pre-written' ? 'active' : ''}}">
-                <i class="glyphicon glyphicon-list-alt fa-4x"></i><b class="badge alert-danger" style="margin-left:-20px;padding: 7px 9px;">2</b><br>Pre-Written </a>
+                <i class="glyphicon glyphicon-list-alt fa-4x"></i><b class="badge alert-danger" style="margin-left:-20px;padding: 7px 9px;">{{$noti_pre}}</b><br>Pre-Written </a>
         </div>
 
         <div class="col-sm-2" style="margin-left: 31px;">

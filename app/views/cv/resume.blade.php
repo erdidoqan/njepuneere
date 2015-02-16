@@ -141,49 +141,6 @@
 	</div>
 </div>
 </div>
-<div class="modal fade" id="resume" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-          &times;
-        </button>
-        <h4 class="modal-title showcase-modal">
-          Change (CV) Name
-        </h4>
-      </div>
-      <div class="modal-body no-padding">
-
-      {{ Form::open(array('url' => array('resume-name',$cvs->id),'id'=>'checkout-form','class'=>'smart-form')) }}
-			<fieldset>
-				<div class="row">
-					<section class="col col-4">
-						<label style="margin-top:6px;"> 
-							Resume (CV) Name:
-						</label>
-					</section>
-					<section class="col col-8">
-						<label class="input"> <i class="icon-prepend fa fa-user"></i>
-							<input type="text" name="resume" placeholder="Resume (CV) Name">
-						</label>
-					</section>
-				</div>
-			</fieldset>
-              
-              <footer>
-                <button type="submit" class="btn btn-warning">
-                  Save CV
-                </button>
-                
-                <button type="button" class="btn btn-default" data-dismiss="modal">
-                  Cancel
-                </button>
-              </footer>
-            {{ Form::close() }}
-      </div>
-    </div>
-  </div>
-</div>
 
 <script type="text/javascript">
 	var activeEl = 1;

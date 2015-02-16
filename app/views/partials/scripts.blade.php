@@ -16,7 +16,8 @@
 
 {{HTML::script("/js/sekil.js")}}
 {{HTML::script("/js/bootstrap-tooltip.js")}}
-
+{{HTML::script("/js/plugin/jcrop/jquery.color.min.js")}}
+{{HTML::script("/js/plugin/jcrop/jquery.Jcrop.min.js")}}
     <script>
       if (!window.jQuery) {
         document.write('<script src="js/libs/jquery-2.0.2.min.js"><\/script>');

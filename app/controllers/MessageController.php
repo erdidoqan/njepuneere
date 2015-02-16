@@ -5,10 +5,12 @@ class MessageController extends \BaseController {
 	{
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
+		$noti_pre = Pre::where('user_id','=',Auth::user()->id)->count();
  		$message = Message::where('birey_id','=',Auth::user()->id)->orderBy('id','DESC')->paginate(5);
 
 		return View::make('cv.message.message')
 		->with('noti_cv',$noti_cv)
+		->with('noti_pre',$noti_app)
 		->with('message',$message)
 		->with('noti_app',$noti_app);
 	}
@@ -16,10 +18,12 @@ class MessageController extends \BaseController {
 	{
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
+		$noti_pre = Pre::where('user_id','=',Auth::user()->id)->count();
  		$message = Message::find($id);
 
 		return View::make('cv.message.open')
 		->with('noti_cv',$noti_cv)
+		->with('noti_pre',$noti_app)
 		->with('message',$message)
 		->with('noti_app',$noti_app);
 	}
@@ -28,9 +32,11 @@ class MessageController extends \BaseController {
 	{
 		$noti_cv = DB::table('tbl_new_cv')->where('user_id','=',Auth::user()->id)->count();
 		$noti_app = DB::table('tbl_new_apply')->where('user_id','=',Auth::user()->id)->count();
+		$noti_pre = Pre::where('user_id','=',Auth::user()->id)->count();
 
 		return View::make('cv.message.compose')
 		->with('noti_cv',$noti_cv)
+		->with('noti_pre',$noti_app)
 		->with('noti_app',$noti_app);
 	}
 }

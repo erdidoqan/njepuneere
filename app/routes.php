@@ -5,10 +5,10 @@ Route::get('mobile', "HomeController@mobile");
 
 Route::get('/', "HomeController@home");
 Route::get('ads/{id}', "HomeController@ads");
-Route::get('BireyKayit', "AuthController@getBireyKayit");
-Route::get('activate/{code}', "AuthController@getActivate");
-Route::get('BireyGiris', array('as'=>'BireyGiris', 'uses'=>'AuthController@getBireyGiris'));
-Route::get('logout', "AuthController@logout");
+Route::get('BireyKayit', "RegisterController@getRegister");
+Route::get('activate/{code}', "RegisterController@getActivate");
+Route::get('BireyGiris', array('as'=>'BireyGiris', 'uses'=>'LoginController@getLogin'));
+Route::get('logout', "LoginController@logout");
 Route::get('ilanVerme', "AuthController@getilanVerme");
 Route::get('aboutus', "HomeController@aboutus");
 Route::get('term-of-use', "HomeController@term");
@@ -23,8 +23,8 @@ Route::get('api/ads', "ApiController@showAdsApi");
 Route::get('api/user', "ApiController@showUserApi");
 
 //Post Controller
-Route::post('BireyGiris', "AuthController@postBireyGiris");
-Route::post('BireyKayit', "AuthController@postBireyKayit");
+Route::post('BireyGiris', "LoginController@postLogin");
+Route::post('BireyKayit', "RegisterController@postRegister");
 Route::post('forgot', "HomeController@forgot");
 
 
@@ -41,8 +41,8 @@ Route::group(array('before' => 'auth'), function(){
 	Route::get('/my-application', "MyPageController@application");
 	Route::get('/pre-written', "MyPageController@pre_written");
 	Route::get('/user-up', "AuthController@user_update");
-	Route::get('/prewrittenic', "MyPageController@prewritten-ic");
-	Route::get('/pr-image', "MyPageController@image");
+	Route::get('/prewritten-ic', "MyPageController@prewrittenic");
+	Route::get('/pr-image', "UserController@image");
 
 	//Resource Controller
 	Route::resource('cv', "CvController");
@@ -56,8 +56,8 @@ Route::group(array('before' => 'auth'), function(){
 	Route::resource('apply', "ApplyController");
 	Route::resource('prewritten', "PrewrittenController");
 	Route::post('/cv/cvstatus' , "CvController@cvstatus");
-	Route::post('/pr_img/{id}' , "AuthController@post_img");
-	Route::post('/crop/{id}', "AuthController@crop");
+	Route::post('/pr_img/{id}' , "UserController@post_img");
+	Route::post('/crop/{id}', "UserController@crop");
 	Route::post('/password', "CvController@password");
 	Route::post('/resume-name/{id}', "CvController@resumeName");
 });

@@ -83,6 +83,10 @@
 			    	</tbody>
 			    	@endforeach
 				</table>
+				@else
+          <div class="alert alert-warning">
+            <p>You have no ads to apply</p>
+          </div>
 			@endif
 		</div>
 		</div>

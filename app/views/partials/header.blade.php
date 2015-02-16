@@ -30,3 +30,6 @@
   ga('send', 'pageview');
 
 </script>
+
+
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/jquery-jcrop/0.9.12/css/jquery.Jcrop.css">
