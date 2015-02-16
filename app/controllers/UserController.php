@@ -32,7 +32,7 @@ class UserController extends \BaseController {
 		        $filename  = $user->adi.$user->soyadi.'-'.$user->id. '.'.$pr_img->getClientOriginalExtension();
 		        $path = public_path("/img/pr_img/".$filename);
 	            Image::make($pr_img->getRealPath())->save($path);
-		        $pr_img = 'img/pr_img/'.$filename;
+		        $pr_img = '/img/pr_img/'.$filename;
 		        $pr_img = Birey_user::where('id','=',$id)->update(array('pr_img' => $pr_img));
 
 		        Session::put('modal', 'true');
