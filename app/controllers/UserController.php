@@ -20,7 +20,7 @@ class UserController extends \BaseController {
 
 	public function post_img($id)
 	{
-		$sirket = Birey_user::find($id);
+		$user = Birey_user::find($id);
 		$input = Input::all();
 		$rules = array ('pr_img' => 'required|image|max:1000');
 		$v = Validator::make($input,$rules);
@@ -29,7 +29,7 @@ class UserController extends \BaseController {
 		{
 			if(Input::hasFile('pr_img')){
 				$pr_img = Input::file('pr_img');
-		        $filename  = $sirket->com_name.'-'.$sirket->id. '.'.$pr_img->getClientOriginalExtension();
+		        $filename  = $user->adi.$user->soyadi.'-'.$user->id. '.'.$pr_img->getClientOriginalExtension();
 		        $path = public_path("/img/pr_img/".$filename);
 	            Image::make($pr_img->getRealPath())->save($path);
 		        $pr_img = 'img/pr_img/'.$filename;
