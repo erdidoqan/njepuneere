@@ -22,7 +22,7 @@ class LoginController extends \BaseController {
 	{
 		$input = Input::all();
 		
-		$rules = array('email' => 'required|exists:Birey_user', 'sifre' => 'required');
+		$rules = array('email' => 'required', 'sifre' => 'required');
 		$v = Validator::make($input, $rules);
 
 		if($v->passes())
