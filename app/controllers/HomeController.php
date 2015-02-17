@@ -7,7 +7,8 @@ class HomeController extends BaseController {
 		//if(Agent::isMobile()){
 		//	return View::make('site.mobile');
 		//}else{
-			$adsInfo = AdsInfo::orderBy('created_at','DESC')->paginate(24); 
+
+			$adsInfo = AdsInfo::where('active','=',1)->orderBy('created_at','DESC')->paginate(24); 
 			return View::make('site.index')->with('adsInfo', $adsInfo);
 		//}
 	}
@@ -36,7 +37,7 @@ class HomeController extends BaseController {
 		$search = Input::get('search');
 		$workPlace = Input::get('work_place');
 
-		$results = Ara::where('work_place', $workPlace)->search($search, 0)->orderBy('id','DESC')->paginate(10);
+		$results = Ara::where('work_place', $workPlace)->where('active','=',1)->search($search, 0)->orderBy('id','DESC')->paginate(10);
   		//$data = $this->AdsInfo->getByPage($page, 50);
 		//$results = AdsInfo::where('ads_name', 'LIKE', '%'.$search.'%')->paginate();
 

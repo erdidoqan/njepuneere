@@ -3,7 +3,9 @@
   <head>
     
 @include('partials/header')
-
+@section('title')
+<title>About | Njepuneere</title>
+@stop
 
   </head>
 
