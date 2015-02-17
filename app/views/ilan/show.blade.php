@@ -184,7 +184,7 @@
   <div class="panel-body">
     <div class="col-sm-12">
       <div class="col-sm-4">
-        <a href="#myModal" class="btn btn-warning btn-block" data-toggle="modal">For Apply to Login</a>
+        <a href="#login" class="btn btn-warning btn-block" data-toggle="modal">For Apply to Login</a>
       </div>
       <div class="col-sm-4">
         
