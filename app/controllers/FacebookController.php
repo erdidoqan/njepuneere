@@ -23,8 +23,7 @@ class FacebookController extends \BaseController
 		}
 		$user = Birey_user::whereUidFb($user_fb->getProperty('id'))->first();
 		if(empty($user)){
-			$code = str_random(60);
-			
+
 			$user = new Birey_user;
 			$user->email = $user_fb->getProperty('email');
 			$user->adi = $user_fb->getProperty('first_name');
@@ -35,7 +34,7 @@ class FacebookController extends \BaseController
 			$user->about_me = $user_fb->getProperty('about');
 			$user->pr_img = 'http://graph.facebook.com/' . $user_fb->getProperty('id') . '/picture?type=large';
 			$user->uid_fb = $user_fb->getProperty('id');
-			$user->code = $code;
+			$user->code = str_random(60);
 
 			$user->save();
 		}
