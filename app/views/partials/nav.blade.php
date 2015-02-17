@@ -71,7 +71,7 @@
 	    <div class="alert-container" style="text-align: center;">
 	       	<div class="project-context hidden-xs">
 	        	<span class="project-selector" href="https://{{Auth::user()->email}}" target="_blank">We sent an email to your email address ({{Auth::user()->email}}). Please comfirm your account.
-	      	<a href="" class="btn btn-warning btn-xs">send again</a></span>
+	      	<a href="/send-again" class="btn btn-warning btn-xs">send again</a></span>
 	      	</div>
 	    </div>
 	</div>

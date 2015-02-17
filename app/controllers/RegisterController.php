@@ -79,7 +79,17 @@ class RegisterController extends \BaseController {
 		}
 	}
 
-
+	public function SendAgain()
+	{
+		$user = Auth::user();
+		Mail::send('emails.auth.activate', 
+                	array('link'=> URL::to('activate', $user->code), 'username'=>$user->adi), 
+                	function($message) use ($user)
+					{
+    					$message->to($user->email, $user->adi)->subject('Activate your account!');
+					});
+		return Redirect::to('/');
+	}
 
 
 	public function getActivate($code)

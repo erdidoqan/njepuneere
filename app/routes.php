@@ -43,6 +43,7 @@ Route::group(array('before' => 'auth'), function(){
 	Route::get('/user-up', "AuthController@user_update");
 	Route::get('/prewritten-ic', "MyPageController@prewrittenic");
 	Route::get('/pr-image', "UserController@image");
+	Route::get('/send-again', "RegisterController@SendAgain");
 
 	//Resource Controller
 	Route::resource('cv', "CvController");
