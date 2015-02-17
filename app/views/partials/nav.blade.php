@@ -70,7 +70,8 @@
 	<div class="alert-header-bottom" id="alert">
 	    <div class="alert-container" style="text-align: center;">
 	       	<div class="project-context hidden-xs">
-	        	<a class="project-selector" href="https://{{Auth::user()->email}}" target="_blank">We sent an email to your email address ({{Auth::user()->email}}). Please comfirm your account.</a>
+	        	<span class="project-selector" href="https://{{Auth::user()->email}}" target="_blank">We sent an email to your email address ({{Auth::user()->email}}). Please comfirm your account.
+	      	<a href="" class="btn btn-warning btn-xs">send again</a></span>
 	      	</div>
 	    </div>
 	</div>

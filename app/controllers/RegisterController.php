@@ -57,7 +57,7 @@ class RegisterController extends \BaseController {
 			$user->about_me = Input::get('about_me');
 			$user->code = $code;
             $user->active = 0;
-            $user->pr_img = 'img/avatars/male.png';
+            $user->pr_img = '/img/avatars/male.png';
 
             if($user->save()){
                 Mail::send('emails.auth.activate', 
