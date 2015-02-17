@@ -35,6 +35,7 @@ class FacebookController extends \BaseController
 			$user->pr_img = 'http://graph.facebook.com/' . $user_fb->getProperty('id') . '/picture?type=large';
 			$user->uid_fb = $user_fb->getProperty('id');
 			$user->code = str_random(60);
+			$user->active = 0;
 
 			$user->save();
 		}
