@@ -17,7 +17,7 @@
 {{HTML::style("/css/smartadmin-production.min.css")}}
 {{HTML::style("/css/smartadmin-skins.min.css")}}
 {{HTML::style("/css/font-awesome.min.css")}}
-{{HTML::style("http://fonts.googleapis.com/css?family=Cabin:400,500,600,700")}}
+{{HTML::style("http://fonts.googleapis.com/css?family=Cabin:400")}}
 {{HTML::style('/css/t.css')}}
 {{HTML::style('/css/hover.css')}}
 <script>
