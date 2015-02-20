@@ -1,7 +1,7 @@
 @extends('layouts.search')
 
 @section('title')
-<title>{{ucwords($search)}}  Njepuneere</title>
+<title>{{ucwords($search)}}  Njepuneere - Rruga më e thjeshtë për të gjetur punë</title>
 @stop
 
 @section('content')
@@ -26,7 +26,7 @@
 
               <tr id="msg1" class="unread">
                 <td class="inbox-table-icon">
-                <a href="/ads/{{$r->id}}">
+                <a href="/punë/{{$r->id}}">
                   <div>
                     <img src="{{User::$img_sirket_src."".$r->logo}}" style="width:120px;height:50px;">
                   </div>
@@ -34,7 +34,7 @@
                 </td>
                 <td class="inbox-data-from hidden-xs hidden-sm">
                   <div>
-                    <a href="/ads/{{$r->id}}">{{ucwords($r->com_name)}}</a>
+                    <a href="/punë/{{$r->id}}">{{ucwords($r->com_name)}}</a>
                   </div>
                   <div class="checkbox">
                   <small> {{str_limit(ucwords($r->ads_name),30)}} </small>
@@ -42,18 +42,18 @@
                 </td>
                 <td class="inbox-data-attachment hidden-xs">
                   <div>
-                    <a href="/ads/{{$r->id}}"><span class="text-success"><i class="fa fa-map-marker"></i> {{ucwords($r->work_place)}}</span></a>
+                    <a href="/punë/{{$r->id}}"><span class="text-success"><i class="fa fa-map-marker"></i> {{ucwords($r->work_place)}}</span></a>
                   </div>
                 </td>
                 <td class="inbox-data-attachment hidden-xs">
                   <div>
-                    <a href="/ads/{{$r->id}}"><span class="label label-primary">{{ Carbon::createFromTimestamp(strtotime($r->created_at))->addDays($r->pub_time)->diffForHumans() }}</a>
+                    <a href="/punë/{{$r->id}}"><span class="label label-primary">{{ Carbon::createFromTimestamp(strtotime($r->created_at))->addDays($r->pub_time)->diffForHumans() }}</a>
                   </div>
                 </td>
                 <td class="inbox-data-date hidden-xs">
                   <div>
                     @if(Auth::user())
-                      <a href="/ads/{{$r->id}}" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-plus"></i> </a>
+                      <a href="/punë/{{$r->id}}" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-plus"></i> </a>
                     @else
                       <a data-toggle="modal" href="#myModal"  class="btn btn-primary btn-sm glyphicon glyphicon-user"  rel="tooltip" data-placement="top" data-original-title="Quick Apply"></a>
                     @endif

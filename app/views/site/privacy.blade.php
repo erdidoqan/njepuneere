@@ -4,6 +4,7 @@
     
 @include('partials/header')
 
+<title>Privacy - Njepuneere - Rruga më e thjeshtë për të gjetur punë</title>
 
   </head>
 

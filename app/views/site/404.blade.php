@@ -3,7 +3,7 @@
   <head>
     @include('partials/header')
     
-    <title>404 - Njepuneere</title>
+    <title>404 - Njepuneere - Rruga më e thjeshtë për të gjetur punë</title>
 
   </head>
 

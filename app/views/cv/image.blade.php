@@ -1,7 +1,7 @@
 @extends('cv.page')
 
 @section('title')
-<title>Profile Image | Njepuneere</title>
+<title>Profile Image | Njepuneere - Rruga më e thjeshtë për të gjetur punë</title>
 @stop
 
 @section('content')

@@ -2,7 +2,7 @@
 @extends('layouts.master')
 
 @section('title')
-<title>Njepuneere</title>
+<title>Njepuneere - Rruga më e thjeshtë për të gjetur punë</title>
 @stop
 
 @section('content')

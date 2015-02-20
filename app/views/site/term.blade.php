@@ -3,6 +3,7 @@
   <head>
     
 @include('partials/header')
+<title>Term Of Use  - Njepuneere - Rruga më e thjeshtë për të gjetur punë</title>
 
 
   </head>

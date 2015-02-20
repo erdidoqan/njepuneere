@@ -1,7 +1,7 @@
 @extends('layouts.auth')
 
 @section('title')
-<title>Login | Njepuneere</title>
+<title>Login | Njepuneere - Rruga më e thjeshtë për të gjetur punë</title>
 @stop
 
 @section('content')

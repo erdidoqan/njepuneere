@@ -4,7 +4,7 @@
     
 @include('partials/header')
 @section('title')
-<title>About | Njepuneere</title>
+<title>About | Njepuneere - Rruga më e thjeshtë për të gjetur punë</title>
 @stop
 
   </head>

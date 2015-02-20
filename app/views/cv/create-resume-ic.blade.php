@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CV | Njepuneere</title>
+    <title>CV | Njepuneere - Rruga më e thjeshtë për të gjetur punë</title>
   </head>
   <body>
 <div class="panel panel-success"  style="margin-top:70px;">

@@ -2,7 +2,7 @@
 @extends('layouts.ads')
 
 @section('title')
-<title>{{ucwords($adsInfo->com_name)}} | Njepuneere</title>
+<title>{{ucwords($adsInfo->com_name)}} | Njepuneere - Rruga më e thjeshtë për të gjetur punë</title>
 @stop
 
 @section('content')
@@ -159,7 +159,7 @@
 
               <ul class="dropdown-menu">
                 <li>
-                <a href="http://www.facebook.com/sharer.php?s=100&p[url]=http://njepuneere.com/ads/{{$adsInfo->id}}/&p[images][0]=http://institutional.njepuneere.com/img/logo/360%20Group%20shpk-38.jpg&p[title]=Title&p[summary]=Summary" class="fa fa-facebook" target="_blank"> Facebook</a>
+                <a href="http://www.facebook.com/sharer.php?s=100&p[url]=http://njepuneere.com/punë/{{$adsInfo->id}}/&p[images][0]=http://institutional.njepuneere.com/img/logo/360%20Group%20shpk-38.jpg&p[title]=Title&p[summary]=Summary" class="fa fa-facebook" target="_blank"> Facebook</a>
                 
 
                 </li>

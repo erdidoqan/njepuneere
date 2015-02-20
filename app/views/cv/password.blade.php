@@ -1,7 +1,7 @@
 @extends('cv.page')
 
 @section('title')
-<title>Change Some Information | Njepuneere</title>
+<title>Change Some Information | Njepuneere - Rruga më e thjeshtë për të gjetur punë</title>
 @stop
 
 @section('content')
