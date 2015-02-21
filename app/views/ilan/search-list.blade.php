@@ -26,7 +26,7 @@
 
               <tr id="msg1" class="unread">
                 <td class="inbox-table-icon">
-                <a href="/punë/{{$r->id}}">
+                <a href="/pune/{{$r->id}}">
                   <div>
                     <img src="{{User::$img_sirket_src."".$r->logo}}" style="width:120px;height:50px;">
                   </div>
@@ -34,7 +34,25 @@
                 </td>
                 <td class="inbox-data-from hidden-xs hidden-sm">
                   <div>
-                    <a href="/punë/{{$r->id}}">{{ucwords($r->com_name)}}</a>
+                    <div class="po-markup">
+        <a href="/pune/{{$r->id}}" class="po-link">{{ucwords($r->com_name)}}</a>
+
+        <div class="po-content hidden">
+          <div class="po-title">
+            <img src="{{User::$img_sirket_src."".$r->logo}}" alt="Google" width="46" height="16" />
+            <span>{{ucwords($r->com_name)}}</span>
+            </div> <!-- ./po-title -->
+            
+            <div class="po-body">
+              <h4 class="text-danger">{{ucwords($r->ads_name)}}</h4>
+              <p>
+                  {{str_limit($r->job_desc,500)}}
+              </p>
+              
+              </div><!-- ./po-body -->
+              </div>  <!-- ./po-content -->
+              </div><!-- ./po-markup -->
+              
                   </div>
                   <div class="checkbox">
                   <small> {{str_limit(ucwords($r->ads_name),30)}} </small>
@@ -42,18 +60,18 @@
                 </td>
                 <td class="inbox-data-attachment hidden-xs">
                   <div>
-                    <a href="/punë/{{$r->id}}"><span class="text-success"><i class="fa fa-map-marker"></i> {{ucwords($r->work_place)}}</span></a>
+                    <a href="/pune/{{$r->id}}"><span class="text-success"><i class="fa fa-map-marker"></i> {{ucwords($r->work_place)}}</span></a>
                   </div>
                 </td>
                 <td class="inbox-data-attachment hidden-xs">
                   <div>
-                    <a href="/punë/{{$r->id}}"><span class="label label-primary">{{ Carbon::createFromTimestamp(strtotime($r->created_at))->addDays($r->pub_time)->diffForHumans() }}</a>
+                    <a href="/pune/{{$r->id}}"><span class="label label-primary">{{ Carbon::createFromTimestamp(strtotime($r->created_at))->addDays($r->pub_time)->diffForHumans() }}</a>
                   </div>
                 </td>
                 <td class="inbox-data-date hidden-xs">
                   <div>
                     @if(Auth::user())
-                      <a href="/punë/{{$r->id}}" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-plus"></i> </a>
+                      <a href="/pune/{{$r->id}}" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-plus"></i> </a>
                     @else
                       <a data-toggle="modal" href="#myModal"  class="btn btn-primary btn-sm glyphicon glyphicon-user"  rel="tooltip" data-placement="top" data-original-title="Quick Apply"></a>
                     @endif
@@ -62,6 +80,7 @@
              </tr>
 
             </tbody>
+
             @endforeach
 </table>
   @else
@@ -70,5 +89,29 @@
   </div>
   @endif
 {{$results->appends(array('search' => $search, 'work_place' => $workPlace))->links()}}
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+  $('.po-markup > .po-link').popover({
+    trigger: 'hover',
+    html: true,  // must have if HTML is contained in popover
+
+    // get the title and conent
+    title: function() {
+      return $(this).parent().find('.po-title').html();
+    },
+    content: function() {
+      return $(this).parent().find('.po-body').html();
+    },
+
+    container: 'body',
+    placement: 'right'
+
+  });
+
+});
+</script>
+
 @stop
 
