@@ -22,7 +22,7 @@
              </tr>
                  </thead>
                  @foreach($results as $r)
-            <tbody>
+            <tbody data-link="row" class="rowlink">
 
               <tr id="msg1" class="unread">
                 <td class="inbox-table-icon">
@@ -60,15 +60,15 @@
                 </td>
                 <td class="inbox-data-attachment hidden-xs">
                   <div>
-                    <a href="/pune/{{$r->id}}"><span class="text-success"><i class="fa fa-map-marker"></i> {{ucwords($r->work_place)}}</span></a>
+                    <span class="text-success"><i class="fa fa-map-marker"></i> {{ucwords($r->work_place)}}</span>
                   </div>
                 </td>
                 <td class="inbox-data-attachment hidden-xs">
                   <div>
-                    <a href="/pune/{{$r->id}}"><span class="label label-primary">{{ Carbon::createFromTimestamp(strtotime($r->created_at))->addDays($r->pub_time)->diffForHumans() }}</a>
+                    <span class="label label-primary">{{ Carbon::createFromTimestamp(strtotime($r->created_at))->addDays($r->pub_time)->diffForHumans() }}
                   </div>
                 </td>
-                <td class="inbox-data-date hidden-xs">
+                <td class="inbox-data-date rowlink-skip  hidden-xs">
                   <div>
                     @if(Auth::user())
                       <a href="/pune/{{$r->id}}" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-plus"></i> </a>
@@ -90,8 +90,18 @@
   @endif
 {{$results->appends(array('search' => $search, 'work_place' => $workPlace))->links()}}
 
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+
+<script type="text/javascript">
+  $('tbody.rowlink').rowlink()
+</script>
+
 <script type="text/javascript">
   $(document).ready(function() {
+
+  
 
   $('.po-markup > .po-link').popover({
     trigger: 'hover',

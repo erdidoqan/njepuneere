@@ -48,7 +48,7 @@
 		            </tr>
 	            </thead>
 	            @foreach($cv as $cvs)
-	            <tbody>
+	            <tbody id="yenile">
 	            	<tr>
 	            		<td>
 	            			<div class="progress">
@@ -165,7 +165,9 @@
 		    		dataType:'json'
 		    	}).done(function (resp){
 		    		if(!resp.err)
-		    			location.reload();
+		    			//return false;
+						    location.reload();
+
 
 		    	}).fail(function(){
 		    		console.log('eben');
