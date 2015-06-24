@@ -16,7 +16,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'karriera',
 			'username'  => 'root',
-			'password'  => 'VSEVsUQ07d',
+			'password'  => 'root',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
