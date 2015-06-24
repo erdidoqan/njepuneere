@@ -4,7 +4,7 @@
 Route::get('mobile', "HomeController@mobile");
 
 Route::get('/', "HomeController@home");
-Route::get('pune/{id}', "HomeController@ads");
+Route::get('pune/{com_name}/{ads_name}', "HomeController@ads")->where('name', '[A-Za-z]+');
 Route::get('BireyKayit', "RegisterController@getRegister");
 Route::get('activate/{code}', "RegisterController@getActivate");
 Route::get('BireyGiris', array('as'=>'BireyGiris', 'uses'=>'LoginController@getLogin'));

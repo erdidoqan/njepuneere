@@ -16,7 +16,7 @@ body{
   width: 100%;
   /*border-bottom: 1px solid #CCCCCC;*/
   border-top: 1px solid #DDDDDD;
-  background: url(http://pyro.com.tr/yeni/img/footerbg.png);
+  background: url(/img/footer_bg.png);
 }
 
 .cizgi {
@@ -127,7 +127,7 @@ body{
  /* border-top: 1px solid #DDDDDD;*/
   padding-top: 10px;
   padding-bottom: 10px;
-  background: url(http://pyro.com.tr/yeni/img/footerbg.png);
+  background: url(/img/footer_bg.png);
 }
 .footer-bottom p.pull-left {
   padding-top: 6px;
@@ -271,6 +271,7 @@ width: 100%;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-top: 25px;
 }
 
 #social:hover {

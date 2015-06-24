@@ -40,7 +40,6 @@ return array(
 		'Intervention\Image\ImageServiceProvider',
 		'Shift31\LaravelElasticsearch\LaravelElasticsearchServiceProvider',
 		'Felixkiss\UniqueWithValidator\UniqueWithValidatorServiceProvider',
-		'Jenssegers\Agent\AgentServiceProvider',
 	),
 	'manifest' => storage_path().'/meta',
 	'aliases' => array(
@@ -87,7 +86,6 @@ return array(
 		'Image' 		  => 'Intervention\Image\Facades\Image',
 		'Es'			  => 'Elasticsearch\Client',
 		'Gravatar' 		  => 'Thomaswelton\LaravelGravatar\Facades\Gravatar',
-		'Agent'            => 'Jenssegers\Agent\Facades\Agent',
 	),
 
 );
